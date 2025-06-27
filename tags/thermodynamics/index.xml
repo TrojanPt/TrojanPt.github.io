@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermodynamics on Trojan TeaHouse</title>
+    <link>/tags/thermodynamics/</link>
+    <description>Recent content in Thermodynamics on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2025 TrojanPoint</copyright>
+    <lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/thermodynamics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>光滑绝热活塞的平衡条件</title>
+      <link>/jottings/smooth-insulated-piston/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>/jottings/smooth-insulated-piston/</guid>
+      <description>如果光滑绝热的活塞两边压强相等而温度不相等，即便所有的传热都不考虑，能量也会通过活塞的微小振动从高温气体传递到低温气体。</description>
+    </item>
+  </channel>
+</rss>

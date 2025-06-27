@@ -1,0 +1,1237 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="zh-Hans"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>关于原始 Ampere 定律的讨论 &middot; Trojan TeaHouse</title>
+    <meta name="title" content="关于原始 Ampere 定律的讨论 &middot; Trojan TeaHouse" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.57e8419debc8831b20efeae42b14641b95c5342286df994ab779c582d53d4c48.js"
+    integrity="sha256-V&#43;hBnevIgxsg7&#43;rkKxRkG5XFNCKG35lKt3nFgtU9TEg="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.7631c3c39beeafc3413740a240fd19c0156131dff75ca5f4a1a8064e7e7c76ff.css"
+    integrity="sha256-djHDw5vur8NBN0CiQP0ZwBVhMd/3XKX0oagGTn58dv8="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
+      data-copy="复制"
+      data-copied="已复制"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="/jottings/amperes-law/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="/jottings/amperes-law/">
+  <meta property="og:site_name" content="Trojan TeaHouse">
+  <meta property="og:title" content="关于原始 Ampere 定律的讨论">
+  <meta property="og:description" content="本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="jottings">
+    <meta property="article:published_time" content="2025-06-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-22T00:00:00+00:00">
+    <meta property="article:tag" content="Physics">
+    <meta property="article:tag" content="Electromagnetism">
+    <meta property="og:image" content="/jottings/amperes-law/feature.jpg">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/jottings/amperes-law/feature.jpg">
+  <meta name="twitter:title" content="关于原始 Ampere 定律的讨论">
+  <meta name="twitter:description" content="本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "关于原始 Ampere 定律的讨论",
+    "headline": "关于原始 Ampere 定律的讨论",
+    
+    "abstract": "本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。",
+    "inLanguage": "zh-Hans",
+    "url" : "\/jottings\/amperes-law\/",
+    "author" : {
+      "@type": "Person",
+      "name": "TrojanPoint"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-06-22T00:00:00\u002b00:00",
+    "datePublished": "2025-06-22T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-06-22T00:00:00\u002b00:00",
+    
+    "keywords": ["Physics","Electromagnetism"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "754"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "/",
+       "name": "Home",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "/jottings/",
+       "name": "",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "关于原始 Ampere 定律的讨论",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="TrojanPoint" />
+  
+  
+    
+      <link href="https://github.com/TrojanPt" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/katex/katex.min.19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75.css"
+    integrity="sha256-GQlRJzV&#43;1tKf4KY6awAMkTqJ9/GWO3Zd03Fel8mFLnU="
+  />
+  
+  
+  <script defer src="/lib/katex/katex.min.e8d885505949f3a5f4abdd5dd0d53696bd1371ad26ffbf4f310dcd77c8cdae89.js" integrity="sha256-6NiFUFlJ86X0q91d0NU2lr0Tca0m/79PMQ3Nd8jNrok="></script>
+  
+  
+  <script
+    defer
+    src="/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
+    integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
+    onload="renderMathInElement(document.body);"
+  ></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >跳到主要内容</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Trojan TeaHouse</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/jottings/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >随记</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/notes/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >笔记</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title="Tags"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >标签</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title="About"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >关于</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="搜索 (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/jottings/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >随记</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/notes/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >笔记</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >标签</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title="About"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >关于</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="搜索 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <progress id="content_progress" value="0"></progress>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var winHeight = window.innerHeight,
+            docHeight = document.documentElement.scrollHeight,
+            progressBar = document.querySelector('#content_progress');
+      progressBar.max = docHeight - winHeight;
+      progressBar.value = window.scrollY;
+
+      document.addEventListener('scroll', function () {
+            progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.value = window.scrollY;
+      });
+    });
+  </script>
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/"
+      >Home</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/jottings/"
+      >jottings</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/jottings/amperes-law/"
+      >关于原始 Ampere 定律的讨论</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        关于原始 Ampere 定律的讨论
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-06-22 00:00:00 &#43;0000 UTC">2025.6.22</time>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+      
+        
+          
+            <a
+              href="/tags/physics/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Physics</a
+            >
+          
+            <a
+              href="/tags/electromagnetism/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Electromagnetism</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+        <div class="prose">
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mb-6 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/jottings/amperes-law/feature_hu_35014f4fac09a034.webp 330w,/jottings/amperes-law/feature_hu_12cac9f9adc0b191.webp 660w
+            
+              ,/jottings/amperes-law/feature_hu_bac7b9db6e88ad7a.webp 1024w
+            
+            
+              ,/jottings/amperes-law/feature_hu_a0bd7ec970e84083.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="5194"
+        height="3782"
+        class="mb-6 rounded-md"
+        
+        
+        
+          src="/jottings/amperes-law/feature_hu_4f32cf85b3eb6f55.jpg" srcset="/jottings/amperes-law/feature_hu_288a5a0a40e9eb10.jpg 330w,/jottings/amperes-law/feature_hu_4f32cf85b3eb6f55.jpg 660w
+          
+            ,/jottings/amperes-law/feature_hu_abd8cf9f166627c.jpg 1024w
+          
+          
+            ,/jottings/amperes-law/feature_hu_3568f6121991e1bb.jpg 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+          
+            <figcaption class="-mt-3 mb-6 text-center">Artist: Measho  Pixiv ID: 99914442</figcaption>
+          
+        </div>
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一原始-ampere-定律的导出过程">一、原始 Ampere 定律的导出过程</a>
+      <ul>
+        <li><a href="#实验依据">实验依据</a></li>
+        <li><a href="#假设">假设</a></li>
+        <li><a href="#推导过程">推导过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#二原始-ampere-定律的适用性讨论">二、原始 Ampere 定律的适用性讨论</a></li>
+    <li><a href="#三为什么使用现行-ampere-定律的形式">三、为什么使用现行 Ampere 定律的形式</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        
+
+<blockquote>
+<p>Ampere 定律给出了如何计算两电流源间作用力的方法，但实际上，现行的 Ampere 定律的形式并不是 Ampere 最初提出的形式，二者在数学形式上有所差异，但是对于稳恒情况，在物理上并无实际测量意义上的区别。</p>
+<p>本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。</p></blockquote>
+<h2 id="一原始-ampere-定律的导出过程" class="relative group">一、原始 Ampere 定律的导出过程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%80%e5%8e%9f%e5%a7%8b-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e5%af%bc%e5%87%ba%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span></h2><h3 id="实验依据" class="relative group">实验依据 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%ae%9e%e9%aa%8c%e4%be%9d%e6%8d%ae" aria-label="锚点">#</a></span></h3><ol>
+<li>
+<p><strong>电流反向，作用力反向</strong>
+</p>
+$$
+   d\vec{F}_{12} \propto i_1 i_2 \tag{1}
+   $$</li>
+<li>
+<p><strong>电流元具有矢量叠加性质</strong>
+</p>
+$$
+   d\vec{F}_{12} = d\vec{F}_{12} (i_1, i_2, d\vec{l}_1, d\vec{l}_2, \vec{r}_{12}) \tag{2}
+   $$</li>
+<li>
+<p><strong>电流元受力与电流元垂直</strong>
+</p>
+$$
+   (\oint_{L_1}{d\vec{F}_{12}}) \cdot d\vec{l}_2 = 0 \tag{3}
+   $$</li>
+<li>
+<p><strong>作用力大小与几何线度无关</strong>
+</p>
+$$
+   |d\vec{F}_{12}| \propto \frac{|d\vec{l}_1| |d\vec{l}_2|}{|\vec{r}_{12}|^2} \tag{4}
+   $$</li>
+</ol>
+<h3 id="假设" class="relative group">假设 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%81%87%e8%ae%be" aria-label="锚点">#</a></span></h3><p>两电流元 \( d\vec{l}_1 \) 和 \( d\vec{l}_2 \) 间的作用力沿 \( \vec{r}_{12} \) 方向。</p>
+<h3 id="推导过程" class="relative group">推导过程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%8e%a8%e5%af%bc%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span></h3><p>根据假设，并考虑实验依据 (1) (2) , 可令
+</p>
+$$
+d\vec{F}_{12} = k i_1 i_2 \varphi(d\vec{l}_1, d\vec{l}_2, \vec{r}_{12}) \hat{r}_{12} \tag{5}
+$$<p>
+其中 \( \varphi \) 为标量值函数。</p>
+<p>考虑实验 (2)，表征电流元路径的 \( d\vec{l} \) 表现出矢量性质，</p>
+<p>一种简单的认为是，\( \varphi \) 对于 \( d\vec{l}_1 \) 和 \( d\vec{l}_2 \) 呈线性关系，</p>
+<p>从而，假设</p>
+$$
+\varphi = \varphi_1(\vec{r}_{12})(d\vec{l}_1 \cdot d\vec{l}_2) + \varphi_2(\vec{r}_{12})(d\vec{l}_1 \cdot \vec{r}_{12})(d\vec{l}_2 \cdot \vec{r}_{12}) + \varphi_3(\vec{r}_{12})(d\vec{l}_1 \times d\vec{l}_2) \cdot \vec{r}_{12} \quad \text{(6)}
+$$<blockquote>
+<p>这么假设的原因在于，首先，\( \varphi \) 中的项应为如下形式</p>
+$$
+(d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\gamma ({r}_{12})_\mu \cdots \tag{7}
+$$<p>① \( \alpha = \beta \)，此即 \( (d\vec{l}_1 \cdot d\vec{l}_2) \) 项</p>
+<p>② \( \alpha \neq \beta \)，由于 \( \varphi \) 为标量值函数，从而有如下两种形式</p>
+<p>1） \( (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\alpha ({r}_{12})_\beta \cdots \)</p>
+<p>即 \( (d\vec{l}_1 \cdot \vec{\gamma}_{12})(d\vec{l}_2 \cdot \vec{\gamma}_{12}) \) 项</p>
+<p>2） \( \varepsilon_{\gamma\alpha\beta} (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\gamma \cdots \)</p>
+<p>即 \( (d\vec{l}_1 \times d\vec{l}_2) \cdot \vec{\gamma}_{12} \) 项</p></blockquote>
+<p>考虑（4），从而
+</p>
+$$
+d\vec{F}_{12} = i_1 i_2 \vec{r}_{12} \left[ (d\vec{l}_1 \cdot d\vec{l}_2) \frac{A}{r_{12}^3} + (d\vec{l}_1 \cdot \vec{r}_{12})(d\vec{l}_2 \cdot \vec{r}_{12}) \frac{B}{r_{12}^5} + (d\vec{l}_1 \times d\vec{l}_2) \cdot \vec{r}_{12} \frac{C}{r_{12}^4} \right] \quad \text{(8)}
+$$<p>
+考虑（3），如图示</p>
+<p>此时 \(d\vec{l}_1 = - d\vec{r}_{12}\)</p>
+<p>注意（3）式
+</p>
+$$
+\left( \oint_{L_1} d\vec{F}_{12} \right) \cdot d\vec{l}_{2} = \oint_{L_1} (d\vec{F}_{12} \cdot d\vec{l}_{2}) = 0 \tag{9}
+$$<p>
+该等式与路径 \(L_1\) 无关，从而 \(d\vec{F}_{12} \cdot d\vec{r}_{12}\) 是某势函数 \(\phi\) 的微分，</p>
+<p>即 \( d\phi = d\vec{F}_{12} \cdot d\vec{l}_{2} \)</p>
+<p>对 \(\phi\) ，考虑上式，有
+</p>
+$$
+d\phi \propto \frac{|d\vec{r}_{12}| |d\vec{l}_2|^2}{|\vec{r}_{12}|^2} \tag{10}
+$$<p>
+</p>
+$$
+\phi \propto \frac{|d\vec{l}_2|^2}{|\vec{r}_{12}|} \tag{11}
+$$<p>
+从而，将 \(\phi\) 形式地表为
+</p>
+$$
+\phi = (d\vec{l}_2 \cdot d\vec{l}_2) \frac{a}{r_{12}} + (d\vec{l}_2 \cdot \vec{r}_{12})^2 \frac{b}{r_{12}^3} + (d\vec{l}_2 \times \vec{r}_{12})^2 \frac{c}{r_{12}^3} \tag{12}
+$$<p>
+取微分，得
+</p>
+$$
+\begin{align}
+d\phi  = & - (d\vec{l}_2 \cdot d\vec{l}_2) \frac{a \vec{r}_{12} \cdot d\vec{r}_{12}}{r_{12}^3} + \notag \\
+&\ 2(d\vec{l}_2 \cdot \vec{r}_{12})(d\vec{l}_2 \cdot d\vec{r}_{12}) \frac{b}{r_{12}^3} - 3(d\vec{l}_2 \cdot \vec{r}_{12})^2 \frac{b \vec{r}_{12} \cdot d\vec{r}_{12}}{r_{12}^5} + \notag \\
+&\ 2(d\vec{l}_2 \times \vec{r}_{12}) \cdot (d\vec{l}_2 \times d\vec{r}_{12}) \frac{c}{r_{12}^3} - 3(d\vec{l}_2 \times \vec{r}_{12})^2 \frac{c \vec{r}_{12} \cdot d\vec{r}_{12}}{r_{12}^5} \tag{13}
+\end{align}
+$$<p>
+又由（5），有
+</p>
+$$
+d\vec{F}_{12} \cdot d\vec{l}_2 = -i_1 i_2 (\vec{r}_{12} \cdot d\vec{l}_2) \left[ (d\vec{r}_{12} \cdot d\vec{l}_2) \frac{A}{r_{12}^3} + (d\vec{r}_{12} \cdot \vec{r}_{12}) (d\vec{l}_2 \cdot \vec{r}_{12}) \frac{B}{r_{12}^5} + (d\vec{r}_{12} \times d\vec{l}_2) \cdot \vec{r}_{12} \frac{C}{r_{12}^4} \right] \quad \text{(14)}
+$$<p>
+且 \( d\phi = d\vec{F}_{12} \cdot d\vec{l}_2 \) ，对比系数得到
+</p>
+$$
+\begin{cases}
+a = 0 \\
+-A = 2b \\
+-B = -3b \\
+c = 0 \\
+C = 0
+\end{cases} \tag{15}
+$$<p>
+从而可令 \( A = -2k, B = 3k, C = 0\) ，代入（9）得
+</p>
+$$
+d\vec{F}_{12} = -k i_1 i_2 \vec{r}_{12} \left[ (d\vec{l}_{1} \cdot d\vec{l}_2) \frac{2}{r_{12}^3} - (d\vec{l}_{1} \cdot \vec{r}_{12}) (d\vec{l}_2 \cdot \vec{r}_{12}) \frac{3}{r_{12}^5} \right] \tag{16}
+$$<p>
+此即 Ampere 定律的原始形式。</p>
+<h2 id="二原始-ampere-定律的适用性讨论" class="relative group">二、原始 Ampere 定律的适用性讨论 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%ba%8c%e5%8e%9f%e5%a7%8b-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e9%80%82%e7%94%a8%e6%80%a7%e8%ae%a8%e8%ae%ba" aria-label="锚点">#</a></span></h2><blockquote>
+<p>在稳恒情况下，由于实际情形下一对电流元间的作用力不可测量，</p>
+<p>实际有测量意义的物理量至少应是闭合回路对电流元的作用力</p></blockquote>
+$$
+\begin{align}
+d\vec{F}_{L_1,2} =& \oint_{L_1} d\vec{F}_{12} \notag \\
+=& \oint_{L_1} k i_1 i_2 \vec{r}_{12} \left[ \frac{2 (d\vec{r}_{12} \cdot d\vec{l}_2)}{r_{12}^3} - \frac{3 (d\vec{r}_{12} \cdot \vec{r}_{12}) (d\vec{l}_2 \cdot \vec{r}_{12})}{r_{12}^5} \right] \notag \\
+=& \oint_{L_1} k i_1 i_2 \left[ d\left(\vec{r}_{12} \frac{(d\vec{l}_2 \cdot \vec{r}_{12})}{r_{12}^3} \right) + \frac{1}{r_{12}^3} \left[ \vec{r}_{12} (d\vec{r}_{12} \cdot d\vec{l}_2) - d\vec{r}_{12} (d\vec{r}_{12} \cdot d\vec{l}_2) \right] \right] \notag \quad \text{(17)}
+\end{align}
+$$<p>
+其中
+</p>
+$$
+\oint_{L_1} k i_1 i_2 d\left( \frac{\vec{r}_{12} (\vec{dl}_2 \cdot \vec{r}_{12})}{r_{12}^3} \right) = 0 \tag{18}
+$$$$
+\vec{r}_{12} (d\vec{r}_{12} \cdot d\vec{l}_2) - d\vec{r}_{12} (d\vec{r}_{12} \cdot d\vec{l}_2) = d\vec{l}_2 \times (\vec{r}_{12} \times d\vec{r}_{12}) \tag{19}
+$$<blockquote>
+<p>由此可见，现行 Ampere 定律与原始 Ampere 定律相差一个全微分项</p>
+<p>因此对稳恒情形下的闭合回路，二者没有实际意义上的区别</p></blockquote>
+<p>从而
+</p>
+$$
+d\vec{F}_{L_1,2} = \oint_{L_1} k i_1 i_2 \frac{1}{r_{12}^3} d\vec{l}_2 \times (\vec{r}_{12} \times d\vec{r}_{12}) \tag{20}
+$$<p>
+考虑到 \( d\vec{r}_2 = -d\vec{l}_1 \)，故
+</p>
+$$
+d\vec{F}_{L_1,2} = \oint_{L_1} k i_1 i_2 \frac{1}{r_{12}^3} d\vec{l}_2 \times (d\vec{l}_1 \times \vec{r}_{12}) \tag{21}
+$$<p>
+与现行 Ampere 定律所得结果一致</p>
+<h2 id="三为什么使用现行-ampere-定律的形式" class="relative group">三、为什么使用现行 Ampere 定律的形式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%89%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bd%bf%e7%94%a8%e7%8e%b0%e8%a1%8c-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e5%bd%a2%e5%bc%8f" aria-label="锚点">#</a></span></h2><blockquote>
+<p>虽然实际情况下不存在稳定的电流元，</p>
+<p>但在非稳定情况下可以存在</p></blockquote>
+<p>例如，运动的点电荷即可视为独立存在的电流元，有<br>
+</p>
+$$
+q \vec{v} = i d\vec{l} \tag{22}
+$$<p>
+考虑图示情形</p>
+<p>利用电磁场的相对论变换，得到该时刻 \( q_1 \) 在 \( \vec{r}_{12} \) 处产生的电磁场满足
+</p>
+$$
+\begin{cases}
+\vec{E}(\vec{r}_{12}) = \left[ \gamma \vec{\vec{I}} - (\gamma - 1) \frac{\vec{v}_1 \vec{v}_1}{|\vec{v}_1|^2} \right] \cdot \frac{1}{4\pi\varepsilon_0} \frac{q_1 \vec{r}_{12}'}{|\vec{r}_{12}'|^3} \\\\
+\vec{B}(\vec{r}_{12}) = \gamma \frac{\vec{v}_1}{c^2} \times \frac{1}{4\pi\varepsilon_0} \frac{q_1 \vec{r}_{12}'}{|\vec{r}_{12}'|^3}
+\end{cases} \tag{23}
+$$<p>
+其中
+</p>
+$$
+\vec{r}_{12}' = \left[ \vec{\vec{I}} + (\gamma - 1) \frac{\vec{v}_1 \vec{v}_1}{|\vec{v}_1|^2} \right] \vec{r}_{12} \tag{24}
+$$<p>
+注意对实际电流元，除运动载流子外还应当有静止的电荷，整体呈电中性。因此实际电场在考虑静止电荷后应为小量，不作考虑。</p>
+<p>从而在 \( v \ll c \) 近似下， \( q_2 \) 所受合力为
+</p>
+$$
+\begin{align}
+\vec{F}_{12} =&\ q_2 \vec{v}_2 \times \vec{B}  \\
+=&\ q_2 \vec{v}_2 \times \left( \frac{\vec{v}_1}{c^2} \times \frac{1}{4\pi\varepsilon_0} \cdot \frac{q_1 \vec{r}_{12}}{|\vec{r}_{12}|^3} \right)  \\
+=&\ \frac{\mu_0}{4\pi} \frac{q_2 \vec{v}_2 \times \left( q_1 \vec{v}_1 \times \vec{r}_{12} \right)}{|\vec{r}_{12}|^3}
+\end{align} \tag{25}
+$$<p>
+若将运动电荷 \( q\vec{v} \) 视为电流元 \( i d\vec{l} \)，则
+</p>
+$$
+\vec{F}_{12} = \frac{\mu_0}{4\pi} \frac{i_2 d\vec{l}_2 \times \left( i_1 d\vec{l}_1 \times \vec{r}_{12} \right)}{|\vec{r}_{12}|^3} \tag{26}
+$$<p>与现行 Ampere 定律的形式一致。</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="500"
+        height="500"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="TrojanPoint"
+        loading="lazy" decoding="async"
+        
+          src="/img/_.jpg"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          作者
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          TrojanPoint
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">What is mind? No matter.  What is matter? Never mind.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://github.com/TrojanPt"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/jottings/vibration-of-elasticbody/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >重力场下弹性体的振动</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-06-26 00:00:00 &#43;0000 UTC">2025.6.26</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="回到顶部"
+            title="回到顶部"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © 2025 TrojanPoint
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="切换为深色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="切换为浅色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+    
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

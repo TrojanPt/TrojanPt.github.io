@@ -1,0 +1,1189 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="zh-Hans"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>光滑绝热活塞的平衡条件 &middot; Trojan TeaHouse</title>
+    <meta name="title" content="光滑绝热活塞的平衡条件 &middot; Trojan TeaHouse" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.57e8419debc8831b20efeae42b14641b95c5342286df994ab779c582d53d4c48.js"
+    integrity="sha256-V&#43;hBnevIgxsg7&#43;rkKxRkG5XFNCKG35lKt3nFgtU9TEg="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.7631c3c39beeafc3413740a240fd19c0156131dff75ca5f4a1a8064e7e7c76ff.css"
+    integrity="sha256-djHDw5vur8NBN0CiQP0ZwBVhMd/3XKX0oagGTn58dv8="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
+      data-copy="复制"
+      data-copied="已复制"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        如果光滑绝热的活塞两边压强相等而温度不相等，即便所有的传热都不考虑，能量也会通过活塞的微小振动从高温气体传递到低温气体。
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="/jottings/smooth-insulated-piston/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="/jottings/smooth-insulated-piston/">
+  <meta property="og:site_name" content="Trojan TeaHouse">
+  <meta property="og:title" content="光滑绝热活塞的平衡条件">
+  <meta property="og:description" content="如果光滑绝热的活塞两边压强相等而温度不相等，即便所有的传热都不考虑，能量也会通过活塞的微小振动从高温气体传递到低温气体。">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="jottings">
+    <meta property="article:published_time" content="2025-06-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-26T00:00:00+00:00">
+    <meta property="article:tag" content="Physics">
+    <meta property="article:tag" content="Thermodynamics">
+    <meta property="og:image" content="/jottings/smooth-insulated-piston/feature.jpg">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/jottings/smooth-insulated-piston/feature.jpg">
+  <meta name="twitter:title" content="光滑绝热活塞的平衡条件">
+  <meta name="twitter:description" content="如果光滑绝热的活塞两边压强相等而温度不相等，即便所有的传热都不考虑，能量也会通过活塞的微小振动从高温气体传递到低温气体。">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "光滑绝热活塞的平衡条件",
+    "headline": "光滑绝热活塞的平衡条件",
+    
+    "abstract": "如果光滑绝热的活塞两边压强相等而温度不相等，即便所有的传热都不考虑，能量也会通过活塞的微小振动从高温气体传递到低温气体。",
+    "inLanguage": "zh-Hans",
+    "url" : "\/jottings\/smooth-insulated-piston\/",
+    "author" : {
+      "@type": "Person",
+      "name": "TrojanPoint"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-06-26T00:00:00\u002b00:00",
+    "datePublished": "2025-06-26T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-06-26T00:00:00\u002b00:00",
+    
+    "keywords": ["Physics","Thermodynamics"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "594"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "/",
+       "name": "Home",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "/jottings/",
+       "name": "",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "光滑绝热活塞的平衡条件",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="TrojanPoint" />
+  
+  
+    
+      <link href="https://github.com/TrojanPt" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/katex/katex.min.19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75.css"
+    integrity="sha256-GQlRJzV&#43;1tKf4KY6awAMkTqJ9/GWO3Zd03Fel8mFLnU="
+  />
+  
+  
+  <script defer src="/lib/katex/katex.min.e8d885505949f3a5f4abdd5dd0d53696bd1371ad26ffbf4f310dcd77c8cdae89.js" integrity="sha256-6NiFUFlJ86X0q91d0NU2lr0Tca0m/79PMQ3Nd8jNrok="></script>
+  
+  
+  <script
+    defer
+    src="/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
+    integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
+    onload="renderMathInElement(document.body);"
+  ></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >跳到主要内容</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Trojan TeaHouse</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/jottings/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >随记</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/notes/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >笔记</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title="Tags"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >标签</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title="About"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >关于</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="搜索 (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/jottings/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >随记</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/notes/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >笔记</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >标签</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title="About"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >关于</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="搜索 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <progress id="content_progress" value="0"></progress>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var winHeight = window.innerHeight,
+            docHeight = document.documentElement.scrollHeight,
+            progressBar = document.querySelector('#content_progress');
+      progressBar.max = docHeight - winHeight;
+      progressBar.value = window.scrollY;
+
+      document.addEventListener('scroll', function () {
+            progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.value = window.scrollY;
+      });
+    });
+  </script>
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/"
+      >Home</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/jottings/"
+      >jottings</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/jottings/smooth-insulated-piston/"
+      >光滑绝热活塞的平衡条件</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        光滑绝热活塞的平衡条件
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-06-26 00:00:00 &#43;0000 UTC">2025.6.26</time>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+      
+        
+          
+            <a
+              href="/tags/physics/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Physics</a
+            >
+          
+            <a
+              href="/tags/thermodynamics/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Thermodynamics</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+        <div class="prose">
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mb-6 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/jottings/smooth-insulated-piston/feature_hu_dd8ab75dd5a46ee3.webp 330w,/jottings/smooth-insulated-piston/feature_hu_e979d3ea83c6871f.webp 660w
+            
+              ,/jottings/smooth-insulated-piston/feature_hu_34c0d54225a46767.webp 1024w
+            
+            
+              ,/jottings/smooth-insulated-piston/feature_hu_22d8759a618a6553.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="2346"
+        height="3543"
+        class="mb-6 rounded-md"
+        
+        
+        
+          src="/jottings/smooth-insulated-piston/feature_hu_53e1f5a8b0cbb59f.jpg" srcset="/jottings/smooth-insulated-piston/feature_hu_4a1600bbd0259147.jpg 330w,/jottings/smooth-insulated-piston/feature_hu_53e1f5a8b0cbb59f.jpg 660w
+          
+            ,/jottings/smooth-insulated-piston/feature_hu_c4083e2063464b50.jpg 1024w
+          
+          
+            ,/jottings/smooth-insulated-piston/feature_hu_730f67e9894c3bf8.jpg 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+          
+            <figcaption class="-mt-3 mb-6 text-center">Artist: 三角夜岩  Pixiv ID: 87843361<br> 咪啪 ~ ☆</figcaption>
+          
+        </div>
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#气体分子与活塞的碰撞">气体分子与活塞的碰撞</a></li>
+    <li><a href="#能量变化">能量变化</a></li>
+    <li><a href="#活塞等效温度">活塞等效温度</a></li>
+    <li><a href="#能流">能流</a></li>
+    <li><a href="#热力学量">热力学量</a></li>
+    <li><a href="#热力学量满足的微分方程">热力学量满足的微分方程</a></li>
+    <li><a href="#近似求解">近似求解</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        
+
+<blockquote>
+<p>​	费恩曼在他的物理学讲义第一卷§39-4中提到，如果光滑绝热的活塞两边压强相等而温度不相等，即便所有的传热都不考虑，能量也会通过活塞的微小振动从高温气体传递到低温气体。</p>
+<p>​	本文尝试从微观角度考察活塞能否平衡以及达到末态平衡的过程。</p></blockquote>
+<p>我们以一个简单的模型为例展开讨论：如 图 1 所示，一光滑绝热活塞将绝热容器分为两部分。对活塞，截面积记为 \(A\) ，质量记为 \(M\). 对气体，单个分子质量记为 \(m({\ll}M)\)，等压平衡常数记为 \(C^{mol}_p\) ，可视为理想气体。</p>
+<p>对初态，左侧气体物质的量为 \(\nu_1\) 、压强为 \(p_0\)、温度为 \(T_{10}\) ，右侧气体物质的量为 \(\nu_2\) 、压强为 \(p_0\) 、温度为 \(T_{20}(>T_{10})\) 。</p>
+<p>对过程中某 \(t\) 时刻，记左侧气体压强为 \(p\) 、温度为 \(T_{1}\)，右侧气体压强为 \(p\) 、温度为 \(T_{2}\)。活塞的速度为 \(u\)（约定向右为正）。</p>
+<figure style="text-align: center;">
+    <img src="p1.jpg" alt="图 1" style="position: relative; left: 50%; transform: translateX(-50%); zoom:50%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 1</figcaption>
+</figure>
+<h2 id="气体分子与活塞的碰撞" class="relative group">气体分子与活塞的碰撞 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%b0%94%e4%bd%93%e5%88%86%e5%ad%90%e4%b8%8e%e6%b4%bb%e5%a1%9e%e7%9a%84%e7%a2%b0%e6%92%9e" aria-label="锚点">#</a></span></h2><p>某时刻板速为 \(u\)，对左侧某气体分子，速度垂直分量 \(v_x\)，</p>
+<p>该气体分子与活塞发生碰撞，碰后速度
+</p>
+$$
+v_x' =\frac{\left ( m-M \right )v_x+2Mu }{M+m} \tag{1}
+$$<h2 id="能量变化" class="relative group">能量变化 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%83%bd%e9%87%8f%e5%8f%98%e5%8c%96" aria-label="锚点">#</a></span></h2><p>该气体分子碰撞前后能量变化</p>
+$$
+\begin{align}
+\triangle \varepsilon\left ( v_x \right )=&\frac{1}2{} m\left ( v_x'^2 -v_x^2 \right ) \notag \\ 
+=& 2Mm\frac{Mu^2-\left ( M-m \right )uv_x-mv_x^2 }{\left ( M+m \right )^2 } \tag{2}
+\end{align}
+$$<p>考虑到 \(u\) 的随机性。取平均，得</p>
+$$
+\left \langle \triangle \varepsilon \right \rangle _{(v_x)}=\frac{2Mm}{\left ( M+m \right )^2}\left ( M\left \langle u^2 \right \rangle - (M - m) v_x \left \langle u \right \rangle - mv_x^2 \right ) \tag{3}
+$$<p>考虑到 \(\sqrt{\frac{kT_1}{m} }\gg u\) ，从而取 \(v_x\in[0,+{\infty}]\) ，得到左侧气体单位时间能量变化</p>
+$$
+\begin{align}
+P_1 &=\int_{0}^{\infty }\triangle \varepsilon _{\left ( v_x \right )}v_xAn_1\sqrt{\frac{m}{2\pi kT_1} }e^{-\frac{m}{2kT_1}v_x^2}dv_x \notag \\ 
+&=\frac{2Mm}{\left ( M+m \right )^2 }An_1\sqrt{\frac{m}{2\pi kT_1}  }\frac{kT_1}{m}\left ( M\left \langle u^2 \right \rangle - \sqrt{\frac{\pi k T_1}{2 m}} (M-m) \left \langle u \right \rangle -  2kT_1 \right ) \notag \quad \text{(4)}
+\end{align}
+$$<p>由 \(p=n_1kT_1\) ，从而</p>
+$$
+P_1=\frac{2Mm}{\left ( M+m \right )^2 }Ap \sqrt{\frac{m}{2\pi kT_1} } \frac{1}{m} \left ( M\left \langle u^2 \right \rangle - \sqrt{\frac{\pi k T_1}{2 m}} (M-m) \left \langle u \right \rangle - 2kT_1 \right ) \quad \text{(5)}
+$$<h2 id="活塞等效温度" class="relative group">活塞等效温度 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%b4%bb%e5%a1%9e%e7%ad%89%e6%95%88%e6%b8%a9%e5%ba%a6" aria-label="锚点">#</a></span></h2><p>考虑记</p>
+$$
+\left \langle u \right \rangle=0\quad,\quad\frac{1}2M\left \langle u^2 \right \rangle = \frac{1}2kT_0 \tag{6}
+$$<p>其中 \(T_0\) 即为活塞的等效温度。注意，实际上 \(\left \langle u \right \rangle \neq 0\) ，但后续可验证 \(\left \langle u^2 \right \rangle \gg \sqrt{\frac{\pi k T_1}{2 m}} \left \langle u \right \rangle\) ，从而 \(\left \langle u \right \rangle\) 可以忽略。从而</p>
+$$
+P_1=\frac{2Mm}{\left ( M+m \right )^2 }Ap \sqrt{\frac{m}{2\pi kT_1} } \frac{1}{m} \left ( kT_0-2kT_1 \right ) \tag{7}
+$$<p>同理，右侧气体单位时间能量变化为</p>
+$$
+P_2=\frac{2Mm}{\left ( M+m \right )^2 }Ap \sqrt{\frac{m}{2\pi kT_2} } \frac{1}{m} \left ( kT_0-2kT_2 \right ) \tag{8}
+$$<p>考虑到 \(\frac{1}{2}M\left \langle u^2 \right \rangle\ll \nu_{1,2}C^{mol}_VT_{1,2}\) ，从而系统能量守恒可写作</p>
+$$
+P_1+P_2=0 \tag{9}
+$$<p>故</p>
+$$
+\frac{T_0}{\sqrt{T_1}}-2\sqrt{T_1}+\frac{T_0}{\sqrt{T_2} }-2\sqrt{T_2}=0 \tag{10}
+$$$$
+T_0=2\sqrt{T_1T_2} \tag{11}
+$$<h2 id="能流" class="relative group">能流 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%83%bd%e6%b5%81" aria-label="锚点">#</a></span></h2><p>将 (11) 式代入 (7) 式，得到右侧气体向左侧的能流</p>
+$$
+P=\frac{4Mm}{\left ( M+m \right )^2 }A\sqrt{\frac{k}{2\pi m} }p\left ( \sqrt{T_2}-\sqrt{T_1}   \right ) \tag{12}
+$$<h2 id="热力学量" class="relative group">热力学量 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%83%ad%e5%8a%9b%e5%ad%a6%e9%87%8f" aria-label="锚点">#</a></span></h2><p>对初态
+</p>
+$$
+p_0V_{10}={\nu} _1RT_{10}, \quad p_0V_{20}=\nu_2RT_{20} \tag{13}
+$$<p>过程中某态
+</p>
+$$
+pV_1=\nu_1 RT_1, \quad pV_2=\nu_2 RT_2 \tag{14}
+$$<p>同样地，考虑到 \(\frac{1}{2}M\left \langle u^2 \right \rangle\ll \nu_{1,2}C^{mol}_VT_{1,2}\) ，从而系统能量守恒可写作</p>
+$$
+\nu _1C^{mol}_vT_{10}+\nu _2C^{mol}_vT_{20}=\nu _1C^{mol}_vT_1+\nu _2C^{mol}_vT_2 \tag{15}
+$$<p>由
+</p>
+$$
+V_{10}+V_{20}=V_1+V_2 \tag{16}
+$$<p>故
+</p>
+$$
+p=p_0 \tag{17}
+$$<h2 id="热力学量满足的微分方程" class="relative group">热力学量满足的微分方程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%83%ad%e5%8a%9b%e5%ad%a6%e9%87%8f%e6%bb%a1%e8%b6%b3%e7%9a%84%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b" aria-label="锚点">#</a></span></h2><p>对 \(t\) ~ \(t+dt\) 的时间微元，设活塞右移 \(dx\)，对左侧气体列能量守恒方程
+</p>
+$$
+\nu _1C_V^{mol}dT_1=Pdt-p_0Adx \tag{18}
+$$<p>又，由 (17) 知压强恒定，故</p>
+$$
+\frac{dT_1}{T_1}-\frac{Adx}{V_1}=0 \tag{19}
+$$<p>即
+</p>
+$$
+p_0Adx=\nu _1RdT_1 \tag{20}
+$$<p>代入 (18) 式得
+</p>
+$$
+\nu _1C_p^{mol}dT_1=Pdt \tag{21}
+$$<p>代入 (12) 式，消去 \(P\)，得到
+</p>
+$$
+\nu _1C_p^{mol}dT_1=\frac{4Mm}{\left ( M+m \right )^2 }A\sqrt{\frac{k}{2\pi m} }p_0\left ( \sqrt{T_2}-\sqrt{T_1}   \right )dt \tag{22}
+$$<p>与 (15) 式联立即为 \(T_1(t)\)，\(T_2(t)\) 所满足的微分方程组</p>
+$$
+\begin{cases}
+\ \nu _1T_{10}+\nu _2T_{20}=\nu _1T_1+\nu _2T_2 \\\\
+\ \nu _1C_P^{mol}\frac{dT_1}{dt}=\frac{4Mm}{\left ( M+m \right )^2 }A\sqrt{\frac{k}{2\pi m} }P_0\left ( \sqrt{T_2}-\sqrt{T_1} \right )
+\end{cases} \tag{23}
+$$<h2 id="近似求解" class="relative group">近似求解 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%bf%91%e4%bc%bc%e6%b1%82%e8%a7%a3" aria-label="锚点">#</a></span></h2><p>(23) 式无法直接求解。考查 \(T_{10}-T_{20}=\delta T_0\ll T_1,T_2\) 的情况，对末态有
+</p>
+$$
+T_f=\frac{\nu _1T_{10}+\nu _2T_{20}}{\nu _1+\nu _2} \tag{24}
+$$<p>对过程中状态，设 \(\delta T=T_1-T_2\) 从而
+</p>
+$$
+{\begin{cases}T_1=T_f+\frac{\nu _2}{\nu _1+\nu _2}\delta T
+\\T_2=T_f-\frac{\nu _1}{\nu _1+\nu _2}\delta T\end{cases}} \tag{25}
+$$<p>代入 (22) 式，保留一阶小量，得到
+</p>
+$$
+\frac{d\left ( \delta T \right ) }{\delta T}=-\frac{2Mm}{\left ( M+m \right )^2 }A\sqrt{\frac{kT_f}{2\pi m} }p_0\frac{1}{T_f}\frac{1}{C_p^{mol}}\frac{\nu_1+\nu _2}{\nu _1\nu _2}dt \tag{26}
+$$<p>即
+</p>
+$$
+\delta T=\delta T_0 e^{-\frac{t}{\tau }} \tag{27}
+$$<p>
+</p>
+$$
+T_1-T_2=(T_{10}-T_{20}) e^{-\frac{t}{\tau }} \tag{28}
+$$<p>
+其中
+</p>
+$$
+\begin{align}
+\tau &=\frac{\left ( M+m \right )^2 }{2Mm}\frac{T_f}{Ap_0}\sqrt{\frac{2\pi m}{kT_f} }C_p^{mol}\frac{\nu _1\nu _2}{\nu _1+\nu _2} \notag \\
+&=\frac{\left ( M+m \right )^2 }{2Mm}\frac{1}{Ap_0}\sqrt{\frac{2\pi m}{k}·\frac{\nu _1T_{10}+\nu _2T_{20}}{\nu _1+\nu _2}}C_p^{mol}\frac{\nu _1\nu _2}{\nu _1+\nu _2} \tag{29}
+\end{align} 
+$$<p>为该过程的特征时间。</p>
+<p>参考代入数值 \(M=10^{-3}kg,m=5\times 10^{-26}kg,A=10^{-2}m^2,p_0=1atm,T_{10}=310K,T_{20}=300K,\nu_1=\nu_2=10mol,C^{mol}_p=\frac{7}{2}R\) ，得到</p>
+$$
+\tau \approx 1.2\times10^{14}a(年) \tag{30}
+$$<p>从而在宏观体系中这一效应可以忽略。（此外，有 \(\left \langle u \right \rangle \sim \frac{l}{\tau}\)，\(l \sim \frac{\nu R T}{p A}\) 为容器线度。从而前面的假设\(\left \langle u^2 \right \rangle \gg \sqrt{\frac{\pi k T_1}{2 m}} \left \langle u \right \rangle\)也就自然成立了）</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="500"
+        height="500"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="TrojanPoint"
+        loading="lazy" decoding="async"
+        
+          src="/img/_.jpg"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          作者
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          TrojanPoint
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">What is mind? No matter.  What is matter? Never mind.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://github.com/TrojanPt"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/jottings/vibration-of-elasticbody/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >重力场下弹性体的振动</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-06-26 00:00:00 &#43;0000 UTC">2025.6.26</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="回到顶部"
+            title="回到顶部"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © 2025 TrojanPoint
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="切换为深色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="切换为浅色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+    
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+      <url>
+            <loc>/en/about/</loc>
+            <lastmod>2025-06-22T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="/about/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="/en/about/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>/en/</loc>
+            <lastmod>2025-06-22T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="/en/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>/en/jottings/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="/jottings/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="/en/jottings/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>/en/notes/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="/notes/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="/en/notes/"
+              />
+          </url>
+    
+  
+    
+  
+    
+  
+</urlset>
