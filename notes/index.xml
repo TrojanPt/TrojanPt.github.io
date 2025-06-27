@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trojan TeaHouse</title>
-    <link>/notes/</link>
+    <link>https://trojanpt.github.io/notes/</link>
     <description>Recent content on Trojan TeaHouse</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://trojanpt.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -4,66 +4,83 @@
   
     
       <url>
-            <loc>/en/about/</loc>
+            <loc>https://trojanpt.github.io/en/about/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/about/"
+              href="https://trojanpt.github.io/about/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/about/"
+              href="https://trojanpt.github.io/en/about/"
               />
           </url>
     
   
     
       <url>
-            <loc>/en/</loc>
+            <loc>https://trojanpt.github.io/en/copyright/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/"
+              href="https://trojanpt.github.io/copyright/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/"
+              href="https://trojanpt.github.io/en/copyright/"
               />
           </url>
     
   
     
       <url>
-            <loc>/en/jottings/</loc>
+            <loc>https://trojanpt.github.io/en/</loc>
+            <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/jottings/"
+              href="https://trojanpt.github.io/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/jottings/"
+              href="https://trojanpt.github.io/en/"
               />
           </url>
     
   
     
       <url>
-            <loc>/en/notes/</loc>
+            <loc>https://trojanpt.github.io/en/jottings/</loc>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/notes/"
+              href="https://trojanpt.github.io/jottings/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/notes/"
+              href="https://trojanpt.github.io/en/jottings/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/en/notes/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/notes/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/notes/"
               />
           </url>
     

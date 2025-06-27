@@ -4,34 +4,34 @@
   
     
       <url>
-            <loc>/jottings/</loc>
+            <loc>https://trojanpt.github.io/jottings/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/jottings/"
+              href="https://trojanpt.github.io/en/jottings/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/jottings/"
+              href="https://trojanpt.github.io/jottings/"
               />
           </url>
     
   
     
       <url>
-            <loc>/</loc>
+            <loc>https://trojanpt.github.io/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/"
+              href="https://trojanpt.github.io/en/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/"
+              href="https://trojanpt.github.io/"
               />
           </url>
     
@@ -46,48 +46,65 @@
   
     
       <url>
-            <loc>/jottings/smooth-insulated-piston/</loc>
+            <loc>https://trojanpt.github.io/jottings/smooth-insulated-piston/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>/jottings/vibration-of-elasticbody/</loc>
+            <loc>https://trojanpt.github.io/jottings/vibration-of-elasticbody/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>/notes/</loc>
+            <loc>https://trojanpt.github.io/notes/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/notes/"
+              href="https://trojanpt.github.io/en/notes/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/notes/"
+              href="https://trojanpt.github.io/notes/"
               />
           </url>
     
   
     
       <url>
-            <loc>/about/</loc>
+            <loc>https://trojanpt.github.io/about/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="/en/about/"
+              href="https://trojanpt.github.io/en/about/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="/about/"
+              href="https://trojanpt.github.io/about/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/copyright/</loc>
+            <lastmod>2025-06-22T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/copyright/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/copyright/"
               />
           </url>
     
@@ -96,7 +113,7 @@
   
     
       <url>
-            <loc>/jottings/amperes-law/</loc>
+            <loc>https://trojanpt.github.io/jottings/amperes-law/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
           </url>
     
