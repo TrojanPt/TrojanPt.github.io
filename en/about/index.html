@@ -806,7 +806,7 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >copyright</span
+                  >Copyright</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -825,6 +825,90 @@
   
 
 
+      
+        
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="pt-3">
+              <script>
+  
+  const initialTheme = document.documentElement.classList.contains('dark') ? "noborder_dark" : "noborder_light";
+  
+  
+  window.giscusConfig = {
+    repo: "TrojanPt/TrojanPt.github.io",
+    repoId: "R_kgDOPC091g",
+    category: "Announcements",
+    categoryId: "DIC_kwDOPC091s4CsJK0",
+    mapping: "pathname",
+    strict: "0",
+    reactionsEnabled: "1",
+    emitMetadata: "0",
+    inputPosition: "top",
+    theme: initialTheme, 
+    lang: "zh-CN",
+    loading: "lazy",
+    crossorigin: "anonymous"
+  };
+
+  
+  function updateGiscusTheme() {
+    const theme = document.documentElement.classList.contains('dark') ? "noborder_dark" : "noborder_light";
+    const giscusFrame = document.querySelector('iframe.giscus-frame');
+    if (giscusFrame) {
+      giscusFrame.contentWindow.postMessage({
+        giscus: {
+          setConfig: {
+            theme: theme
+          }
+        }
+      }, 'https://giscus.app');
+    }
+  }
+
+  
+  new MutationObserver(updateGiscusTheme).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+
+  
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://giscus.app') return;
+    if (event.data?.giscus?.loading === false) {
+      updateGiscusTheme(); 
+    }
+  });
+</script>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="TrojanPt/TrojanPt.github.io"
+        data-repo-id="R_kgDOPC091g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOPC091s4CsJK0"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+<script>
+  if (window.giscusConfig) {
+    document.querySelector('script[src="https://giscus.app/client.js"]')
+      .setAttribute('data-theme', window.giscusConfig.theme);
+  }
+</script>
+            </div>
+          </div>
+        
       
     </footer>
   </article>
@@ -856,7 +940,7 @@
             
               <a
                 href="/en/copyright/"
-                title="copyright"
+                title="Copyright"
                 
                 ><span
                     class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -919,6 +1003,12 @@
   
   
     
+
+<script
+type="text/javascript"
+src="https://trojanpt.github.io/background/sakura.min.js"
+integrity=""
+></script>
   
 </footer>
 <div
