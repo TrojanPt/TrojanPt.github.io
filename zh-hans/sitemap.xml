@@ -4,23 +4,6 @@
   
     
       <url>
-            <loc>https://trojanpt.github.io/jottings/</loc>
-            <lastmod>2025-06-26T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://trojanpt.github.io/en/jottings/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://trojanpt.github.io/jottings/"
-              />
-          </url>
-    
-  
-    
-      <url>
             <loc>https://trojanpt.github.io/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
             <xhtml:link
@@ -32,6 +15,23 @@
               rel="alternate"
               hreflang="zh-hans"
               href="https://trojanpt.github.io/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/jottings/</loc>
+            <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/"
               />
           </url>
     
@@ -55,23 +55,6 @@
       <url>
             <loc>https://trojanpt.github.io/jottings/vibration-of-elasticbody/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://trojanpt.github.io/notes/</loc>
-            <lastmod>2025-06-22T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://trojanpt.github.io/en/notes/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://trojanpt.github.io/notes/"
-              />
           </url>
     
   
@@ -109,6 +92,23 @@
           </url>
     
   
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/notes/</loc>
+            <lastmod>2025-06-22T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/notes/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/notes/"
+              />
+          </url>
     
   
     
