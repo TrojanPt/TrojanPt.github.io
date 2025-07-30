@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/tags/mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小振动的简正坐标存在性验证</title>
+      <link>https://trojanpt.github.io/jottings/normal-mode/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/normal-mode/</guid>
+      <description>对于力学系统在其稳定平衡位置附近的一阶小振动，存在与其自由度数量相等的简正模式</description>
+    </item>
     <item>
       <title>重力场下弹性体的振动</title>
       <link>https://trojanpt.github.io/jottings/vibration-of-elasticbody/</link>

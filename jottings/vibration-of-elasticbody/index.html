@@ -683,12 +683,19 @@
   
 
   
+    
+  
+
+  
 
 
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-06-26 00:00:00 &#43;0000 UTC">2025.6.26</time>
+      <time datetime="2025-06-26 00:00:00 &#43;0000 UTC">2025.6.26</time><span class="px-2 text-primary-500">&middot;</span><span class="vercount-container" data-url="https://trojanpt.github.io/jottings/vibration-of-elasticbody/">
+  <span class="icon relative inline-block px-1 align-text-bottom"><svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8260"><path d="M956 686.5l-0.1-0.1-0.1-0.1C911.7 593 843.4 545 752.5 545s-159.2 48.1-203.4 141.3v0.1c-5.4 11.5-5.4 24.9 0 36.4C593.3 816 661.6 864 752.5 864s159.2-48.1 203.4-141.3c5.4-11.5 5.4-24.8 0.1-36.2zM752.5 800c-62.1 0-107.4-30-141.1-95.5C645 639 690.4 609 752.5 609c62.1 0 107.4 30 141.1 95.5C860 770 814.6 800 752.5 800zM753 705m-56 0a56 56 0 1 0 112 0 56 56 0 1 0-112 0ZM136 232h704v253h72V192c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32v520c0 17.7 14.3 32 32 32h352v-72H136V232zM724.9 338.1l-36.8-36.8c-3.1-3.1-8.2-3.1-11.3 0L493 485.3l-86.1-86.2c-3.1-3.1-8.2-3.1-11.3 0L251.3 543.4c-3.1 3.1-3.1 8.2 0 11.3l36.8 36.8c3.1 3.1 8.2 3.1 11.3 0l101.8-101.8 86.1 86.2c3.1 3.1 8.2 3.1 11.3 0l226.3-226.5c3.2-3.1 3.2-8.2 0-11.3z" p-id="8261"></path></svg></span>
+  <span class="vercount_value_page_pv">-</span>
+</span>
     
 
     
@@ -748,15 +755,15 @@
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_94ee75b37ca80636.webp 330w,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_8a75df39e6499108.webp 660w
+            srcset="https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_1854f595e9057928.webp 330w,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_f18669aece0e49a1.webp 660w
             
               
-                ,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_9d58790c90f6ec15.webp 849w
+                ,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_755468f25fe14db5.webp 849w
               
             
             
               
-                ,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_9d58790c90f6ec15.webp 849w
+                ,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_755468f25fe14db5.webp 849w
               
             "
           
@@ -771,7 +778,7 @@
         
         
         
-          src="https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_567fe5996854e34.jpg" srcset="https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_5f4af3c703d220cf.jpg 330w,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_567fe5996854e34.jpg 660w
+          src="https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_d71393c05feb0e51.jpg" srcset="https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_504e0796aab3004d.jpg 330w,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature_hu_d71393c05feb0e51.jpg 660w
           
             ,https://trojanpt.github.io/jottings/vibration-of-elasticbody/feature.jpg 849w
           
@@ -1273,11 +1280,46 @@ $$<p>此即为 \(\omega\) 满足的方程。</p>
   
     
 
+
 <script
 type="text/javascript"
 src="https://trojanpt.github.io/background/sakura.min.js"
 integrity=""
 ></script>
+
+
+<script defer src="https://events.vercount.one/js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const containers = document.querySelectorAll('.vercount-container[data-url]');
+    containers.forEach(async (container) => {
+        const url = container.getAttribute('data-url');
+        const valueElement = container.querySelector('.vercount_value_page_pv');
+        
+        if (!url || !valueElement) return;
+        
+        try {
+            
+            const response = await fetch("https://events.vercount.one/api/v2/log?url=" + encodeURIComponent(url), {
+                method: "GET",
+                signal: AbortSignal.timeout(5000)
+            });
+            
+            if (response.ok) {
+                const data = await response.json();
+                const pageViews = data.data?.page_pv || 0;
+                valueElement.textContent = pageViews;
+            } else {
+                valueElement.textContent = '-';
+            }
+        } catch (error) {
+            console.warn('Failed to load page views for:', url, error);
+            valueElement.textContent = '-';
+        }
+    });
+});
+</script>
   
 </footer>
 <div

@@ -664,11 +664,46 @@
   
     
 
+
 <script
 type="text/javascript"
 src="https://trojanpt.github.io/background/sakura.min.js"
 integrity=""
 ></script>
+
+
+<script defer src="https://events.vercount.one/js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const containers = document.querySelectorAll('.vercount-container[data-url]');
+    containers.forEach(async (container) => {
+        const url = container.getAttribute('data-url');
+        const valueElement = container.querySelector('.vercount_value_page_pv');
+        
+        if (!url || !valueElement) return;
+        
+        try {
+            
+            const response = await fetch("https://events.vercount.one/api/v2/log?url=" + encodeURIComponent(url), {
+                method: "GET",
+                signal: AbortSignal.timeout(5000)
+            });
+            
+            if (response.ok) {
+                const data = await response.json();
+                const pageViews = data.data?.page_pv || 0;
+                valueElement.textContent = pageViews;
+            } else {
+                valueElement.textContent = '-';
+            }
+        } catch (error) {
+            console.warn('Failed to load page views for:', url, error);
+            valueElement.textContent = '-';
+        }
+    });
+});
+</script>
   
 </footer>
 <div
