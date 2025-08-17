@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermodynamics on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/en/tags/thermodynamics/</link>
+    <description>Recent content in Thermodynamics on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2025 TrojanPoint</copyright>
+    <lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/en/tags/thermodynamics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Equilibrium Conditions for a Smooth Adiabatic Piston</title>
+      <link>https://trojanpt.github.io/en/jottings/smooth-insulated-piston/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/smooth-insulated-piston/</guid>
+      <description>If the pressures on both sides of a smooth adiabatic piston are equal but the temperatures are unequal, energy will transfer from the higher-temperature gas to the lower-temperature gas through microscopic vibrations of the piston, even when all heat conduction is neglected.</description>
+    </item>
+  </channel>
+</rss>

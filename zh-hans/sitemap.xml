@@ -46,6 +46,16 @@
       <url>
             <loc>https://trojanpt.github.io/jottings/normal-mode/</loc>
             <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/normal-mode/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/normal-mode/"
+              />
           </url>
     
   
@@ -55,6 +65,16 @@
       <url>
             <loc>https://trojanpt.github.io/jottings/smooth-insulated-piston/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/smooth-insulated-piston/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/smooth-insulated-piston/"
+              />
           </url>
     
   
@@ -62,6 +82,16 @@
       <url>
             <loc>https://trojanpt.github.io/jottings/vibration-of-elasticbody/</loc>
             <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/vibration-of-elasticbody/"
+              />
           </url>
     
   
@@ -122,6 +152,16 @@
       <url>
             <loc>https://trojanpt.github.io/jottings/amperes-law/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/amperes-law/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/amperes-law/"
+              />
           </url>
     
   

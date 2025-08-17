@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electromagnetism on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/en/tags/electromagnetism/</link>
+    <description>Recent content in Electromagnetism on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2025 TrojanPoint</copyright>
+    <lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/en/tags/electromagnetism/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discussions on the Original Form of Ampere’s Law</title>
+      <link>https://trojanpt.github.io/en/jottings/amperes-law/</link>
+      <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/amperes-law/</guid>
+      <description>This jotting introduces the derivation process of the original form of Ampere’s Law and discusses its relationship with the modern form.</description>
+    </item>
+  </channel>
+</rss>

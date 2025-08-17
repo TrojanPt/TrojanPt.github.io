@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jottings on Trojan TeaHouse</title>
-    <link>https://trojanpt.github.io/en/jottings/</link>
-    <description>Recent content in Jottings on Trojan TeaHouse</description>
+    <title>Physics on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/en/tags/physics/</link>
+    <description>Recent content in Physics on Trojan TeaHouse</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
     <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://trojanpt.github.io/en/jottings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://trojanpt.github.io/en/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Verification of the Existence of Normal Coordinates for Small Vibrations</title>
       <link>https://trojanpt.github.io/en/jottings/normal-mode/</link>

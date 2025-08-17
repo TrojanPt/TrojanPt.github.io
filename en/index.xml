@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Verification of the Existence of Normal Coordinates for Small Vibrations</title>
+      <link>https://trojanpt.github.io/en/jottings/normal-mode/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/normal-mode/</guid>
+      <description>For the first-order small vibrations of a mechanical system near its stable equilibrium position, there exist normal modes equal in number to its degrees of freedom.</description>
+    </item>
+    <item>
+      <title>Equilibrium Conditions for a Smooth Adiabatic Piston</title>
+      <link>https://trojanpt.github.io/en/jottings/smooth-insulated-piston/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/smooth-insulated-piston/</guid>
+      <description>If the pressures on both sides of a smooth adiabatic piston are equal but the temperatures are unequal, energy will transfer from the higher-temperature gas to the lower-temperature gas through microscopic vibrations of the piston, even when all heat conduction is neglected.</description>
+    </item>
+    <item>
+      <title>Vibrations of an Elastic Body in a Gravitational Field</title>
+      <link>https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/</guid>
+      <description>Small-amplitude vibrations of an incompressible elastic rope in a gravitational field.</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://trojanpt.github.io/en/about/</link>
@@ -22,6 +43,13 @@
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://trojanpt.github.io/en/copyright/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Discussions on the Original Form of Ampere’s Law</title>
+      <link>https://trojanpt.github.io/en/jottings/amperes-law/</link>
+      <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/amperes-law/</guid>
+      <description>This jotting introduces the derivation process of the original form of Ampere’s Law and discusses its relationship with the modern form.</description>
     </item>
   </channel>
 </rss>

@@ -4,6 +4,99 @@
   
     
       <url>
+            <loc>https://trojanpt.github.io/en/</loc>
+            <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/en/jottings/</loc>
+            <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/"
+              />
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/en/jottings/normal-mode/</loc>
+            <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/normal-mode/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/normal-mode/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/en/jottings/smooth-insulated-piston/</loc>
+            <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/smooth-insulated-piston/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/smooth-insulated-piston/"
+              />
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/</loc>
+            <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/vibration-of-elasticbody/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/"
+              />
+          </url>
+    
+  
+    
+      <url>
             <loc>https://trojanpt.github.io/en/about/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
@@ -38,37 +131,23 @@
   
     
       <url>
-            <loc>https://trojanpt.github.io/en/</loc>
+            <loc>https://trojanpt.github.io/en/jottings/amperes-law/</loc>
             <lastmod>2025-06-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="https://trojanpt.github.io/"
+              href="https://trojanpt.github.io/jottings/amperes-law/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="https://trojanpt.github.io/en/"
+              href="https://trojanpt.github.io/en/jottings/amperes-law/"
               />
           </url>
     
   
     
   
-    
-      <url>
-            <loc>https://trojanpt.github.io/en/jottings/</loc>
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://trojanpt.github.io/jottings/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://trojanpt.github.io/en/jottings/"
-              />
-          </url>
     
   
     
@@ -85,8 +164,6 @@
               href="https://trojanpt.github.io/en/notes/"
               />
           </url>
-    
-  
     
   
 </urlset>

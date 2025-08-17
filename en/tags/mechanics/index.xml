@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mechanics on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/en/tags/mechanics/</link>
+    <description>Recent content in Mechanics on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2025 TrojanPoint</copyright>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/en/tags/mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Verification of the Existence of Normal Coordinates for Small Vibrations</title>
+      <link>https://trojanpt.github.io/en/jottings/normal-mode/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/normal-mode/</guid>
+      <description>For the first-order small vibrations of a mechanical system near its stable equilibrium position, there exist normal modes equal in number to its degrees of freedom.</description>
+    </item>
+    <item>
+      <title>Vibrations of an Elastic Body in a Gravitational Field</title>
+      <link>https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/vibration-of-elasticbody/</guid>
+      <description>Small-amplitude vibrations of an incompressible elastic rope in a gravitational field.</description>
+    </item>
+  </channel>
+</rss>
