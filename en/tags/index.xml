@@ -7,20 +7,27 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Physics</title>
+      <link>https://trojanpt.github.io/en/tags/physics/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/tags/physics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relativity</title>
+      <link>https://trojanpt.github.io/en/tags/relativity/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/tags/relativity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Mechanics</title>
       <link>https://trojanpt.github.io/en/tags/mechanics/</link>
       <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://trojanpt.github.io/en/tags/mechanics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Physics</title>
-      <link>https://trojanpt.github.io/en/tags/physics/</link>
-      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://trojanpt.github.io/en/tags/physics/</guid>
       <description></description>
     </item>
     <item>

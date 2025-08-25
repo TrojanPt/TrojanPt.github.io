@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wigner 转动的一般情况</title>
+      <link>https://trojanpt.github.io/jottings/wigner-rotation/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/wigner-rotation/</guid>
+      <description>Wigner 转动指出，对坐标系按序作用两个任意方向的 Lorentz boost，其等效于一个 Lorentz boost 和一个空间转动。本文将尝试讨论一般情况下的 Wigner 转动。</description>
+    </item>
     <item>
       <title>小振动的简正坐标存在性验证</title>
       <link>https://trojanpt.github.io/jottings/normal-mode/</link>

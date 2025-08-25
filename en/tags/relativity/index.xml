@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Relativity on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/en/tags/relativity/</link>
+    <description>Recent content in Relativity on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2025 TrojanPoint</copyright>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/en/tags/relativity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General Case of Wigner Rotation</title>
+      <link>https://trojanpt.github.io/en/jottings/wigner-rotation/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/wigner-rotation/</guid>
+      <description>Wigner rotation states that the successive action of two Lorentz boosts in arbitrary directions is equivalent to a single Lorentz boost followed by a spatial rotation. This article attempts to discuss the most general case of the Wigner rotation.</description>
+    </item>
+  </channel>
+</rss>

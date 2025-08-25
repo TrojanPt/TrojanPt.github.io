@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/en/jottings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General Case of Wigner Rotation</title>
+      <link>https://trojanpt.github.io/en/jottings/wigner-rotation/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/en/jottings/wigner-rotation/</guid>
+      <description>Wigner rotation states that the successive action of two Lorentz boosts in arbitrary directions is equivalent to a single Lorentz boost followed by a spatial rotation. This article attempts to discuss the most general case of the Wigner rotation.</description>
+    </item>
     <item>
       <title>Verification of the Existence of Normal Coordinates for Small Vibrations</title>
       <link>https://trojanpt.github.io/en/jottings/normal-mode/</link>

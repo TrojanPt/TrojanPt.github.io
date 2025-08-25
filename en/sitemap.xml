@@ -4,8 +4,25 @@
   
     
       <url>
+            <loc>https://trojanpt.github.io/en/jottings/wigner-rotation/</loc>
+            <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://trojanpt.github.io/jottings/wigner-rotation/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://trojanpt.github.io/en/jottings/wigner-rotation/"
+              />
+          </url>
+    
+  
+    
+      <url>
             <loc>https://trojanpt.github.io/en/</loc>
-            <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+            <lastmod>2025-08-19T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
@@ -22,7 +39,7 @@
     
       <url>
             <loc>https://trojanpt.github.io/en/jottings/</loc>
-            <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+            <lastmod>2025-08-19T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
@@ -34,6 +51,8 @@
               href="https://trojanpt.github.io/en/jottings/"
               />
           </url>
+    
+  
     
   
     
