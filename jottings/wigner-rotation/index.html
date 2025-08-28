@@ -79,7 +79,7 @@
       Wigner 转动指出，对坐标系按序作用两个任意方向的 Lorentz boost，其等效于一个 Lorentz boost 和一个空间转动。本文将尝试讨论一般情况下的 Wigner 转动。
     "
   />
-  <meta name="keywords" content="Wigner rotation, 洛伦兹变换, 相对论" />
+  <meta name="keywords" content="Wigner rotation, 魏格纳转动, 洛伦兹变换, 相对论, Thomas 进动, 托马斯进动" />
   
   
   
@@ -138,10 +138,10 @@
     
     "dateModified": "2025-08-19T00:00:00\u002b00:00",
     
-    "keywords": ["Wigner rotation","洛伦兹变换","相对论"],
+    "keywords": ["Wigner rotation","魏格纳转动","洛伦兹变换","相对论","Thomas 进动","托马斯进动"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1693"
+    "wordCount": "2219"
   }
   </script>
     
@@ -913,8 +913,10 @@
         <li><a href="#转动矩阵--的矢量形式">转动矩阵  的矢量形式</a></li>
         <li><a href="#补充">补充</a>
           <ul>
-            <li><a href="#一thomas-进动">（一）Thomas 进动</a></li>
-            <li><a href="#二代数结构">（二）代数结构</a></li>
+            <li><a href="#一关于等效-lorentz-boost-与空间转动的次序">（一）关于等效 Lorentz boost 与空间转动的次序</a></li>
+            <li><a href="#二低阶近似">（二）低阶近似</a></li>
+            <li><a href="#三thomas-进动">（三）Thomas 进动</a></li>
+            <li><a href="#四代数结构">（四）代数结构</a></li>
           </ul>
         </li>
       </ul>
@@ -934,56 +936,56 @@
 <p>即
 </p>
 $$
-\hat{Q}\left(\bm{\beta}_{2}\right) \hat{Q}\left(\bm{\beta}_{1}\right) = \hat{Q}\left(\bm{\beta} \right) \hat{R} \tag{1}
+\hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right) = \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} \tag{1}
 $$<p>本文将尝试讨论一般情况下的 Wigner 转动。</p>
-<h3 id="相对论变换矢量关系式" class="relative group">相对论变换矢量关系式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%9b%b8%e5%af%b9%e8%ae%ba%e5%8f%98%e6%8d%a2%e7%9f%a2%e9%87%8f%e5%85%b3%e7%b3%bb%e5%bc%8f" aria-label="锚点">#</a></span></h3><p>我们首先尝试导出任意 Lorentz boost 矢量形式的变换矩阵。以 \(\bm{\beta}\) 表征 Lorentz boost ，对于在 \(S\) 中坐标为 \(( \bm{x},\ x^{0} = ct)\) 的事件，其空间坐标 \(\bm{x}\) 的平行与垂直 Lorentz boost 方向的分量可由下式给出</p>
+<h3 id="相对论变换矢量关系式" class="relative group">相对论变换矢量关系式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%9b%b8%e5%af%b9%e8%ae%ba%e5%8f%98%e6%8d%a2%e7%9f%a2%e9%87%8f%e5%85%b3%e7%b3%bb%e5%bc%8f" aria-label="锚点">#</a></span></h3><p>我们首先尝试导出任意 Lorentz boost 矢量形式的变换矩阵。以 \(\boldsymbol{\beta}\) 表征 Lorentz boost ，对于在 \(S\) 中坐标为 \(( \boldsymbol{x},\ x^{0} = ct)\) 的事件，其空间坐标 \(\boldsymbol{x}\) 的平行与垂直 Lorentz boost 方向的分量可由下式给出</p>
 $$
 \begin{align}
-    \bm{x} & = x_{\parallel } \bm{e_{\parallel}} + x_{\bot} \bm{e_{\bot}} \notag \\
-    & = \bm{x} \cdot \frac{\bm{\beta}}{\beta} \frac{\bm{\beta}}{\beta} + \left( \bm{x} - \bm{x} \cdot \frac{\bm{\beta}}{\beta} \frac{\bm{\beta}}{\beta} \right) \tag{2}
+    \boldsymbol{x} & = x_{\parallel } \boldsymbol{e_{\parallel}} + x_{\bot} \boldsymbol{e_{\bot}} \notag \\
+    & = \boldsymbol{x} \cdot \frac{\boldsymbol{\beta}}{\beta} \frac{\boldsymbol{\beta}}{\beta} + \left( \boldsymbol{x} - \boldsymbol{x} \cdot \frac{\boldsymbol{\beta}}{\beta} \frac{\boldsymbol{\beta}}{\beta} \right) \tag{2}
 \end{align} 
 $$<p>利用 Lorentz 坐标变换公式，得</p>
 $$
 \begin{align}
-    \bm{x'} & = \gamma \left( \bm{x} \cdot \frac{\bm{\beta}}{\beta} - \beta x^0 \right) \frac{\bm{\beta}}{\beta} + \left( \bm{x} - \bm{x} \cdot \frac{\bm{\beta}}{\beta} \frac{\bm{\beta}}{\beta} \right) \notag \\
-    & = \left[ \mathbf{I} + (\gamma - 1) \frac{\bm{\beta}}{\beta} \frac{\bm{\beta}}{\beta} \right] \cdot \bm{x} - \gamma \bm{\beta} x^0 \tag{3a} \\
-    x'^0 & = \gamma x^0 - \bm{\beta} \gamma \cdot \bm{x} \tag{3b}
+    \boldsymbol{x'} & = \gamma \left( \boldsymbol{x} \cdot \frac{\boldsymbol{\beta}}{\beta} - \beta x^0 \right) \frac{\boldsymbol{\beta}}{\beta} + \left( \boldsymbol{x} - \boldsymbol{x} \cdot \frac{\boldsymbol{\beta}}{\beta} \frac{\boldsymbol{\beta}}{\beta} \right) \notag \\
+    & = \left[ \mathbf{I} + (\gamma - 1) \frac{\boldsymbol{\beta}}{\beta} \frac{\boldsymbol{\beta}}{\beta} \right] \cdot \boldsymbol{x} - \gamma \boldsymbol{\beta} x^0 \tag{3a} \\
+    x'^0 & = \gamma x^0 - \boldsymbol{\beta} \gamma \cdot \boldsymbol{x} \tag{3b}
 \end{align}
 $$<p>可写作矩阵形式</p>
 $$
 \begin{bmatrix}
-    \bm{x'} \\ x'^0
+    \boldsymbol{x'} \\ x'^0
 \end{bmatrix} =
 \begin{bmatrix}
-    \mathbf{I} + (\gamma - 1) \frac{\bm{\beta}}{\beta} \frac{\bm{\beta}}{\beta} & -\bm{\beta} \gamma \\
-    -\bm{\beta} \gamma & \gamma 
+    \mathbf{I} + (\gamma - 1) \frac{\boldsymbol{\beta}}{\beta} \frac{\boldsymbol{\beta}}{\beta} & -\boldsymbol{\beta} \gamma \\
+    -\boldsymbol{\beta} \gamma & \gamma 
 \end{bmatrix} 
-\begin{bmatrix} \bm{x} \\ x^0 \end{bmatrix} \tag{4}
+\begin{bmatrix} \boldsymbol{x} \\ x^0 \end{bmatrix} \tag{4}
 $$<p>令 \(\gamma = \ch \theta\)，则 \(\beta \gamma = \sh \theta\)</p>
-<p>再令 \(\frac{\bm{\beta}}{\beta} = \bm{e}\) 为该 Lorentz boost 方向的单位向量，故</p>
+<p>再令 \(\frac{\boldsymbol{\beta}}{\beta} = \boldsymbol{e}\) 为该 Lorentz boost 方向的单位向量，故</p>
 $$
-\hat{Q}(\bm{\beta}) = 
+\hat{Q}(\boldsymbol{\beta}) = 
 \begin{bmatrix}
-    \mathbf{I} + (\ch \theta - 1) \bm{e} \bm{e} & -\sh \theta \bm{e} \\
-    -\sh \theta \bm{e} & \ch \theta 
+    \mathbf{I} + (\ch \theta - 1) \boldsymbol{e} \boldsymbol{e} & -\sh \theta \boldsymbol{e} \\
+    -\sh \theta \boldsymbol{e} & \ch \theta 
 \end{bmatrix} \tag{5}
-$$<h3 id="确定等效-lorentz-boost" class="relative group">确定等效 Lorentz boost \(\bm{\beta}\) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%a1%ae%e5%ae%9a%e7%ad%89%e6%95%88-lorentz-boost" aria-label="锚点">#</a></span></h3><p>对于按序作用两个任意方向的 Lorentz boost，记</p>
+$$<h3 id="确定等效-lorentz-boost" class="relative group">确定等效 Lorentz boost \(\boldsymbol{\beta}\) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%a1%ae%e5%ae%9a%e7%ad%89%e6%95%88-lorentz-boost" aria-label="锚点">#</a></span></h3><p>对于按序作用两个任意方向的 Lorentz boost，记</p>
 $$
 \begin{align}
-    & \hat{Q}\left(\bm{\beta}_{2}\right) \hat{Q}\left(\bm{\beta}_{1}\right) \notag \\
+    & \hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right) \notag \\
     & =
     \begin{bmatrix}
-        \mathbf{I} + (\ch \theta_2 - 1) \bm{e}_2 \bm{e}_2 & -\sh \theta_2 \bm{e}_2 \\
-        -\sh \theta_2 \bm{e}_2 & \ch \theta_2 
+        \mathbf{I} + (\ch \theta_2 - 1) \boldsymbol{e}_2 \boldsymbol{e}_2 & -\sh \theta_2 \boldsymbol{e}_2 \\
+        -\sh \theta_2 \boldsymbol{e}_2 & \ch \theta_2 
     \end{bmatrix} 
     \begin{bmatrix}
-        \mathbf{I} + (\ch \theta_1 - 1) \bm{e}_1 \bm{e}_1 & -\sh \theta_1 \bm{e}_1 \\
-        -\sh \theta_1 \bm{e}_1 & \ch \theta_1 
+        \mathbf{I} + (\ch \theta_1 - 1) \boldsymbol{e}_1 \boldsymbol{e}_1 & -\sh \theta_1 \boldsymbol{e}_1 \\
+        -\sh \theta_1 \boldsymbol{e}_1 & \ch \theta_1 
     \end{bmatrix} \notag \\
     & = 
     \begin{bmatrix}
-        \mathbf{A}_{11} & \bm{a}_{12} \\
-        \bm{a}_{21} & a_{22} 
+        \mathbf{A}_{11} & \boldsymbol{a}_{12} \\
+        \boldsymbol{a}_{21} & a_{22} 
     \end{bmatrix} \tag{6} 
 \end{align} 
 $$<p>
@@ -991,32 +993,32 @@ $$<p>
 </p>
 $$
 \begin{align}
-    \mathbf{A}_{11} & = \mathbf{I} + (\ch\theta_1 - 1)\bm{e}_1\bm{e}_1 + (\ch\theta_2 - 1)\bm{e}_2\bm{e}_2 + \left[(\ch\theta_1 - 1)(\ch\theta_2 - 1)\bm{e}_1 \cdot \bm{e}_2 + \sh\theta_1\sh\theta_2 \right]\bm{e}_1\bm{e}_2 \notag \quad \text{(7a)}
+    \mathbf{A}_{11} & = \mathbf{I} + (\ch\theta_1 - 1)\boldsymbol{e}_1\boldsymbol{e}_1 + (\ch\theta_2 - 1)\boldsymbol{e}_2\boldsymbol{e}_2 + \left[(\ch\theta_1 - 1)(\ch\theta_2 - 1)\boldsymbol{e}_1 \cdot \boldsymbol{e}_2 + \sh\theta_1\sh\theta_2 \right]\boldsymbol{e}_2 \boldsymbol{e}_1 \notag \quad \text{(7a)}
     \\
-    \bm{a}_{12} & = -\sh\theta_1\bm{e}_1 - \left[\sh\theta_1(\ch\theta_2 - 1)\bm{e}_1\cdot \bm{e}_2 + \sh\theta_2\ch\theta_1\right]\bm{e}_2 \tag{7b}
+    \boldsymbol{a}_{12} & = -\sh\theta_1\boldsymbol{e}_1 - \left[\sh\theta_1(\ch\theta_2 - 1)\boldsymbol{e}_1\cdot \boldsymbol{e}_2 + \sh\theta_2\ch\theta_1\right]\boldsymbol{e}_2 \tag{7b}
     \\
-    \bm{a}_{21} & = -\sh\theta_2\bm{e}_2 - \left[\sh\theta_2(\ch\theta_1 - 1)\bm{e}_1\cdot \bm{e}_2 + \ch\theta_2\sh\theta_1\right]\bm{e}_1 \tag{7c}
+    \boldsymbol{a}_{21} & = -\sh\theta_2\boldsymbol{e}_2 - \left[\sh\theta_2(\ch\theta_1 - 1)\boldsymbol{e}_1\cdot \boldsymbol{e}_2 + \ch\theta_2\sh\theta_1\right]\boldsymbol{e}_1 \tag{7c}
     \\
-    a_{22} & = \sh\theta_1\sh\theta_2\bm{e}_1\cdot \bm{e}_2 + \ch\theta_1\ch\theta_2 \tag{7d}
+    a_{22} & = \sh\theta_1\sh\theta_2\boldsymbol{e}_1\cdot \boldsymbol{e}_2 + \ch\theta_1\ch\theta_2 \tag{7d}
 \end{align}
 $$<blockquote>
 <p>不妨首先看看要证明的式子</p>
 $$
-\hat{Q}\left(\bm{\beta}_{2}\right) \hat{Q}\left(\bm{\beta}_{1}\right) = \hat{Q}\left(\bm{\beta} \right) \hat{R} \tag{8} $$<p>对左式
+\hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right) = \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} \tag{8} $$<p>对左式
 </p>
 $$
-\hat{Q}\left(\bm{\beta}_{2}\right) \hat{Q}\left(\bm{\beta}_{1}\right)  = 
+\hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right)  = 
 \begin{bmatrix}
-      \mathbf{A}_{11} & \bm{a}_{12} \\
-        \bm{a}_{21} & a_{22} 
+      \mathbf{A}_{11} & \boldsymbol{a}_{12} \\
+        \boldsymbol{a}_{21} & a_{22} 
       \end{bmatrix} 
     \tag{9} $$<p>对右式</p>
 $$
 \begin{align}
-\hat{Q}\left(\bm{\beta} \right) \hat{R} & = 
+\hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} & = 
     \begin{bmatrix}
-      \mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e} & -\sh\theta\bm{e} \\
-        -\sh\theta\bm{e} & \ch\theta
+      \mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} & -\sh\theta\boldsymbol{e} \\
+        -\sh\theta\boldsymbol{e} & \ch\theta
       \end{bmatrix} 
     \begin{bmatrix}
       \mathbf{R}_{11} & 0 \\
@@ -1024,20 +1026,22 @@ $$
       \end{bmatrix} \notag \\
     & = 
     \begin{bmatrix}
-      (\mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e})\cdot \mathbf{R}_{11} & -\sh\theta\bm{e} \\
-        -\sh\theta\bm{e}\cdot \mathbf{R}_{11} & \ch\theta
+      (\mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e})\cdot \mathbf{R}_{11} & -\sh\theta\boldsymbol{e} \\
+        -\sh\theta\boldsymbol{e}\cdot \mathbf{R}_{11} & \ch\theta
       \end{bmatrix} \tag{10}
-    \end{align} $$<p>且其中 \(\mathbf{R}_{11}\) 为一转动矩阵。</p>
+    \end{align} $$<blockquote>
+<p>需要注意的是，此处（包括下文）中的 \(\boldsymbol{e} \cdot \mathbf{R}_{11}\) 指的是 \(e_i R_{ij}\) ，即为 \(\boldsymbol{e}^T \mathbf{R}_{11}\) 。</p></blockquote>
+<p>且其中 \(\mathbf{R}_{11}\) 为一转动矩阵。</p>
 <p>因此，要验证左右两式相等，可遵循如下思路</p>
 <ol>
 <li>
-<p>验证 \(a_{22}^2 - |\bm{a}_{12}|^2 = 1\)。这是为了能够表示出 \(\bm{\beta}\)</p>
+<p>验证 \(a_{22}^2 - |\boldsymbol{a}_{12}|^2 = 1\)。这是为了能够表示出 \(\boldsymbol{\beta}\)</p>
 </li>
 <li>
-<p>假设 \(\bm{\beta}\)</p>
+<p>假设 \(\boldsymbol{\beta}\)</p>
 </li>
 <li>
-<p>利用假设的 \(\bm{\beta}\) ，计算 \(\hat{R} = \hat{Q}^{-1}(\bm{\beta})\hat{Q}(\bm{\beta_2})\hat{Q}(\bm{\beta_1})\)</p>
+<p>利用假设的 \(\boldsymbol{\beta}\) ，计算 \(\hat{R} = \hat{Q}^{-1}(\boldsymbol{\beta})\hat{Q}(\boldsymbol{\beta_2})\hat{Q}(\boldsymbol{\beta_1})\)</p>
 </li>
 <li>
 <p>验证 \(\hat{R}\) 为空间转动，进而假设成立。</p>
@@ -1046,95 +1050,95 @@ $$
 <p>可验证</p>
 $$
 \begin{cases}
-    a_{22}^2 - |\bm{a}_{12}|^2 = 1 \\
-    a_{22}^2 - |\bm{a}_{21}|^2 = 1 \tag{11}
+    a_{22}^2 - |\boldsymbol{a}_{12}|^2 = 1 \\
+    a_{22}^2 - |\boldsymbol{a}_{21}|^2 = 1 \tag{11}
 \end{cases}
 $$<p>因此，令</p>
 $$
 \begin{align}
-    \ch\theta &= a_{22} = \sh\theta_1\sh\theta_2\bm{e}_1\cdot\bm{e}_2 + \ch\theta_1\ch\theta_2  \tag{12a} \\
-    \sh\theta &= |\bm{a}_{12}| = |\bm{a}_{21}|  \tag{12b}
+    \ch\theta &= a_{22} = \sh\theta_1\sh\theta_2\boldsymbol{e}_1\cdot\boldsymbol{e}_2 + \ch\theta_1\ch\theta_2  \tag{12a} \\
+    \sh\theta &= |\boldsymbol{a}_{12}| = |\boldsymbol{a}_{21}|  \tag{12b}
 \end{align}
-$$<p>对于 \(\bm{\beta}\) 的方向 \(\bm{e}\)，先假设
+$$<p>对于 \(\boldsymbol{\beta}\) 的方向 \(\boldsymbol{e}\)，先假设
 </p>
 $$
--\sh\theta\ \ \bm{e} = \bm{a}_{12} \tag{13}
+-\sh\theta\ \ \boldsymbol{e} = \boldsymbol{a}_{12} \tag{13}
 $$<p>
 成立。即
 </p>
 $$
-\bm{e} = \frac{\sh\theta_1\bm{e}_1 + \left[\sh\theta_1(\ch\theta_2 - 1)\bm{e}_1\cdot \bm{e}_2 + \sh\theta_2\ch\theta_1\right]\bm{e}_2}{\sqrt{\sh^2\theta_1 \sh^2\theta_2(\bm{e}_1\cdot \bm{e}_2)^2 + \ch^2\theta_1\ch^2\theta_2 + 2\sh\theta_1\sh\theta_2\ch\theta_1\ch\theta_2(\bm{e}_1\cdot \bm{e}_2) - 1}} \quad \text{(14)}
+\boldsymbol{e} = \frac{\sh\theta_1\boldsymbol{e}_1 + \left[\sh\theta_1(\ch\theta_2 - 1)\boldsymbol{e}_1\cdot \boldsymbol{e}_2 + \sh\theta_2\ch\theta_1\right]\boldsymbol{e}_2}{\sqrt{\sh^2\theta_1 \sh^2\theta_2(\boldsymbol{e}_1\cdot \boldsymbol{e}_2)^2 + \ch^2\theta_1\ch^2\theta_2 + 2\sh\theta_1\sh\theta_2\ch\theta_1\ch\theta_2(\boldsymbol{e}_1\cdot \boldsymbol{e}_2) - 1}} \quad \text{(14)}
 $$<p>因此
 </p>
 $$
-\hat{Q}(\bm{\beta}) = \begin{bmatrix}
-\mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e} & -\sh\theta\bm{e} \\
--\sh\theta\bm{e} & \ch\theta
+\hat{Q}(\boldsymbol{\beta}) = \begin{bmatrix}
+\mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} & -\sh\theta\boldsymbol{e} \\
+-\sh\theta\boldsymbol{e} & \ch\theta
 \end{bmatrix} \tag{15}
 $$<h3 id="验证空间转动" class="relative group">验证空间转动 \(\hat{R}\) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%aa%8c%e8%af%81%e7%a9%ba%e9%97%b4%e8%bd%ac%e5%8a%a8" aria-label="锚点">#</a></span></h3>$$
 \begin{align}
-    \hat{R} & = \hat{Q}^{-1}(\bm{\beta})\hat{Q}(\bm{\beta_2})\hat{Q}(\bm{\beta_1}) \notag \\
-    & = \hat{Q}(-\bm{\beta})\hat{Q}(\bm{\beta_2})\hat{Q}(\bm{\beta_1}) \notag \\
+    \hat{R} & = \hat{Q}^{-1}(\boldsymbol{\beta})\hat{Q}(\boldsymbol{\beta_2})\hat{Q}(\boldsymbol{\beta_1}) \notag \\
+    & = \hat{Q}(-\boldsymbol{\beta})\hat{Q}(\boldsymbol{\beta_2})\hat{Q}(\boldsymbol{\beta_1}) \notag \\
     & = \begin{bmatrix}
-        1 + (\ch\theta - 1)\bm{e}\bm{e} & \sh\theta\bm{e} \\
-        \sh\theta\bm{e} & \ch\theta
+        1 + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} & \sh\theta\boldsymbol{e} \\
+        \sh\theta\boldsymbol{e} & \ch\theta
     \end{bmatrix} 
     \begin{bmatrix}
-        \mathbf{A}_{11} & \bm{a}_{12} \\
-        \bm{a}_{21} & a_{22} 
+        \mathbf{A}_{11} & \boldsymbol{a}_{12} \\
+        \boldsymbol{a}_{21} & a_{22} 
     \end{bmatrix} \notag \\
     & = \begin{bmatrix}
-        \mathbf{R}_{11} & \bm{r}_{12} \\
-        \bm{r}_{21} & r_{22}
+        \mathbf{R}_{11} & \boldsymbol{r}_{12} \\
+        \boldsymbol{r}_{21} & r_{22}
     \end{bmatrix}  \tag{16}
 \end{align}
 $$<p>其中</p>
 $$
 \begin{align}
-    r_{22} & = \sh\theta\bm{e}\cdot\overline{a}_{12} + \ch\theta\cdot a_{22} \notag \\
-    & = \sh\theta\bm{e} \cdot (-\sh\theta\bm{e}) + \ch^2\theta \notag \\ 
-    & = -\sh^2\theta|\bm{e}|^2 + \ch^2\theta = 1  \tag{17a} \\
-    \bm{r}_{12} & = \left[ \mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e} \right] \bm{a}_{12} + \sh\theta \bm{e}\ a_{22} \notag \\
-    & = \left[ \mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e} \right] (-sh\theta \bm{e}) + sh\theta ch\theta \bm{e} \notag \\
-    & = \bm{0}  \tag{17b} \\
-    \bm{r}_{21} & = \sh\theta \bm{e} \cdot \mathbf{A}_{11} + \ch\theta \bm{a}_{21} \notag \\
-    & = -\bm{a}_{12} \cdot \mathbf{A}_{11} + a_{22} \bm{a}_{21} \notag \\
-    & = \bm{0}  \tag{17c} \\
-    \mathbf{R}_{11} & = \left[ \mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e} \right] \cdot \mathbf{A}_{11} + \sh\theta \bm{e} \bm{a}_{21}  \tag{17d} \\
+    r_{22} & = \sh\theta\boldsymbol{e}\cdot\boldsymbol{a}_{12} + \ch\theta \ a_{22} \notag \\
+    & = \sh\theta\boldsymbol{e} \cdot (-\sh\theta\boldsymbol{e}) + \ch^2\theta \notag \\ 
+    & = -\sh^2\theta|\boldsymbol{e}|^2 + \ch^2\theta = 1  \tag{17a} \\
+    \boldsymbol{r}_{12} & = \left[ \mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} \right] \cdot \boldsymbol{a}_{12} + \sh\theta \boldsymbol{e}\ a_{22} \notag \\
+    & = \left[ \mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} \right] \cdot (-\sh\theta \boldsymbol{e}) + \sh\theta \ch\theta \boldsymbol{e} \notag \\
+    & = \boldsymbol{0}  \tag{17b} \\
+    \boldsymbol{r}_{21} & = \sh\theta \boldsymbol{e} \cdot \mathbf{A}_{11} + \ch\theta \boldsymbol{a}_{21} \notag \\
+    & = -\boldsymbol{a}_{12} \cdot \mathbf{A}_{11} + a_{22} \boldsymbol{a}_{21} \notag \\
+    & = \boldsymbol{0}  \tag{17c} \\
+    \mathbf{R}_{11} & = \left[ \mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} \right] \cdot \mathbf{A}_{11} + \sh\theta \boldsymbol{e} \boldsymbol{a}_{21}  \tag{17d} \\
 \end{align}
 $$<blockquote>
-<p>注意到结果中 \(r_{22} = 1\),  \(\bm{r}_{12}=\bm{0}\)，从而确实有 \(-\sh\theta\ \ \bm{e} = \bm{a}_{12}\) 。因此上文中的假设 (13) 是成立的。</p>
+<p>注意到结果中 \(r_{22} = 1\),  \(\boldsymbol{r}_{12}=\boldsymbol{0}\)，从而确实有 \(-\sh\theta\ \ \boldsymbol{e} = \boldsymbol{a}_{12}\) 。因此上文中的假设 (13) 是成立的。</p>
 <p>接下来，需要验证 \(\mathbf{R}_{11}\) 确为一转动矩阵。</p></blockquote>
 <p>由于
 </p>
 $$
-\bm{r}_{21} = \ch\theta \bm{e} \cdot \mathbf{A}_{11} + \ch\theta \bm{a}_{21} = \bm{0} \tag{18}
+\boldsymbol{r}_{21} = \sh\theta \boldsymbol{e} \cdot \mathbf{A}_{11} + \ch\theta \boldsymbol{a}_{21} = \boldsymbol{0} \tag{18}
 $$<p>
 从而
 </p>
 $$
 \begin{align}
-    \mathbf{R}_{11} & = \left[ \mathbf{I} + (\ch\theta - 1)\bm{e}\bm{e} \right] \cdot \mathbf{A}_{11} + \sh\theta \bm{e} \frac{ - \sh\theta\bm{e} \cdot \mathbf{A}_{11}}{\ch\theta} \notag \\
-    & = \left[ \mathbf{I} - \frac{\ch\theta - 1}{\ch\theta} \bm{e}\bm{e} \right] \cdot \mathbf{A}_{11} \notag \\
-    & = \left[ \mathbf{I} - \frac{1}{\ch\theta (\ch\theta + 1)} \bm{a}_{12} \bm{a}_{12} \right] \cdot \mathbf{A}_{11} \notag \\
-    & = \mathbf{I} + b_{11} \bm{e}_1 \bm{e}_1 + b_{12} \bm{e}_1 \bm{e}_2 + b_{21} \bm{e}_2 \bm{e}_1 + b_{22} \bm{e}_2 \bm{e}_2 \tag{19}
+    \mathbf{R}_{11} & = \left[ \mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e} \right] \cdot \mathbf{A}_{11} + \sh\theta \boldsymbol{e} \frac{ - \sh\theta\boldsymbol{e} \cdot \mathbf{A}_{11}}{\ch\theta} \notag \\
+    & = \left[ \mathbf{I} - \frac{\ch\theta - 1}{\ch\theta} \boldsymbol{e}\boldsymbol{e} \right] \cdot \mathbf{A}_{11} \notag \\
+    & = \left[ \mathbf{I} - \frac{1}{\ch\theta (\ch\theta + 1)} \boldsymbol{a}_{12} \boldsymbol{a}_{12} \right] \cdot \mathbf{A}_{11} \notag \\
+    & = \mathbf{I} + b_{11} \boldsymbol{e}_1 \boldsymbol{e}_1 + b_{12} \boldsymbol{e}_1 \boldsymbol{e}_2 + b_{21} \boldsymbol{e}_2 \boldsymbol{e}_1 + b_{22} \boldsymbol{e}_2 \boldsymbol{e}_2 \tag{19}
 \end{align} 
 $$<blockquote>
 <p>现在我们已经将 \(\mathbf{R}_{11}\) 形式地表为了 (19) 式所示，即
 </p>
 $$
 \begin{align}
-    \mathbf{R}_{11} & = \mathbf{I} + \sum b_{ij} \bm{e}_i \bm{e}_j \notag \\
+    \mathbf{R}_{11} & = \mathbf{I} + \sum b_{ij} \boldsymbol{e}_i \boldsymbol{e}_j \notag \\
     & = \mathbf{I} + 
     \begin{bmatrix}
-        \bm{e}_1 & \bm{e}_2
+        \boldsymbol{e}_1 & \boldsymbol{e}_2
     \end{bmatrix}
     \begin{bmatrix}
         b_{11} & b_{12} \\
         b_{21} & b_{22}
     \end{bmatrix}
     \begin{bmatrix}
-        \bm{e}_1 \\ \bm{e}_2
+        \boldsymbol{e}_1 \\ \boldsymbol{e}_2
     \end{bmatrix} \tag{20}
 \end{align} $$<p>
 要验证其为转动矩阵，即是验证
@@ -1158,36 +1162,36 @@ $$
     b_{21} & b_{22}
 \end{bmatrix}
 \begin{bmatrix}
-    1 & \bm{e}_1 \cdot \bm{e}_2 \\
-    \bm{e}_1 \cdot \bm{e}_2 & 1
+    1 & \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 \\
+    \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 & 1
 \end{bmatrix}
 \begin{bmatrix}
     b_{11} & b_{21} \\
     b_{12} & b_{22}
 \end{bmatrix} = 0 \tag{23} $$<p>对于 (22) 式，考虑 (20) 式右乘 \(\begin{bmatrix}
- \bm{e}_1 & \bm{e}_2 \end{bmatrix}\)，得到
+ \boldsymbol{e}_1 & \boldsymbol{e}_2 \end{bmatrix}\)，得到
 </p>
 $$
 \mathbf{R}_{11} 
 \begin{bmatrix}
-    \bm{e}_1 & \bm{e}_2 
+    \boldsymbol{e}_1 & \boldsymbol{e}_2 
 \end{bmatrix} = 
 \begin{bmatrix}
-    \bm{e}_1 & \bm{e}_2 
+    \boldsymbol{e}_1 & \boldsymbol{e}_2 
 \end{bmatrix} \left(
     \mathbf{I} + \begin{bmatrix}
         b_{11} & b_{12} \\
         b_{21} & b_{22}
     \end{bmatrix}
     \begin{bmatrix}
-        1 & \bm{e}_1 \cdot \bm{e}_2 \\
-        \bm{e}_1 \cdot \bm{e}_2 & 1
+        1 & \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 \\
+        \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 & 1
     \end{bmatrix} \tag{24}
 \right) $$<p>由于</p>
 $$
 \det \begin{bmatrix}
-    \bm{e}_1 & \bm{e}_2
-\end{bmatrix} = \sqrt{1 - (\bm{e}_1 \cdot \bm{e}_2)^2} \neq 0 \tag{25} $$<p>因此</p>
+    \boldsymbol{e}_1 & \boldsymbol{e}_2
+\end{bmatrix} = \sqrt{1 - (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2)^2} \neq 0 \tag{25} $$<p>因此</p>
 $$
 \det \mathbf{R}_{11} = \det \left(
     \mathbf{I} + \begin{bmatrix}
@@ -1195,8 +1199,8 @@ $$
         b_{21} & b_{22}
     \end{bmatrix}
     \begin{bmatrix}
-        1 & \bm{e}_1 \cdot \bm{e}_2 \\
-        \bm{e}_1 \cdot \bm{e}_2 & 1
+        1 & \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 \\
+        \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 & 1
     \end{bmatrix}
 \right) = 1 \tag{26} $$<p>
 因此，需要验证 (23), (26) 式。</p></blockquote>
@@ -1206,7 +1210,7 @@ $$
 \begin{align}
     & b_{11} = b_{22} = - \frac{(\ch\theta_1 - 1)(\ch\theta_2 - 1)}{\ch\theta + 1}  \tag{27a} \\
     & b_{12} = -\frac{\sh\theta_1 \sh\theta_2}{\ch\theta + 1}  \tag{27b} \\
-    & b_{21} = \frac{2(\ch\theta_1 - 1)(\ch\theta_2 - 1)(\bm{e}_1 \cdot \bm{e}_2) + \sh\theta_1 \sh\theta_2}{\ch\theta + 1}  \tag{27c} \\
+    & b_{21} = \frac{2(\ch\theta_1 - 1)(\ch\theta_2 - 1)(\boldsymbol{e}_1 \cdot \boldsymbol{e}_2) + \sh\theta_1 \sh\theta_2}{\ch\theta + 1}  \tag{27c} \\
 \end{align}
 $$<p>可验证其满足关系
 </p>
@@ -1214,7 +1218,7 @@ $$
 \begin{cases}
 b_{11} = b_{22}\\
 (b_{11}+1)(b_{22}+1) - b_{12}b_{21} = 1 \\
-b_{12} + b_{21} + 2b_{22}(\bm{e}_1 \cdot \bm{e}_2) = 0
+b_{12} + b_{21} + 2b_{22}(\boldsymbol{e}_1 \cdot \boldsymbol{e}_2) = 0
 \end{cases} \tag{28}
 $$<p>因此 \(\mathbf{R}_{11}\) 为一转动矩阵。</p>
 <p>从而
@@ -1227,128 +1231,231 @@ $$
 \end{bmatrix} \tag{29}
 $$<p>
 对应空间转动。</p>
-<h3 id="转动矩阵--的矢量形式" class="relative group">转动矩阵 \(\mathbf{R}_{11}\) 的矢量形式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%bd%ac%e5%8a%a8%e7%9f%a9%e9%98%b5--%e7%9a%84%e7%9f%a2%e9%87%8f%e5%bd%a2%e5%bc%8f" aria-label="锚点">#</a></span></h3><p>首先对单位元 \(\mathbf{I}\) 进行分解。</p>
-<p>设 \(\mathbf{I} = C_{11} \bm{e}_1\bm{e}_1 + C_{12} \bm{e}_1\bm{e}_2 + C_{21} \bm{e}_2\bm{e}_1 + C_{22} \bm{e}_2\bm{e}_2\)</p>
-<p>则<br>
+<h3 id="转动矩阵--的矢量形式" class="relative group">转动矩阵 \(\mathbf{R}_{11}\) 的矢量形式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%bd%ac%e5%8a%a8%e7%9f%a9%e9%98%b5--%e7%9a%84%e7%9f%a2%e9%87%8f%e5%bd%a2%e5%bc%8f" aria-label="锚点">#</a></span></h3><blockquote>
+<p>我们首先尝试给出任意转动的矩阵表示，以此指导我们对转动矩阵的化简与分析。</p>
+<p>对任意转动，以转轴方向的单位向量 \(\boldsymbol{n}\) 与转动角度 \(\phi\) 表示。</p>
+<p>如图所示</p>
+<figure style="text-align: center;">
+    <img src="p1.png" alt="图 1" style="position: relative; left: 50%; transform: translateX(-50%); zoom:40%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 1</figcaption>
+</figure>
+<p>从而有</p>
+$$ \boldsymbol{r}' = \boldsymbol{r}_\parallel + \boldsymbol{r}'_\bot \tag{30}$$<p>其中
+</p>
+$$ \boldsymbol{r}_\parallel = (\boldsymbol{r} \cdot \boldsymbol{n}) \boldsymbol{n} \tag{31} $$<p>
+</p>
+$$ \boldsymbol{r}'_\bot = \boldsymbol{r}_\bot \cos\phi + (\boldsymbol{n} \times \boldsymbol{r}_\bot) \sin\phi \tag{32} $$<p>因此
+</p>
+$$ \boldsymbol{r}' = (\boldsymbol{r} \cdot \boldsymbol{n}) \boldsymbol{n} + (\boldsymbol{r} - (\boldsymbol{r} \cdot \boldsymbol{n}) \boldsymbol{n}) \cos\phi + (\boldsymbol{n} \times \boldsymbol{r}) \sin\phi \tag{33} $$<p>即
+</p>
+$$ r'_i = \left[ n_i n_j + (\delta_{ij} - n_i n_j) \cos\phi - \varepsilon_{ijk} n_k \sin\phi \right] r_j \tag{34} $$<p>从而转动矩阵为
+</p>
+$$ R_{ij} = n_i n_j + (\delta_{ij} - n_i n_j) \cos\phi - \varepsilon_{ijk} n_k \sin\phi \tag{35} $$</blockquote>
+<p>首先对单位元 \(\mathbf{I}\) 进行分解。</p>
+<blockquote>
+<p>需要注意的是，我们的目的是将 (19) 式中的单位元 \(\mathbf{I}\) 进行分解，因此全空间应为 \(\mathbb{R}^3\)，从而 \(\left( \operatorname{span}\{\boldsymbol{e}_1, \boldsymbol{e}_2\} \right)^\perp \cong \mathbb{R}^1\)。因此，取 \(\boldsymbol{e}_{\bot}\) 为该正交补空间的单位向量。</p></blockquote>
+<p>设
 </p>
 $$
-C_{11} = C_{22} = \frac{1}{1 - (\bm{e}_1 \cdot \bm{e}_2)^2} \tag{30}
-$$<p>
+\mathbf{I} = C_{11} \boldsymbol{e}_1\boldsymbol{e}_1 + C_{12} \boldsymbol{e}_1\boldsymbol{e}_2 + C_{21} \boldsymbol{e}_2\boldsymbol{e}_1 + C_{22} \boldsymbol{e}_2\boldsymbol{e}_2 + \boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} \tag{36}
+$$<p>则<br>
 </p>
 $$
-C_{12} = C_{21} = -\frac{\bm{e}_1 \cdot \bm{e}_2}{1 - (\bm{e}_1 \cdot \bm{e}_2)^2} \tag{31}
+C_{11} = C_{22} = \frac{1}{1 - (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2)^2} \tag{37}
+$$$$
+C_{12} = C_{21} = -\frac{\boldsymbol{e}_1 \cdot \boldsymbol{e}_2}{1 - (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2)^2} \tag{38}
 $$<p>从而
 </p>
 $$
 \begin{align}
-\mathbf{R}_{11} &= \mathbf{I} + \frac{b_{11}}{C_{11}} + \left( b_{11} - b_{11}\frac{C_{11}}{C_{11}} \right) \bm{e}_1\bm{e}_1 + \left( b_{12} - b_{11}\frac{C_{12}}{C_{11}} \right) \bm{e}_1\bm{e}_2 \notag \\
-&\phantom{{}= \mathbf{I} + \frac{b_{11}}{C_{11}}} + \left( b_{21} - b_{11}\frac{C_{21}}{C_{11}} \right) \bm{e}_2\bm{e}_1 + \left( b_{22} - b_{11}\frac{C_{22}}{C_{11}} \right) \bm{e}_2\bm{e}_2 \notag \\
-&= \left[ \alpha (\bm{e}_1 \cdot \bm{e}_2) + \beta \right] \mathbf{I} + \alpha \left[ \bm{e}_2\bm{e}_1 - \bm{e}_1\bm{e}_2 \right]  \tag{32}
+\mathbf{R}_{11} &= \left( 1 + \frac{b_{11}}{C_{11}} \right) \mathbf{I} - \frac{b_{11}}{C_{11}} \mathbf{I} + b_{11} \boldsymbol{e}_1 \boldsymbol{e}_1 + b_{12} \boldsymbol{e}_1 \boldsymbol{e}_2 + b_{21} \boldsymbol{e}_2 \boldsymbol{e}_1 + b_{22} \boldsymbol{e}_2 \boldsymbol{e}_2 \notag \\
+&= \left( 1 + \frac{b_{11}}{C_{11}} \right) \mathbf{I} + \left( b_{11} - b_{11}\frac{C_{11}}{C_{11}} \right) \boldsymbol{e}_1\boldsymbol{e}_1 + \left( b_{12} - b_{11}\frac{C_{12}}{C_{11}} \right) \boldsymbol{e}_1\boldsymbol{e}_2 \notag \\
+&\phantom{{}= \left( 1 + \frac{b_{11}}{C_{11}} \right) \mathbf{I}} + \left( b_{21} - b_{11}\frac{C_{21}}{C_{11}} \right) \boldsymbol{e}_2\boldsymbol{e}_1 + \left( b_{22} - b_{11}\frac{C_{22}}{C_{11}} \right) \boldsymbol{e}_2\boldsymbol{e}_2 \notag \\
+&\phantom{{}= \left( 1 + \frac{b_{11}}{C_{11}} \right) \mathbf{I}} - \frac{b_{11}}{C_{11}} \boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} \notag \\
+&= \boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} + \left( \mathbf{I} -\boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} \right) \left( 1 + \frac{b_{11}}{C_{11}} \right) + \left( b_{12} - b_{11}\frac{C_{12}}{C_{11}} \right) \boldsymbol{e}_1\boldsymbol{e}_2 \notag \\ 
+&\phantom{= \boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} + \left( \mathbf{I} -\boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} \right) \left( 1 + \frac{b_{11}}{C_{11}} \right)} + \left( b_{21} - b_{11}\frac{C_{21}}{C_{11}} \right) \boldsymbol{e}_2\boldsymbol{e}_1 \notag \\
+&= \boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} + \left( \mathbf{I} -\boldsymbol{e}_{\bot} \boldsymbol{e}_{\bot} \right) \left[ \alpha (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2) + \beta \right] + \alpha \left[ \boldsymbol{e}_2\boldsymbol{e}_1 - \boldsymbol{e}_1\boldsymbol{e}_2 \right]  \tag{39}
 \end{align}
 $$<p>或
 </p>
 $$
-(\mathbf{R}_{11})_{ik} = \left[ \alpha (\bm{e}_1 \cdot \bm{e}_2) + \beta \right] \delta_{ik} + \alpha \epsilon_{ijk} (\bm{e}_1 \times \bm{e}_2)_j \tag{33}
+(\mathbf{R}_{11})_{ij} = (\boldsymbol{e}_{\bot})_i (\boldsymbol{e}_{\bot})_j + \left[ \delta_{ij} - (\boldsymbol{e}_{\bot})_i (\boldsymbol{e}_{\bot})_j \right] \left[ \alpha (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2) + \beta \right] - \alpha \varepsilon_{ijk} (\boldsymbol{e}_1 \times \boldsymbol{e}_2)_k \quad \text{(40)}
 $$<p>
 其中
 </p>
 $$
 \begin{cases}
-    \alpha =  \frac{\sh\theta_1\sh\theta_2 + (\ch\theta_1-1)(\ch\theta_2-1)(\bm{e_1} \cdot \bm{e_2})}{\ch\theta+1} \\
+    \alpha =  \frac{\sh\theta_1\sh\theta_2 + (\ch\theta_1-1)(\ch\theta_2-1)(\boldsymbol{e_1} \cdot \boldsymbol{e_2})}{\ch\theta+1} \\
     \beta =  \frac{\ch\theta_1+\ch\theta_2}{\ch\theta+1}
-\end{cases} \tag{34}
-$$<p>记转动的转角为 \(\phi\)，转动的方向向量为 \(\bm{n}\)，因此<br>
+\end{cases} \tag{41}
+$$<p>记转动的转角为 \(\phi\)，转动的方向向量为 \(\boldsymbol{n}\)，对比 (35) 式，因此<br>
 </p>
 $$
 \begin{aligned}
-    \bm{n} \sin\phi & = \alpha (\bm{e}_1 \times \bm{e}_2) \notag \\
-    & = \frac{\sh\theta_1 \sh\theta_2 + (\ch\theta_1 - 1)(\ch\theta_2 - 1)(\bm{e}_1 \cdot \bm{e}_2)}{\ch\theta + 1} \bm{e}_1 \times \bm{e}_2 \notag \\
-    & = \frac{\sh\theta_1 \sh\theta_2 + (\ch\theta_1 - 1)(\ch\theta_2 - 1)(\bm{e}_1 \cdot \bm{e}_2)}{\sh\theta_1 \sh\theta_2 (\bm{e}_1 \cdot \bm{e}_2) + \ch\theta_1 \ch\theta_2 + 1} \bm{e}_1 \times \bm{e}_2 \quad \text{(35)}
+    \boldsymbol{n} \sin\phi & = \alpha (\boldsymbol{e}_1 \times \boldsymbol{e}_2) \notag \\
+    & = \frac{\sh\theta_1 \sh\theta_2 + (\ch\theta_1 - 1)(\ch\theta_2 - 1)(\boldsymbol{e}_1 \cdot \boldsymbol{e}_2)}{\ch\theta + 1} \boldsymbol{e}_1 \times \boldsymbol{e}_2 \notag \\
+    & = \frac{\sh\theta_1 \sh\theta_2 + (\ch\theta_1 - 1)(\ch\theta_2 - 1)(\boldsymbol{e}_1 \cdot \boldsymbol{e}_2)}{\sh\theta_1 \sh\theta_2 (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2) + \ch\theta_1 \ch\theta_2 + 1} \boldsymbol{e}_1 \times \boldsymbol{e}_2 \quad \text{(42)}
 \end{aligned}
-$$<h3 id="补充" class="relative group">补充 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a1%a5%e5%85%85" aria-label="锚点">#</a></span></h3><h4 id="一thomas-进动" class="relative group">（一）Thomas 进动 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%80thomas-%e8%bf%9b%e5%8a%a8" aria-label="锚点">#</a></span></h4><p>考虑 \(\beta_1, \beta_2 \to 0\) 时的低阶近似<br>
+$$<hr>
+<h3 id="补充" class="relative group">补充 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a1%a5%e5%85%85" aria-label="锚点">#</a></span></h3><h4 id="一关于等效-lorentz-boost-与空间转动的次序" class="relative group">（一）关于等效 Lorentz boost 与空间转动的次序 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%80%e5%85%b3%e4%ba%8e%e7%ad%89%e6%95%88-lorentz-boost-%e4%b8%8e%e7%a9%ba%e9%97%b4%e8%bd%ac%e5%8a%a8%e7%9a%84%e6%ac%a1%e5%ba%8f" aria-label="锚点">#</a></span></h4><p>本文所考察的等效变换是
+</p>
+$$
+\hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right) = \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} \tag{43}
+$$<p>
+即先进行空间转动，再进行 Lorentz boost。</p>
+<p>实际上应有两种等效变换形式，即
+</p>
+$$
+\hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right) = \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} = \hat{R}' \hat{Q}\left(\boldsymbol{\beta}' \right) \tag{44}
+$$<p>我们需要比较二者的区别。注意到对易 Lorentz boost 与空间转动改变了整体矩阵的副对角线元素，即
+</p>
+$$
+\hat{Q}\left(\boldsymbol{\beta} \right) \hat{R}  = 
+\begin{bmatrix}
+    (\mathbf{I} + (\ch\theta - 1)\boldsymbol{e}\boldsymbol{e})\cdot \mathbf{R}_{11} & -\sh\theta\boldsymbol{e} \\
+    -\sh\theta\boldsymbol{e}\cdot \mathbf{R}_{11} & \ch\theta
+\end{bmatrix} \tag{45}
+$$<p>
+</p>
+$$
+\hat{R}' \hat{Q}\left(\boldsymbol{\beta}' \right)  =
+\begin{bmatrix}
+    \mathbf{R}'_{11} \cdot (\mathbf{I} + (\ch\theta' - 1)\boldsymbol{e}'\boldsymbol{e}') & -\sh\theta'\ \mathbf{R}'_{11} \cdot \boldsymbol{e}' \\
+    -\sh\theta'\ \boldsymbol{e}' & \ch\theta'
+\end{bmatrix} \tag{46}
+$$<p>可见 \(\boldsymbol{\beta}'\) 相较 \(\boldsymbol{\beta}\) 大小不变，但旋转了一个角度，即
+</p>
+$$
+\begin{cases}
+    \boldsymbol{\beta} = \mathbf{R}'_{11} \cdot \boldsymbol{\beta}'\\
+    \boldsymbol{\beta}' = \boldsymbol{\beta} \cdot \mathbf{R}_{11}
+\end{cases} \tag{47}
+$$<p>
+或
+</p>
+$$
+\begin{cases}
+    \beta_i = R'_{ij} \beta'_j \\
+    \beta'_i = \beta_j R_{ji} 
+\end{cases} \tag{48}
+$$<p>
+从而
+</p>
+$$ \beta_i = R'_{ij} \beta_k R_{kj} \tag{49}$$<p>
+有
+</p>
+$$ R'_{ij} R_{kj} = \delta_{ik} \tag{50}$$<p>
+或
+</p>
+$$ \mathbf{R}'_{11}  \mathbf{R}_{11}^T = \mathbf{I} \tag{51}$$<p>
+得到
+</p>
+$$ \mathbf{R}'_{11} = \mathbf{R}_{11} \tag{52}$$<p>
+综合上述讨论，针对两种等效形式，有
+</p>
+$$
+\hat{Q}\left(\boldsymbol{\beta}_{2}\right) \hat{Q}\left(\boldsymbol{\beta}_{1}\right) = \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} = \hat{R} \hat{Q}\left( \mathbf{R}_{11}^T \cdot \boldsymbol{\beta} \right) \tag{53}
+$$<blockquote>
+<p>从另一个角度看这个问题，即是
+</p>
+$$\hat{Q}\left( \mathbf{R}_{11}^T \cdot \boldsymbol{\beta} \right) = \hat{R}^T \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} \tag{54}$$<p>
+根据 Lorentz 群的空间旋转对称性，此式显然。</p></blockquote>
+<h4 id="二低阶近似" class="relative group">（二）低阶近似 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%ba%8c%e4%bd%8e%e9%98%b6%e8%bf%91%e4%bc%bc" aria-label="锚点">#</a></span></h4><p>考虑 \(\beta_1, \beta_2 \to 0\) 时的低阶近似
 此时<br>
 </p>
 $$
 \begin{align}
-    \bm{n} \sin\phi & = \frac{\gamma_1 \gamma_2 \beta_1 \beta_2 + (\gamma_1 - 1)(\gamma_2 - 1)(\bm{e}_1 \cdot \bm{e}_2)}{\gamma_1 \gamma_2 \beta_1 \beta_2 (\bm{e}_1 \cdot \bm{e}_2) + \gamma_1 \gamma_2 + 1} \bm{e}_1 \times \bm{e}_2 \notag \\
-    & \approx \frac{1}{2} \beta_1 \beta_2 \bm{e}_1 \times \bm{e}_2 \notag \\
-    & = \frac{1}{2} \bm{\beta}_1 \times \bm{\beta}_2  \tag{36}
+    \boldsymbol{n} \sin\phi & = \frac{\gamma_1 \gamma_2 \beta_1 \beta_2 + (\gamma_1 - 1)(\gamma_2 - 1)(\boldsymbol{e}_1 \cdot \boldsymbol{e}_2)}{\gamma_1 \gamma_2 \beta_1 \beta_2 (\boldsymbol{e}_1 \cdot \boldsymbol{e}_2) + \gamma_1 \gamma_2 + 1} \boldsymbol{e}_1 \times \boldsymbol{e}_2 \notag \\
+    & \approx \frac{1}{2} \beta_1 \beta_2 \boldsymbol{e}_1 \times \boldsymbol{e}_2 \notag \\
+    & = \frac{1}{2} \boldsymbol{\beta}_1 \times \boldsymbol{\beta}_2  \tag{55}
 \end{align}
 $$<p>因此可近似 \(\sin\phi \approx \phi\)，得到转角<br>
 </p>
 $$
-\bm{n} \phi = \frac{1}{2} \bm{\beta}_1 \times \bm{\beta}_2 \tag{37}
-$$<p>例如，对氢原子轨道电子的 Thomas 进动</p>
+\boldsymbol{n} \phi = \frac{1}{2} \boldsymbol{\beta}_1 \times \boldsymbol{\beta}_2 \tag{56}
+$$<h4 id="三thomas-进动" class="relative group">（三）Thomas 进动 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%89thomas-%e8%bf%9b%e5%8a%a8" aria-label="锚点">#</a></span></h4><p>Thomas 进动指出，一个沿弯曲轨道运动（即存在不平行于速度方向的加速度）的粒子，其固有坐标系相对于实验室系的取向会发生一个纯粹相对论性的进动。</p>
+<p>在时刻 \(t\) 与 \(t+dt\) 粒子的瞬时静止系分别记为 \(S\) 与 \(S'\)。二者之间的变换可写成两个 boost 的复合</p>
 $$
-\bm{\beta}_1 = \frac{\bm{v}}{c}, \quad \bm{\beta}_2 = \frac{{\bm{a}} dt}{c} \tag{38}
-$$<p>故
+S \to S' :\quad \hat{\Lambda} = \hat{Q}\!\left(\boldsymbol{\beta}+d\boldsymbol{\beta}\right)\hat{Q}\!\left(\boldsymbol{- \beta}\right) \tag{57}
+$$<p>这里 \(\hat{Q}\!\left(\boldsymbol{- \beta}\right)\) 把 \(S\) 带回到实验室系，再用 \(\hat{Q}\!\left(\boldsymbol{\beta}+d\boldsymbol{\beta}\right)\) 把实验室系带到新的瞬时静止系 \(S'\)。其中
+</p>
+$$\boldsymbol{\beta} = \frac{\boldsymbol{v}}{c}, \quad d\boldsymbol{\beta} = \frac{\boldsymbol{a} dt}{c} \tag{58}$$<p>
+利用 (42) 式，并考虑 \(d\boldsymbol{\beta} \ll \boldsymbol{\beta}\)，保留一阶项，有
 </p>
 $$
-\bm{n} d\phi = \frac{1}{2} \frac{\bm{v} \times {\bm{a}}}{c^2} dt \tag{39}
+\boldsymbol{n} \sin d\phi \approx \frac{\gamma^2 \beta^2 - (\gamma - 1)^2}{ - \gamma^2 \beta^2 + \gamma^2 + 1} \frac{ - \boldsymbol{\beta} \times d\boldsymbol{\beta}}{\beta^2} = \frac{ 1- \gamma }{\beta^2} \boldsymbol{\beta} \times d\boldsymbol{\beta} = \frac{\gamma^2}{\gamma + 1} d\boldsymbol{\beta} \times \boldsymbol{\beta} \tag{59}
 $$<p>
 即
 </p>
-$$
-\bm{\omega} = \frac{1}{2} \frac{\bm{v} \times {\bm{a}}}{c^2} \tag{40}
-$$<p>带入 Bohr 氢原子轨道模型，得</p>
-$$
-\omega = \frac{\mu_0}{8\pi} \frac{m e^8}{(4\pi \epsilon_0)^3 (n \hbar)^5} \tag{41}
-$$<h4 id="二代数结构" class="relative group">（二）代数结构 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%ba%8c%e4%bb%a3%e6%95%b0%e7%bb%93%e6%9e%84" aria-label="锚点">#</a></span></h4><p>Wigner 转动来自于 Lorentz boost 生成元 \(\hat{k}_i\) 的非零对易子。</p>
-<p>设两次 Lorentz boost 快度分别为 \(\bm{\eta}^1, \bm{\eta}^2\)，即</p>
-$$
-\bm{\eta}^1 = (\sh^{-1} \beta_{1}\gamma_1) \frac{\bm{\beta}_1}{\beta_1} \tag{42}
-$$<p>
+$$\boldsymbol{n} d{\phi} = \frac{\gamma^2}{\gamma + 1} d\boldsymbol{\beta} \times \boldsymbol{\beta} = \frac{\gamma^2}{\gamma + 1} \frac{dt}{c^2} \boldsymbol{a} \times \boldsymbol{v} \tag{60}$$<p>
+因此 Thomas 进动的角速度为
 </p>
 $$
-\bm{\eta}^2 = (\sh^{-1} \beta_{2}\gamma_2) \frac{\bm{\beta}_2}{\beta_2} \tag{43}
+\boldsymbol{\omega}_T = \frac{\gamma^2}{\gamma + 1} \frac{ \boldsymbol{a} \times \boldsymbol{v} }{c^2} \tag{61}
+$$<p>
+若 \(v \ll c\)，则
+</p>
+$$
+\boldsymbol{\omega}_T \approx \frac{1}{2} \frac{ \boldsymbol{a} \times \boldsymbol{v} }{c^2} \tag{62}
+$$<p>
+带入 Bohr 氢原子轨道模型，得
+</p>
+$$
+\omega_T = \frac{\mu_0}{8\pi} \frac{m e^8}{(4\pi \epsilon_0)^3 (n \hbar)^5} \tag{63}
+$$<h4 id="四代数结构" class="relative group">（四）代数结构 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9b%9b%e4%bb%a3%e6%95%b0%e7%bb%93%e6%9e%84" aria-label="锚点">#</a></span></h4><p>Wigner 转动来自于 Lorentz boost 生成元 \(\hat{\boldsymbol{K}}\) 的非零对易子。</p>
+<p>设两次 Lorentz boost 快度分别为 \(\boldsymbol{\eta}^1, \boldsymbol{\eta}^2\)，即</p>
+$$
+\boldsymbol{\eta}^1 = (\sh^{-1} \beta_{1}\gamma_1) \frac{\boldsymbol{\beta}_1}{\beta_1} \tag{64}
+$$$$
+\boldsymbol{\eta}^2 = (\sh^{-1} \beta_{2}\gamma_2) \frac{\boldsymbol{\beta}_2}{\beta_2} \tag{65}
 $$<p>故
 </p>
 $$
-\hat{Q}(\bm{\beta}_1) = \exp\left(i \bm{\eta}^1 \cdot \hat{\bm{K}} \right) \tag{44}
+\hat{Q}(\boldsymbol{\beta}_1) = \exp\left(i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}} \right) \tag{66}
 $$<p>
 </p>
 $$
-\hat{Q}(\bm{\beta}_2) = \exp\left(i \bm{\eta}^2 \cdot \hat{\bm{K}}\right) \tag{45}
+\hat{Q}(\boldsymbol{\beta}_2) = \exp\left(i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}\right) \tag{67}
 $$<p>由于
 </p>
 $$
-\hat{Q}(\bm{\beta}_2) \hat{Q}(\bm{\beta}_1) = \hat{Q}(\bm{\beta}) \hat{R} \tag{46}
+\hat{Q}(\boldsymbol{\beta}_2) \hat{Q}(\boldsymbol{\beta}_1) = \hat{Q}(\boldsymbol{\beta}) \hat{R} \tag{68}
 $$<p>即
 </p>
 $$
-\exp(i \bm{\eta}^2 \cdot \hat{\bm{K}}) \exp(i \bm{\eta}^1 \cdot \hat{\bm{K}}) = \exp(i \bm{\eta} \cdot \hat{\bm{K}}) \hat{R} \tag{47}
+\exp(i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}) \exp(i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}) = \exp(i \boldsymbol{\eta} \cdot \hat{\boldsymbol{K}}) \hat{R} \tag{69}
 $$<p>根据对称性，有</p>
 $$
-\exp(i \bm{\eta}^1 \cdot \hat{\bm{K}}) \exp(i \bm{\eta}^2 \cdot \hat{\bm{K}}) = \exp(i \bm{\eta} \cdot \hat{\bm{K}}) \hat{R}^{-1} \tag{48}
+\exp(i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}) \exp(i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}) = \exp(i \boldsymbol{\eta} \cdot \hat{\boldsymbol{K}}) \hat{R}^{-1} \tag{70}
 $$<p>因此
 </p>
 $$
-\exp(i \bm{\eta}^2 \cdot \hat{\bm{K}}) \exp(i \bm{\eta}^1 \cdot \hat{\bm{K}}) = \exp(i \bm{\eta}^1 \cdot \hat{\bm{K}}) \exp(i \bm{\eta}^2 \cdot \hat{\bm{K}}) \hat{R}^2 \tag{49}
+\exp(i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}) \exp(i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}) = \exp(i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}) \exp(i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}) \hat{R}^2 \tag{71}
 $$<p>由 Baker-Campbell-Hausdorff 公式，有</p>
 $$
-\hat{R}^2 = \exp\left( \left[i \bm{\eta}^2 \cdot \hat{\bm{K}}, i \bm{\eta}^1 \cdot \hat{\bm{K}}\right] + \frac{1}{2}\left[ \left[i \bm{\eta}^2 \cdot \hat{\bm{K}}, i \bm{\eta}^1 \cdot \hat{\bm{K}} \right], i \bm{\eta}^2 \cdot \hat{\bm{K}} + i \bm{\eta}^1 \cdot \hat{\bm{K}}\right] + \cdots \right) \quad \text{(50)}
+\hat{R}^2 = \exp\left( \left[i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}, i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}\right] + \frac{1}{2}\left[ \left[i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}, i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}} \right], i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}} + i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}\right] + \cdots \right) \quad \text{(72)}
 $$<p>考虑 \(\beta_1, \beta_2 \to 0\) 的低阶近似</p>
 $$
 \begin{align}
-    \hat{R}^2 & \approx \exp\left(\left[i \bm{\eta}^2 \cdot \hat{\bm{K}}, i \bm{\eta}^1 \cdot \hat{\bm{K}}\right]\right) \notag
+    \hat{R}^2 & \approx \exp\left(\left[i \boldsymbol{\eta}^2 \cdot \hat{\boldsymbol{K}}, i \boldsymbol{\eta}^1 \cdot \hat{\boldsymbol{K}}\right]\right) \notag
     \\
     & =\exp\left(\left[i {\eta}^2_i \hat{K}_i, i {\eta}^1_j \hat{K}_j \right]\right) \notag
     \\
     & =\exp\left(- {\eta}^2_i {\eta}^1_j \left[\hat{K}_i, \hat{K}_j \right]\right) \notag
     \\
-    & = \exp\left(- {\eta}^2_i {\eta}^1_j \epsilon_{ijk} \hat{J}_k \right) \notag
+    & = \exp\left( i {\eta}^2_i {\eta}^1_j \varepsilon_{ijk} \hat{J}_k \right) \notag
     \\
-    & = \exp\left(- (\bm{\eta}^1 \times \bm{\eta}^2 ) \cdot \hat{\bm{J}} \right) \tag{51}
+    & = \exp\left( - i (\boldsymbol{\eta}^1 \times \boldsymbol{\eta}^2 ) \cdot \hat{\boldsymbol{J}} \right) \tag{73}
 \end{align} 
 $$<p>
 故
 </p>
 $$
-\hat{R} \approx \exp\left(- \frac{1}{2} (\bm{\eta}^1 \times \bm{\eta}^2 ) \cdot \hat{\bm{J}} \right) \tag{52}
+\hat{R} \approx \exp\left( - \frac{i}{2} (\boldsymbol{\eta}^1 \times \boldsymbol{\eta}^2 ) \cdot \hat{\boldsymbol{J}} \right) \tag{74}
 $$<p>转角
 </p>
 $$
-\bm{n} \phi \approx \frac{1}{2} \bm{\eta}^1 \times \bm{\eta}^2 \approx \frac{1}{2} \bm{\beta}_1 \times \bm{\beta}_2 \tag{53}
+\boldsymbol{n} \phi \approx \frac{1}{2} \boldsymbol{\eta}^1 \times \boldsymbol{\eta}^2 \approx \frac{1}{2} \boldsymbol{\beta}_1 \times \boldsymbol{\beta}_2 \tag{75}
 $$
       </div>
     </section>
