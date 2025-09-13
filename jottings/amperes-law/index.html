@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.7631c3c39beeafc3413740a240fd19c0156131dff75ca5f4a1a8064e7e7c76ff.css"
-    integrity="sha256-djHDw5vur8NBN0CiQP0ZwBVhMd/3XKX0oagGTn58dv8="
+    href="https://trojanpt.github.io/css/main.bundle.min.42f6a44ef147ee46c18a0036d8fc36b1fce238fad971faf2b700d6d8f3e2fa80.css"
+    integrity="sha256-QvakTvFH7kbBigA22Pw2sfziOPrZcfrytwDW2PPi&#43;oA="
   />
   
     
@@ -141,7 +141,7 @@
     "keywords": ["物理","电磁学","电动力学","Ampere 定律"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "758"
+    "wordCount": "891"
   }
   </script>
     
@@ -926,35 +926,79 @@
         
 
 <blockquote>
-<p>Ampere 定律给出了如何计算两电流源间作用力的方法，但实际上，现行的 Ampere 定律的形式并不是 Ampere 最初提出的形式，二者在数学形式上有所差异，但是对于稳恒情况，在物理上并无实际测量意义上的区别。</p>
+<p>Ampere 定律给出了如何计算两电流源间作用力的方法，但实际上，现行的 Ampere 定律的形式并不是 Ampere 最初提出的形式，二者在数学形式上有所差异，但是对于稳恒情况，在物理上并无实际测量意义上的区别。</p></blockquote>
+<p><strong>Ampere 定律原始形式</strong>
+</p>
+$$
+d\vec{F}_{12} = -k i_1 i_2 \vec{r}_{12} \left[ (d\vec{l}_{1} \cdot d\vec{l}_2) \frac{2}{r_{12}^3} - (d\vec{l}_{1} \cdot \vec{r}_{12}) (d\vec{l}_2 \cdot \vec{r}_{12}) \frac{3}{r_{12}^5} \right] \notag
+$$<p><strong>现行的 Ampere 定律形式（Grassmann 形式）</strong>
+</p>
+$$
+d\vec{F}_{12} = k \ \frac{i_1 i_2}{r_{12}^3} d\vec{l}_2 \times (d\vec{l}_1 \times \vec{r}_{12}) \notag
+$$<blockquote>
 <p>本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。</p></blockquote>
-<h2 id="一原始-ampere-定律的导出过程" class="relative group">一、原始 Ampere 定律的导出过程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%80%e5%8e%9f%e5%a7%8b-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e5%af%bc%e5%87%ba%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span></h2><h3 id="实验依据" class="relative group">实验依据 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%ae%9e%e9%aa%8c%e4%be%9d%e6%8d%ae" aria-label="锚点">#</a></span></h3><ol>
+<h2 id="一原始-ampere-定律的导出过程" class="relative group">一、原始 Ampere 定律的导出过程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%80%e5%8e%9f%e5%a7%8b-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e5%af%bc%e5%87%ba%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span></h2><blockquote>
+<p>Ampere 关于电流相互作用的理论建立在四个实验证据和一个假设之上（Ampere&rsquo;s theory of the mutual action of electric currents is founded on four experimental facts and one assumption）&quot;，Maxwell 在他的  A Treatise on Electricity and Magnetism 一书的最后一章中如此写道。本小节尝试从 Ampere 所做的四个实验以及他的一个假设出发，推导出原始的 Ampere 定律。</p></blockquote>
+<h3 id="实验依据" class="relative group">实验依据 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%ae%9e%e9%aa%8c%e4%be%9d%e6%8d%ae" aria-label="锚点">#</a></span></h3><p>Ampere 的四个实验均采用了“示零法”，即通过构造平衡状态判断电流间相互作用力大小相等的方式。考虑到地磁的干扰，Ampere 设计了如图 1 所示的测量装置，称其为“无定向秤“（astatic）。它在均匀磁场（如地磁场）中不受力和力矩，可以随遇平衡，但对于非均匀磁场将会作出反应。考虑到无定向秤本身产生的磁场，在实际的实验中，需要先接通无定向秤的电源，调整到平衡状态后，再接通实验电路，观察无定向秤是否作出反应。</p>
+<figure style="text-align: center;">
+    <img src="p1.jpg" alt="图 1 无定向秤" style="position: relative; left: 50%; transform: translateX(-50%); zoom:70%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 1 &emsp;无定向秤</figcaption>
+</figure>
+<ol>
 <li>
-<p><strong>电流反向，作用力反向</strong>
+<p><strong>实验一</strong></p>
+<p>如图 2 所示，通过对折导线得到两条平行、等量、相邻且方向相反的电流。实验发现其在接通电流时不会对无定向秤产生作用力。</p>
+<figure style="text-align: center;">
+    <img src="p2.png" alt="图 2" style="position: relative; left: 50%; transform: translateX(-50%); zoom:70%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 2</figcaption>
+</figure>
+<p>这表明<strong>当电流反向时，其产生的作用力也反向</strong>。一种简单的想法是，认为
 </p>
 $$
    d\vec{F}_{12} \propto i_1 i_2 \tag{1}
-   $$</li>
+   $$<p>
+结合实验二来看，这样的想法是合理的。</p>
+</li>
 <li>
-<p><strong>电流元具有矢量叠加性质</strong>
+<p><strong>实验二</strong></p>
+<p>如图 3 所示，将对折导线的其中一条绕为弯曲导线。注意图中直导线的电流方向应改为沿HG方向，框架 EFKL 用于支撑实验电路并引导无定向秤与电源间的连接导线。实验电路同样对无定向秤（图中后方的装置）不产生作用。</p>
+<figure style="text-align: center;">
+    <img src="p3.jpg" alt="图 3" style="position: relative; left: 50%; transform: translateX(-50%); zoom:70%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 3</figcaption>
+</figure>
+<p>这表明<strong>电流元具有矢量的性质</strong>。即
 </p>
 $$
    d\vec{F}_{12} = d\vec{F}_{12} (i_1, i_2, d\vec{l}_1, d\vec{l}_2, \vec{r}_{12}) \tag{2}
    $$</li>
 <li>
-<p><strong>电流元受力与电流元垂直</strong>
+<p><strong>实验三</strong></p>
+<p>如图 4 所示，将一弧形导体架在水银槽上。导体与一绝缘柄固联，柄架在圆心 C 处的支点上。这样，既可通过水银槽给弧形导体通电，由通过绝缘柄的固定使弧形导体可绕圆心转动，从而构成一个只能沿长度方向移动，但不能作横向位移的电流元。安培用这样一个装置检验各种载流线圈对它产生的作用力，结果发现都不能使这弧形导体运动。</p>
+<figure style="text-align: center;">
+    <img src="p4.jpg" alt="图 4" style="position: relative; left: 50%; transform: translateX(-50%); zoom:70%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 4</figcaption>
+</figure>
+<p>这表明<strong>载流线圈作用在电流元上的力是与电流元垂直的</strong>。即
 </p>
 $$
    (\oint_{L_1}{d\vec{F}_{12}}) \cdot d\vec{l}_2 = 0 \tag{3}
    $$</li>
 <li>
-<p><strong>作用力大小与几何线度无关</strong>
+<p><strong>实验四</strong></p>
+<p>如图 5 所示，在可动圆形回路 \(P\) 两侧设置固定的圆形回路 \(E, E'\)，一个直径缩小为原来的 \(\frac{1}{p}\) ，另一个扩大为原来的 \(p\) 倍。同时，使 \(E - P\) 之间的距离与 \(P - E'\) 之间的距离比为 \(1 : p\) 。固定圆形回路 \(E\) 和 \(E'\) 串联在一起。实验结果发现，可动圆形回路在两个固定圆形回路的合作用力下保持平衡。</p>
+<figure style="text-align: center;">
+    <img src="p5.jpg" alt="图 5" style="position: relative; left: 50%; transform: translateX(-50%); zoom:70%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 5</figcaption>
+</figure>
+<p>这表明<strong>作用力大小与几何线度无关</strong>。一种简单的想法是，认为
 </p>
 $$
    |d\vec{F}_{12}| \propto \frac{|d\vec{l}_1| |d\vec{l}_2|}{|\vec{r}_{12}|^2} \tag{4}
-   $$</li>
+   $$<p>
+考虑到实验二，这样的想法是合理的。</p>
+</li>
 </ol>
-<h3 id="假设" class="relative group">假设 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%81%87%e8%ae%be" aria-label="锚点">#</a></span></h3><p>两电流元 \( d\vec{l}_1 \) 和 \( d\vec{l}_2 \) 间的作用力沿 \( \vec{r}_{12} \) 方向。</p>
+<h3 id="假设" class="relative group">假设 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%81%87%e8%ae%be" aria-label="锚点">#</a></span></h3><p>Ampere 以典型的牛顿力学风格进行假设，认为两电流元 \(d\vec{l}_1\) 和 \(d\vec{l}_2 \) 间的作用力遵循相互作用力的原理，从而方向沿 \(\vec{r}_{12}\) 。</p>
 <h3 id="推导过程" class="relative group">推导过程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%8e%a8%e5%af%bc%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span></h3><p>根据假设，并考虑实验依据 (1) (2) , 可令
 </p>
 $$
@@ -968,9 +1012,7 @@ $$
 \varphi = \varphi_1(\vec{r}_{12})(d\vec{l}_1 \cdot d\vec{l}_2) + \varphi_2(\vec{r}_{12})(d\vec{l}_1 \cdot \vec{r}_{12})(d\vec{l}_2 \cdot \vec{r}_{12}) + \varphi_3(\vec{r}_{12})(d\vec{l}_1 \times d\vec{l}_2) \cdot \vec{r}_{12} \quad \text{(6)}
 $$<blockquote>
 <p>这么假设的原因在于，首先，\( \varphi \) 中的项应为如下形式</p>
-$$
-(d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\gamma ({r}_{12})_\mu \cdots \tag{7}
-$$<p>① \( \alpha = \beta \)，此即 \( (d\vec{l}_1 \cdot d\vec{l}_2) \) 项</p>
+$$ (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\gamma ({r}_{12})_\mu \cdots \tag{7} $$<p>① \( \alpha = \beta \)，此即 \( (d\vec{l}_1 \cdot d\vec{l}_2) \) 项</p>
 <p>② \( \alpha \neq \beta \)，由于 \( \varphi \) 为标量值函数，从而有如下两种形式</p>
 <p>1） \( (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\alpha ({r}_{12})_\beta \cdots \)</p>
 <p>即 \( (d\vec{l}_1 \cdot \vec{\gamma}_{12})(d\vec{l}_2 \cdot \vec{\gamma}_{12}) \) 项</p>
@@ -983,8 +1025,8 @@ d\vec{F}_{12} = i_1 i_2 \vec{r}_{12} \left[ (d\vec{l}_1 \cdot d\vec{l}_2) \frac{
 $$<p>
 考虑（3），如图示</p>
 <figure style="text-align: center;">
-    <img src="p1.png" alt="图 1" style="position: relative; left: 50%; transform: translateX(-50%); zoom:50%; border-radius: 12px;" />
-    <figcaption style="font-size: 14px; margin-top: 8px;">图 1</figcaption>
+    <img src="p6.png" alt="图 6" style="position: relative; left: 50%; transform: translateX(-50%); zoom:50%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 6</figcaption>
 </figure>
 <p>此时 \(d\vec{l}_1 = - d\vec{r}_{12}\)</p>
 <p>注意（3）式
@@ -1033,7 +1075,7 @@ c = 0 \\
 C = 0
 \end{cases} \tag{15}
 $$<p>
-从而可令 \( A = -2k, B = 3k, C = 0\) ，代入（9）得
+从而可令 \( A = -2k, B = 3k, C = 0\) ，代入（8）得
 </p>
 $$
 d\vec{F}_{12} = -k i_1 i_2 \vec{r}_{12} \left[ (d\vec{l}_{1} \cdot d\vec{l}_2) \frac{2}{r_{12}^3} - (d\vec{l}_{1} \cdot \vec{r}_{12}) (d\vec{l}_2 \cdot \vec{r}_{12}) \frac{3}{r_{12}^5} \right] \tag{16}
@@ -1063,7 +1105,7 @@ $$<blockquote>
 $$
 d\vec{F}_{L_1,2} = \oint_{L_1} k i_1 i_2 \frac{1}{r_{12}^3} d\vec{l}_2 \times (\vec{r}_{12} \times d\vec{r}_{12}) \tag{20}
 $$<p>
-考虑到 \( d\vec{r}_2 = -d\vec{l}_1 \)，故
+考虑到 \( d\vec{r}_{12} = -d\vec{l}_1 \)，故
 </p>
 $$
 d\vec{F}_{L_1,2} = \oint_{L_1} k i_1 i_2 \frac{1}{r_{12}^3} d\vec{l}_2 \times (d\vec{l}_1 \times \vec{r}_{12}) \tag{21}
@@ -1079,8 +1121,8 @@ q \vec{v} = i d\vec{l} \tag{22}
 $$<p>
 考虑图示情形</p>
 <figure style="text-align: center;">
-    <img src="p2.png" alt="图 2" style="position: relative; left: 50%; transform: translateX(-50%); zoom:50%; border-radius: 12px;" />
-    <figcaption style="font-size: 14px; margin-top: 8px;">图 2</figcaption>
+    <img src="p7.png" alt="图 7" style="position: relative; left: 50%; transform: translateX(-50%); zoom:50%; border-radius: 12px;" />
+    <figcaption style="font-size: 14px; margin-top: 8px;">图 7</figcaption>
 </figure>
 <p>利用电磁场的相对论变换，得到该时刻 \( q_1 \) 在 \( \vec{r}_{12} \) 处产生的电磁场满足
 </p>
@@ -1100,10 +1142,10 @@ $$<p>
 </p>
 $$
 \begin{align}
-\vec{F}_{12} =&\ q_2 \vec{v}_2 \times \vec{B}  \\
-=&\ q_2 \vec{v}_2 \times \left( \frac{\vec{v}_1}{c^2} \times \frac{1}{4\pi\varepsilon_0} \cdot \frac{q_1 \vec{r}_{12}}{|\vec{r}_{12}|^3} \right)  \\
-=&\ \frac{\mu_0}{4\pi} \frac{q_2 \vec{v}_2 \times \left( q_1 \vec{v}_1 \times \vec{r}_{12} \right)}{|\vec{r}_{12}|^3}
-\end{align} \tag{25}
+\vec{F}_{12} =&\ q_2 \vec{v}_2 \times \vec{B} \notag \\
+=&\ q_2 \vec{v}_2 \times \left( \frac{\vec{v}_1}{c^2} \times \frac{1}{4\pi\varepsilon_0} \cdot \frac{q_1 \vec{r}_{12}}{|\vec{r}_{12}|^3} \right) \notag \\
+=&\ \frac{\mu_0}{4\pi} \frac{q_2 \vec{v}_2 \times \left( q_1 \vec{v}_1 \times \vec{r}_{12} \right)}{|\vec{r}_{12}|^3}  \tag{25}
+\end{align}
 $$<p>
 若将运动电荷 \( q\vec{v} \) 视为电流元 \( i d\vec{l} \)，则
 </p>
