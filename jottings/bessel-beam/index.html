@@ -1,0 +1,2178 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="zh-Hans"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>贝塞尔光束的衍射性质 &middot; Trojan TeaHouse</title>
+    <meta name="title" content="贝塞尔光束的衍射性质 &middot; Trojan TeaHouse" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="https://trojanpt.github.io/js/appearance.min.57e8419debc8831b20efeae42b14641b95c5342286df994ab779c582d53d4c48.js"
+    integrity="sha256-V&#43;hBnevIgxsg7&#43;rkKxRkG5XFNCKG35lKt3nFgtU9TEg="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
+    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
+      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
+      data-copy="复制"
+      data-copied="已复制"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      本文旨在探讨贝塞尔光束的衍射特性，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性
+    "
+  />
+  <meta name="keywords" content="物理, 光学, 贝塞尔光束, 无衍射光束" />
+  
+  
+  
+    <link rel="canonical" href="https://trojanpt.github.io/jottings/bessel-beam/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://trojanpt.github.io/jottings/bessel-beam/">
+  <meta property="og:site_name" content="Trojan TeaHouse">
+  <meta property="og:title" content="贝塞尔光束的衍射性质">
+  <meta property="og:description" content="本文旨在探讨贝塞尔光束的衍射特性，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性">
+  <meta property="og:locale" content="zh_Hans">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="jottings">
+    <meta property="article:published_time" content="2026-01-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-17T00:00:00+00:00">
+    <meta property="article:tag" content="Physics">
+    <meta property="article:tag" content="Optics">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="贝塞尔光束的衍射性质">
+  <meta name="twitter:description" content="本文旨在探讨贝塞尔光束的衍射特性，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Jottings",
+    "name": "贝塞尔光束的衍射性质",
+    "headline": "贝塞尔光束的衍射性质",
+    "description": "本文旨在探讨贝塞尔光束的衍射特性，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性",
+    "abstract": "贝塞尔光束表现出无衍射特性，这类光束具有新颖且独特的光学性质",
+    "inLanguage": "zh-Hans",
+    "url" : "https:\/\/trojanpt.github.io\/jottings\/bessel-beam\/",
+    "author" : {
+      "@type": "Person",
+      "name": "TrojanPoint"
+    },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-01-17T00:00:00\u002b00:00",
+    "datePublished": "2026-01-17T00:00:00\u002b00:00",
+    
+    "dateModified": "2026-01-17T00:00:00\u002b00:00",
+    
+    "keywords": ["物理","光学","贝塞尔光束","无衍射光束"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1615"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://trojanpt.github.io/",
+       "name": "Home",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://trojanpt.github.io/jottings/",
+       "name": "Jottings",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "贝塞尔光束的衍射性质",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="TrojanPoint" />
+  
+  
+    
+      <link href="https://github.com/TrojanPt" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://trojanpt.github.io/lib/katex/katex.min.19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75.css"
+    integrity="sha256-GQlRJzV&#43;1tKf4KY6awAMkTqJ9/GWO3Zd03Fel8mFLnU="
+  />
+  
+  
+  <script defer src="https://trojanpt.github.io/lib/katex/katex.min.e8d885505949f3a5f4abdd5dd0d53696bd1371ad26ffbf4f310dcd77c8cdae89.js" integrity="sha256-6NiFUFlJ86X0q91d0NU2lr0Tca0m/79PMQ3Nd8jNrok="></script>
+  
+  
+  <script
+    defer
+    src="https://trojanpt.github.io/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
+    integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
+    onload="renderMathInElement(document.body);"
+  ></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sn0mpk9ji9");
+</script>
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >跳到主要内容</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Trojan TeaHouse</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/jottings/"
+                      title="Jottings"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >随记</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/notes/"
+                      title="Notes"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >笔记</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title="Tags"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >标签</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title="About"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >关于</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="搜索 (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/jottings/"
+                  title="Jottings"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >随记</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/notes/"
+                  title="Notes"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >笔记</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >标签</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title="About"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >关于</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="搜索 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <progress id="content_progress" value="0"></progress>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var winHeight = window.innerHeight,
+            docHeight = document.documentElement.scrollHeight,
+            progressBar = document.querySelector('#content_progress');
+      progressBar.max = docHeight - winHeight;
+      progressBar.value = window.scrollY;
+
+      document.addEventListener('scroll', function () {
+            progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.value = window.scrollY;
+      });
+    });
+  </script>
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://trojanpt.github.io/"
+      >Home</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://trojanpt.github.io/jottings/"
+      >Jottings</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://trojanpt.github.io/jottings/bessel-beam/"
+      >贝塞尔光束的衍射性质</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        贝塞尔光束的衍射性质
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-01-17 00:00:00 &#43;0000 UTC">2026.1.17</time><span class="px-2 text-primary-500">&middot;</span><span class="vercount-container" data-url="https://trojanpt.github.io/jottings/bessel-beam/">
+  <span class="icon relative inline-block px-1 align-text-bottom"><svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8260"><path d="M956 686.5l-0.1-0.1-0.1-0.1C911.7 593 843.4 545 752.5 545s-159.2 48.1-203.4 141.3v0.1c-5.4 11.5-5.4 24.9 0 36.4C593.3 816 661.6 864 752.5 864s159.2-48.1 203.4-141.3c5.4-11.5 5.4-24.8 0.1-36.2zM752.5 800c-62.1 0-107.4-30-141.1-95.5C645 639 690.4 609 752.5 609c62.1 0 107.4 30 141.1 95.5C860 770 814.6 800 752.5 800zM753 705m-56 0a56 56 0 1 0 112 0 56 56 0 1 0-112 0ZM136 232h704v253h72V192c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32v520c0 17.7 14.3 32 32 32h352v-72H136V232zM724.9 338.1l-36.8-36.8c-3.1-3.1-8.2-3.1-11.3 0L493 485.3l-86.1-86.2c-3.1-3.1-8.2-3.1-11.3 0L251.3 543.4c-3.1 3.1-3.1 8.2 0 11.3l36.8 36.8c3.1 3.1 8.2 3.1 11.3 0l101.8-101.8 86.1 86.2c3.1 3.1 8.2 3.1 11.3 0l226.3-226.5c3.2-3.1 3.2-8.2 0-11.3z" p-id="8261"></path></svg></span>
+  <span class="vercount_value_page_pv">-</span>
+</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+      
+        
+          
+            <a
+              href="https://trojanpt.github.io/tags/physics/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Physics</a
+            >
+          
+            <a
+              href="https://trojanpt.github.io/tags/optics/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Optics</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1---贝塞尔光束">1   贝塞尔光束</a>
+      <ul>
+        <li><a href="#11---理论公式">1.1   理论公式</a></li>
+        <li><a href="#12---实际的近似贝塞尔光束">1.2   实际的近似贝塞尔光束</a></li>
+      </ul>
+    </li>
+    <li><a href="#2---无衍射性质">2   无衍射性质</a>
+      <ul>
+        <li><a href="#21---理想贝塞尔光束的无衍射性质">2.1   理想贝塞尔光束的无衍射性质</a></li>
+        <li><a href="#22---近似贝塞尔光束的有限无衍射距离">2.2   近似贝塞尔光束的有限无衍射距离</a></li>
+      </ul>
+    </li>
+    <li><a href="#3---经高斯型软边光阑后的衍射">3   经高斯型软边光阑后的衍射</a></li>
+    <li><a href="#4---附录">4   附录</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        
+
+<blockquote>
+<p>光波的传输通常会受到衍射效应的影响，导致横向光场分布随传播距离增加而发散，这一现象限制了其在对光束准直性敏感的领域的应用。1987年，Durnin 等人提出了一类标量亥姆霍兹方程的特殊解，即<strong>贝塞尔光束</strong>（Bessel Beam）。贝塞尔光束具有一系列独特的传输特性。理想的贝塞尔光束在自由空间传播时，其横向光强分布保持不变，具有高度局域化强度分布。此外，贝塞尔光束还表现出自愈特性，当光束经过光阑后，在一定传播距离后能够自重建出原始光场。Durnin 将符合这些特性的光束称为<strong>无衍射光束</strong>（Diffraction-free Beam），这类光束新颖且独特的性质使得其在激光打孔、微粒操控、精密准直等领域展现出广泛的应用前景。</p>
+<p>然而，理想的贝塞尔光束在全空间内非平方可积，意味着其携带无限大的能量，这与现实相悖。实际应用中，通常通过环缝 - 透镜系统、轴棱锥等光学元件产生近似贝塞尔光束。这类光束在有限的传播距离内能够较好地符合理想贝塞尔光束的无衍射与自愈特性。</p>
+<p>本文旨在探讨贝塞尔光束的衍射特性及其经光阑后的自愈机制，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性。</p>
+</blockquote>
+<h2 id="1---贝塞尔光束" class="relative group">1   贝塞尔光束 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1---%e8%b4%9d%e5%a1%9e%e5%b0%94%e5%85%89%e6%9d%9f" aria-label="锚点">#</a></span></h2><h3 id="11---理论公式" class="relative group">1.1   理论公式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#11---%e7%90%86%e8%ae%ba%e5%85%ac%e5%bc%8f" aria-label="锚点">#</a></span></h3><p>考虑在柱坐标系下求解标量亥姆霍兹方程</p>
+$$
+\nabla^2 u + k^2 u = 0 \tag{1}
+$$<p>得到描述贝塞尔光束的一般方程</p>
+$$
+u_m(r,\varphi,z) = \left[ A J_m(k_r r) + B Y_m(k_r r) \right] e^{i m \varphi} e^{i k_z z} \tag{2}
+$$<p>附录 \(4.1\) 给出了具体的推导过程。其中 \(k_r^2 = k^2 - k_z^2\)，\(J_m\) 和 \(Y_m\) 分别为第一类和第二类 \(m\) 阶贝塞尔函数。</p>
+<p>考虑到 \(Y_m\) 在 \(r=0\) 处奇异，通常，直接称 \(B=0\) 时为 \(m\) 阶贝塞尔光束。</p>
+<p>图 1 是通过数值模拟给出的贝塞尔光束的横向光强分布。可见，贝塞尔光束的横向光强分布为一组同心圆环。特别地，零阶贝塞尔光束中心光强为一个亮斑，而高阶的贝塞尔光束中心光强为零。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_0_2d_hu_16ad75d268cb3da4.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="641"
+        height="555"
+        class="mx-auto my-0 rounded-md"
+        alt="零阶贝塞尔光束横向光强分布"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_0_2d.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</th>
+          <th style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_1_2d_hu_9a922f97a824d3b3.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="643"
+        height="554"
+        class="mx-auto my-0 rounded-md"
+        alt="一阶贝塞尔光束横向光强分布"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_1_2d.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<center>Fig.1 &nbsp; 贝塞尔光束横向光强分布</center>
+<h3 id="12---实际的近似贝塞尔光束" class="relative group">1.2   实际的近似贝塞尔光束 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12---%e5%ae%9e%e9%99%85%e7%9a%84%e8%bf%91%e4%bc%bc%e8%b4%9d%e5%a1%9e%e5%b0%94%e5%85%89%e6%9d%9f" aria-label="锚点">#</a></span></h3><p>理论公式所描述的贝塞尔光束在全平面上非平方可积，意即其携带有无限大的能量，显然与实际相悖。这意味着，理想的贝塞尔光束无法在实际中产生。然而，可以通过近似的方法在有限区域内产生近似的贝塞尔光束。这里以最早提出“无衍射贝塞尔光束”的 Durnin 等人所设计的环缝-透镜系统为例进行说明。</p>
+<p><strong>1.2.1   理论分析</strong></p>
+<p>利用 Hansen Bessel 公式，对整数阶贝塞尔函数，有</p>
+$$
+J_m(x) = \frac{1}{2\pi} \int_{-\pi}^{\pi} e^{i x \cos \varphi} e^{i m (\varphi - \pi/2)} \mathrm{d}\varphi \tag{3}
+$$<p>从而 0 阶贝塞尔光束可表示为</p>
+$$
+u_0(r,z) = \frac{A_0}{2\pi} \int_{-\pi}^{\pi} e^{i k_r r \cos \varphi} e^{i k_z z} \mathrm{d}\varphi \tag{4}
+$$<p>可见，0 阶贝塞尔光束可视为由所有与 \(z\) 轴成角度 \(\theta\)（满足 \(k_r = k \sin \theta\)，\(k_z = k \cos \theta\)），具有相同振幅和相位的平面波组成的光束的叠加。</p>
+<p><strong>1.2.2   环缝-透镜系统的近似贝塞尔光束方程</strong></p>
+<center><img src="Figure_2.png" style="zoom:30%; border-radius: 12px;" /></center>
+<center>Fig.2 &nbsp; 贝塞尔光束的产生示意图</center>
+<p>如图 2 所示为 Durnin 等人用来产生贝塞尔光束的实验装置。透镜的焦距 \(f\)，孔径 \(2a\), 在前焦面处放置一个环形光阑，环形光阑的半径 \(R\) ，环宽 \(\Delta R\) 。入射光为波长 \(\lambda\) 的平面波。</p>
+<p>入射平面波经过环缝-透镜系统后，在傍轴近似下，透镜后方 \(z-f\) 处得到的光场可表示为</p>
+$$
+\begin{align}
+    E(r, z) =& - k^2 \frac{e^{i k z}}{(z-f) f} E_0 \exp\left( \frac{i k}{2(z-f)} r^2 \right) \cdot\notag \\
+    &\int^{a}_{0} \int^{R+\frac{\Delta R}{2}}_{R-\frac{\Delta R}{2}} \exp\left( \frac{i k}{2f} r_0^2 \right) \exp\left( \frac{i k}{2(z-f)} r_1^2 \right) J_0\left( \frac{k r_1 r_0}{f} \right) J_0\left( \frac{k r r_1}{z-f} \right) r_0 r_1 \mathrm{d}r_0 \mathrm{d}r_1 \tag{5}
+\end{align}
+$$<p>附录 \(4.2\) 给出了具体的推导过程。</p>
+<p><strong>1.2.3   光束方程的近似与局限分析</strong></p>
+<p>为使上述光束方程近似满足贝塞尔光束方程，需要参数间符合一定要求。</p>
+<p>根据 1.2.1 理论分析中的思想，一方面，需要透镜前焦面上环形光阑后表面光场近似为光源分布在环上的点光源的叠加，即能够使用 \(r_0 = R\)， \(d r_0 = \Delta R\) 来代替对 \(r_0\) 的积分。为此，对 \(r_0\) 的积分式中的被积函数 \(\exp\left( \frac{i k}{2f} r_0^2 \right) J_0\left( \frac{k r_1 r_0}{f} \right) r_0\) 应当在积分区间 \([R−ΔR/2,R+ΔR/2]\) 内变化缓慢，即满足</p>
+$$
+\frac{\Delta R}{R} \ll 1\ ,\quad \frac{k R}{f} \Delta R \ll 1\ ,\quad \left(\frac{k r_1}{f} \Delta R\right)_{max} = \frac{k a}{f} \Delta R \ll 1 \tag{6}
+$$<p>此时，透镜前表面光场</p>
+$$
+\begin{align}
+    E_1(r_1,f) &= - i k \frac{e^{i k f}}{f} \exp\left(\frac{i k}{2f} r_1^2\right) \int^{R+\frac{\Delta R}{2}}_{R-\frac{\Delta R}{2}} E_0 \exp\left( \frac{i k}{2f} r_0^2 \right) J_0\left( \frac{k r_1 r_0}{f} \right) r_0 \mathrm{d}r_0 \notag\\
+    &\approx - i k \frac{e^{i k f}}{f} E_0 \exp\left(\frac{i k}{2f} r_1^2\right) \exp\left( \frac{i k}{2f} R^2 \right) J_0\left( \frac{k r_1 R}{f} \right) R \Delta R  \tag{7}
+\end{align}
+$$<p>另一方面，需要透镜孔径 \(a\) 足够大，使得透镜屏函数的边界效应对光场的影响尽可能小。为此，关于 \(r_1\) 的积分式 \(\int_0^{\infty} \exp\left( \frac{i k}{2(z-f)} r_1^2 \right) J_0\left( \frac{k r_1 R}{f} \right) J_0\left( \frac{k r r_1}{z-f} \right) r_1\) 其主要贡献部分应位于 \([0,a]\) 内，且远离 \(r_1 = a\) 处，即满足</p>
+$$
+z - f \ll \frac{f a}{R} \tag{8}
+$$<p>具体分析见附录 \(4.3\) 。此时，忽略透镜屏函数的边界，透镜后表面光场</p>
+$$
+\begin{align}
+    E_1(r_1,f) \approx - i k \frac{e^{i k f}}{f} E_0 \exp\left( \frac{i k}{2f} R^2 \right) J_0\left( \frac{k r_1 R}{f} \right) R \Delta R
+\end{align} \tag{9}
+$$<p>符合贝塞尔光束在截面处的横向光场分布。从而，透镜后方 \(z-f\) 处光场</p>
+$$
+\begin{align}
+    E_1(r_1,z) \approx - i k \frac{e^{i k f}}{f} E_0 \exp\left( \frac{i k}{2f} R^2 \right) J_0\left( \frac{k r_1 R}{f} \right) R \Delta R \exp\left(i k \sqrt{1 - \left( \frac{R}{f} \right)^2} (z-f) \right)
+\end{align} \tag{10}
+$$<p>为贝塞尔光束。而式 (6) (8) 则给出了上述近似所需满足的参数条件。</p>
+<h2 id="2---无衍射性质" class="relative group">2   无衍射性质 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2---%e6%97%a0%e8%a1%8d%e5%b0%84%e6%80%a7%e8%b4%a8" aria-label="锚点">#</a></span></h2><h3 id="21---理想贝塞尔光束的无衍射性质" class="relative group">2.1   理想贝塞尔光束的无衍射性质 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#21---%e7%90%86%e6%83%b3%e8%b4%9d%e5%a1%9e%e5%b0%94%e5%85%89%e6%9d%9f%e7%9a%84%e6%97%a0%e8%a1%8d%e5%b0%84%e6%80%a7%e8%b4%a8" aria-label="锚点">#</a></span></h3><p>对贝塞尔光束</p>
+$$
+u_m(r,\varphi,z) = A J_m(k_r r) e^{i m \varphi} e^{i k_z z} \tag{11}
+$$<p>其传播距离 \(z\) 变化仅引起相位因子的变化，而横向强度分布</p>
+$$
+I(r,\varphi,z) = |A J_m(k_r r)|^2 \tag{12}
+$$<p>与 \(z\) 无关。称这种在传输过程中保持横向光强分布不变的光束为无衍射光束（Diffraction-free Beam）</p>
+<h3 id="22---近似贝塞尔光束的有限无衍射距离" class="relative group">2.2   近似贝塞尔光束的有限无衍射距离 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#22---%e8%bf%91%e4%bc%bc%e8%b4%9d%e5%a1%9e%e5%b0%94%e5%85%89%e6%9d%9f%e7%9a%84%e6%9c%89%e9%99%90%e6%97%a0%e8%a1%8d%e5%b0%84%e8%b7%9d%e7%a6%bb" aria-label="锚点">#</a></span></h3><p>在实际中产生的近似贝塞尔光束只能在有限距离内近似保持无衍射性质。在 1.2.3 节中给出的环缝-透镜系统所产生的近似贝塞尔光束方程，参数条件中</p>
+$$
+z - f \ll \frac{f a}{R} \tag{8}
+$$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
+<p>图 3 图 4 展示了基于式 \((5)\) 进行数值模拟对其作的直观验证。考虑波长 \(\lambda = 632.8\ nm\) 的准直 He - Ne 激光入射，透镜焦距 \(f = 305\ mm\)，半径 \(a = 3.5\ mm\)，环缝半径 \(R = 1.25\ mm\)，环宽 \(\Delta R = 10\ \mu m\)</p>
+<center><img src="Figure_3.png" style="zoom:65%; border-radius: 12px;" /></center>
+<center>Fig.3 &nbsp; 近似贝塞尔光束轴上光强分布</center>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_f11f1b2ec251a024.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_f281e33490be5c9e.webp 660w
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_df7ae8d3188ebaa6.webp 840w
+              
+            
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_df7ae8d3188ebaa6.webp 840w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="840"
+        height="537"
+        class="mx-auto my-0 rounded-md"
+        alt="近似贝塞尔光束横向光强分布 z - f = 100 mm"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_1a939d2468f2eac.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_81e60f497b2c697e.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_1a939d2468f2eac.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100.png 840w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100.png 840w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</th>
+          <th style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_62e9fda52fbceb3f.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_65b312eb23c66b4c.webp 660w
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e1d8a04b2e7bfc19.webp 839w
+              
+            
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e1d8a04b2e7bfc19.webp 839w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="839"
+        height="534"
+        class="mx-auto my-0 rounded-md"
+        alt="近似贝塞尔光束横向光强分布 z - f = 400 mm"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e7d743365c356330.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_88ea6a58eb4cf08f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e7d743365c356330.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400.png 839w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400.png 839w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_584c1319108cfec6.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_15a61086dc60eefd.webp 660w
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_127f492ee9001805.webp 840w
+              
+            
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_127f492ee9001805.webp 840w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="840"
+        height="532"
+        class="mx-auto my-0 rounded-md"
+        alt="近似贝塞尔光束横向光强分布 z - f = 700 mm"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_9283d931bd5a7892.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_9f65d2e089e6cb48.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_9283d931bd5a7892.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700.png 840w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700.png 840w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</td>
+          <td style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_c432910d4657751a.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_397c36a2e62b0ebe.webp 660w
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_7542942c41921504.webp 839w
+              
+            
+            
+              
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_7542942c41921504.webp 839w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="839"
+        height="538"
+        class="mx-auto my-0 rounded-md"
+        alt="近似贝塞尔光束横向光强分布 z - f = 1000 mm"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_163297b68bace164.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_d5dd16177ca59a2e.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_163297b68bace164.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000.png 839w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000.png 839w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</td>
+      </tr>
+  </tbody>
+</table>
+<center>Fig.4 &nbsp; 近似贝塞尔光束横向光强分布</center>
+<p>可见，近似贝塞尔光束在远离 \(Z_{max} = \frac{f a}{R} \approx 854\ mm\) （大致 \(z - f = 0 \sim 600\ mm\) 范围内）基本保持无衍射性质。轴上光强分布在一定范围剧烈振荡，这是透镜作为硬边光阑所引起的；横向光强分布则基本保持贝塞尔光束的特征。而当传播距离超过 \(z - f \approx 700\ mm\) 后，透镜的有限边界产生的影响开始显现，光强分布发生明显变化，无法再近似视为无衍射光束。</p>
+<h2 id="3---经高斯型软边光阑后的衍射" class="relative group">3   经高斯型软边光阑后的衍射 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3---%e7%bb%8f%e9%ab%98%e6%96%af%e5%9e%8b%e8%bd%af%e8%be%b9%e5%85%89%e9%98%91%e5%90%8e%e7%9a%84%e8%a1%8d%e5%b0%84" aria-label="锚点">#</a></span></h2><p>高斯型软边光阑的屏函数遵循高斯函数的形式。在不考虑中心及相位偏移时，屏函数可表示为</p>
+$$
+t_g(r_0) = \exp\left( - \frac{r_0^2}{w^2} \right) \tag{14}
+$$<p>利用衍射积分公式，并采用傍轴近似，得到贝塞尔光束经高斯型软边光阑后的光场</p>
+$$
+\begin{align}
+    E(r, z) =& -\frac{i}{\lambda} \frac{e^{i k z}}{z} \int_{\infty} E_0 J_m(k_r r_0) e^{im\varphi_0} \exp\left(-\frac{r_0^2}{\omega^2}\right) \cdot \notag\\ & \qquad \qquad \exp\left({\frac{i k}{2z} [r^2 + r_0^2 - 2 r r_0 \cos(\varphi - \varphi_0)]}\right) r_0 \mathrm{d}r_0 \mathrm{d}\varphi_0 \notag\\
+    =& E_0 \frac{k}{k+2i\frac{z}{\omega^2}} \exp\left[ -i\frac{k_r^2}{2k}z \left( \frac{1-2i\frac{1}{\omega^2}\frac{k}{k_r^2}\frac{r^2}{z}}{1+2i\frac{1}{\omega^2}\frac{z}{k}} \right) \right] J_m\left( \frac{k_r k}{k + 2i \frac{z}{\omega^2}} r \right) e^{i m \varphi} e^{i k z}  \tag{15}
+\end{align}
+$$<p>附录 \(4.4\) 给出了具体的推导过程。在满足参数条件</p>
+$$
+z \ll k \omega^2 , \quad r \ll \sqrt{ \frac{k_r^2}{k} z \omega^2 } \tag{16}
+$$<p>时，光场可近似表示为</p>
+$$
+E(r, z) \approx E_0 \exp\left( -i \frac{k_r^2}{2 k} z \right) J_m(k_r r) e^{i m \varphi} e^{i k z} \tag{17}
+$$<p>符合贝塞尔光束的形式。</p>
+<p>图 5 图 6 展示了基于式 \((15)\) 进行数值模拟对其作的直观验证。考虑波长 \(\lambda = 632.8\ nm\) 的单位振幅的 \(0\) 阶贝塞尔光束，参数 \(k_r = 3\ (mm)^{-1}\)，光阑宽度 \(\omega = 5\ mm\)</p>
+<center><img src="Figure_5.png" style="zoom:25%; border-radius: 12px;" /></center>
+<center>Fig.5 &nbsp; 贝塞尔光束经高斯型软边光阑后轴上光强分布</center>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_11f7d2d618322792.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_81f0ea3ec6780006.webp 660w
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_7d1d6d8c70a7d720.webp 1024w
+            
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_329043cb9ccd2d31.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="2032"
+        height="1292"
+        class="mx-auto my-0 rounded-md"
+        alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 1 m"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_ff278818f3d7d5c4.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_799e6d8700016c41.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_ff278818f3d7d5c4.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_b00d664fc978fcb0.png 1024w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_b24f0441fbe4543b.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</th>
+          <th style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_2f2a5612748f2202.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_7d6987ee0e901601.webp 660w
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_af6c71a52a565580.webp 1024w
+            
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_eda95d2b5f9f77ff.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="2039"
+        height="1291"
+        class="mx-auto my-0 rounded-md"
+        alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 10 m"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_76eb2ed7e02795e1.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_d57c5bae277e66a8.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_76eb2ed7e02795e1.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_96710646b507bdb.png 1024w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_b8e427801f4bc3b4.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_1089f9f3bd017a75.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_74b04942b1e3f6c3.webp 660w
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_535eab6c9cc4022a.webp 1024w
+            
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_43df268801642b6d.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="2032"
+        height="1292"
+        class="mx-auto my-0 rounded-md"
+        alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 15 m"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_6b180fbdf8bb4d14.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_5a01b450f3a2d262.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_6b180fbdf8bb4d14.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_b91b26bf8d28767f.png 1024w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_d920362c3efe0c89.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</td>
+          <td style="text-align: center">
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_fe207ada8a08c952.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_77e2a2e4fb012b7c.webp 660w
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_d01e74ef37e0c593.webp 1024w
+            
+            
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_78ac98346e5e80d2.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="2035"
+        height="1293"
+        class="mx-auto my-0 rounded-md"
+        alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 20 m"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_d995fd06cac2415e.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_49259f34076b8ffd.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_d995fd06cac2415e.png 660w
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_cbd8d8978c8df699.png 1024w
+          
+          
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_5170770e45d76341.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</td>
+      </tr>
+  </tbody>
+</table>
+<center>Fig.6 &nbsp; 贝塞尔光束经高斯型软边光阑后横向光强分布</center>
+<p>可见，贝塞尔光束经高斯型软边光阑后，在传播距离远离 \(Z_{max} = k \omega^2 \approx 248\ m\) （大致 \(z = 1 \sim 10\ m\) 范围内）基本保持横向分布不变。横向光强分布则在轴向距离远离 \(r_{bound} = \sqrt{ \frac{k_r^2}{k} z \omega^2 }\) 基本保持贝塞尔光束的特征。</p>
+<h2 id="4---附录" class="relative group">4   附录 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4---%e9%99%84%e5%bd%95" aria-label="锚点">#</a></span></h2><p><strong>4.1   贝塞尔光束方程的推导</strong></p>
+<p>从单频光场所满足的标量亥姆霍兹方程出发</p>
+$$
+\nabla^2 u + k^2 u = 0 \tag{18}
+$$<p>采用柱坐标 \((r,\varphi,z)\)，作变量分离，令</p>
+$$
+u(r,\varphi,z) = R(r)\ \Phi(\varphi)\ Z(z) \tag{19}
+$$<p>代入亥姆霍兹方程得</p>
+$$
+\frac{1}{R} \frac{1}{r} \frac{\mathrm{d}}{\mathrm{d}r} \left( r \frac{\mathrm{d}R}{\mathrm{d}r} \right) + \frac{1}{\Phi} \frac{1}{r^2} \frac{\mathrm{d}^2 \Phi}{\mathrm{d}\varphi^2} = - \frac{1}{Z} \frac{\mathrm{d}^2 Z}{\mathrm{d}z^2} - k^2 \tag{20}
+$$<p>等式左侧仅依赖于 \(r,\varphi\)，右侧仅依赖于 \(z\)，可令</p>
+$$
+\frac{1}{Z} \frac{\mathrm{d}^2 Z}{\mathrm{d}z^2} = -k_z^2 \tag{21}
+$$<p>从而</p>
+$$
+Z(z) = e^{i k_z z} \tag{22}
+$$$$
+r \frac{\mathrm{d}}{\mathrm{d}r} \left( r \frac{\mathrm{d}R}{\mathrm{d}r} \right) \frac{1}{R} + (k^2 - k_z^2) r^2 = - \frac{1}{\Phi} \frac{\mathrm{d}^2 \Phi}{\mathrm{d}\varphi^2} \tag{23}
+$$<p>同样地，等式左侧仅依赖于 \(r\)，右侧仅依赖于 \(\varphi\)，可令
+</p>
+$$
+\frac{1}{\Phi} \frac{\mathrm{d}^2 \Phi}{\mathrm{d}\varphi^2} = -m^2 \tag{24}
+$$<p>从而
+</p>
+$$
+\Phi(\varphi) = e^{i m \varphi} \tag{25}
+$$$$
+r \frac{\mathrm{d}}{\mathrm{d}r} \left( r \frac{\mathrm{d}R}{\mathrm{d}r} \right) \frac{1}{R} + (k^2 - k_z^2) r^2 - m^2 = 0 \tag{26}
+$$<p>\(R(r)\) 满足的方程即符合贝塞尔方程的形式，其标准解可写为</p>
+$$
+R(r) = A J_m(k_r r) + B Y_m(k_r r) \tag{27}
+$$<p>其中 \(k_r^2 = k^2 - k_z^2\)，\(J_m\) 和 \(Y_m\) 分别为第一类和第二类 \(m\) 阶贝塞尔函数</p>
+<p>由此，我们得到了描述贝塞尔光束的一般方程</p>
+$$
+u_m(r,\varphi,z) = \left[ A J_m(k_r r) + B Y_m(k_r r) \right] e^{i m \varphi} e^{i k_z z} \tag{28}
+$$<p><strong>4.2   环缝-透镜系统所产生的近似贝塞尔光束方程的推导</strong></p>
+<p>平面波通过环形光阑后光场</p>
+$$
+E_0(r_0, 0) = \begin{cases}
+    E_0 &,\ R - \frac{\Delta R}{2} \leq r_0 \leq R + \frac{\Delta R}{2} \\
+    0 &,\ otherwise
+\end{cases} \tag{29}
+$$<p>利用菲涅尔-基尔霍夫衍射积分公式，采用傍轴近似，得到
+</p>
+$$
+\begin{align}
+    E_1(r_1,f) &= -\frac{i}{\lambda} \frac{e^{i k f}}{f} \int_{\infty} E_0(r_0, 0) \exp\left({\frac{i k}{2f} [r_1^2 + r_0^2 - 2 r_1 r_0 \cos(\varphi_1 - \varphi_0)]}\right) r_0 \mathrm{d}r_0 \mathrm{d}\varphi_0 \notag\\
+    &= - i k \frac{e^{i k f}}{f} \exp\left(\frac{i k}{2f} r_1^2\right) \int^{R+\frac{\Delta R}{2}}_{R-\frac{\Delta R}{2}} E_0 \exp\left( \frac{i k}{2f} r_0^2 \right) J_0\left( \frac{k r_1 r_0}{f} \right) r_0 \mathrm{d}r_0 \tag{30}
+\end{align} 
+$$<p>理想薄透镜的屏函数满足</p>
+$$
+t_f(r_1) = \begin{cases}
+    \exp\left( - \frac{i k}{2f} r_1^2 \right) &,\ r_1 \le a \\
+    0 &,\ r_1 \gt a 
+\end{cases} \tag{31}
+$$<p>经透镜后光场</p>
+$$
+\begin{align}
+    E_f(r_1,f) &= E_1(r_1,f) t_f(r_1) \notag\\
+    &= - i k \frac{e^{i k f}}{f} t_f(r_1) \exp\left(\frac{i k}{2f} r_1^2\right) \int^{R+\frac{\Delta R}{2}}_{R-\frac{\Delta R}{2}} E_0 \exp\left( \frac{i k}{2f} r_0^2 \right) J_0\left( \frac{k r_1 r_0}{f} \right) r_0 \mathrm{d}r_0 \tag{32}
+\end{align} 
+$$<p>再次利用衍射积分公式并采用傍轴近似，得到透镜后方 \(z-f\) 处光场</p>
+$$
+\begin{align}
+    E(r, z) &= -\frac{i}{\lambda} \frac{e^{i k (z-f)}}{z-f} \int_{\infty} E_f(r_1,f) \exp\left({\frac{i k}{2(z-f)} [r^2 + r_1^2 - 2 r r_1 \cos(\varphi - \varphi_1)]}\right) r_1 \mathrm{d}r_1 \mathrm{d}\varphi_1 \notag\\
+    &= - i k \frac{e^{i k (z-f)}}{z-f} \exp\left( \frac{i k}{2(z-f)} r^2 \right) \int^{a}_{0} E_f(r_1,f) \exp\left( \frac{i k}{2(z-f)} r_1^2 \right) J_0\left( \frac{k r r_1}{z-f} \right) r_1 \mathrm{d}r_1 \notag\\
+    &= - k^2 \frac{e^{i k z}}{(z-f) f} E_0 \exp\left( \frac{i k}{2(z-f)} r^2 \right)\cdot\notag \\& \qquad \ \int^{a}_{0} \int^{R+\frac{\Delta R}{2}}_{R-\frac{\Delta R}{2}} \exp\left( \frac{i k}{2f} r_0^2 \right) \exp\left( \frac{i k}{2(z-f)} r_1^2 \right) J_0\left( \frac{k r_1 r_0}{f} \right) J_0\left( \frac{k r r_1}{z-f} \right) r_0 r_1 \mathrm{d}r_0 \mathrm{d}r_1  \tag{33}
+\end{align}
+$$<p><strong>4.3   近似贝塞尔光束产生中的参数条件分析</strong></p>
+<p>考察关于 \(r_1\) 的积分式</p>
+$$
+I = \int_0^a \exp\left( \frac{i k}{2(z-f)} r_1^2 \right) J_0\left( \frac{k r_1 R}{f} \right) J_0\left( \frac{k r r_1}{z-f} \right) r_1 \mathrm{d}r_1 \tag{34}
+$$<p>此为第一型振荡积分，考虑采用驻相法分析积分值的主要贡献部分。为此，需要首先确定函数的相位因子。</p>
+<p>贝塞尔函数中 \(J_0\left( \frac{k r_1 R}{f} \right)\) 的宗量与变量 \(r\) 无关。首先考虑让其符合大宗量近似条件</p>
+$$
+\frac{k a R}{f} \gg 1 \tag{35}
+$$<p>利用贝塞尔函数的大宗量近似</p>
+$$
+J_0\left( \frac{k r_1 R}{f} \right) \approx \sqrt{\frac{f}{2 \pi k r_1 R}} \left[ e^{i \left( \frac{k r_1 R}{f} - \frac{\pi}{4} \right)} + e^{-i \left( \frac{k r_1 R}{f} - \frac{\pi}{4} \right)} \right] \tag{36}
+$$<p>而对 \(J_0\left( \frac{k r r_1}{z-f} \right)\)，由于通常在考察近似贝塞尔光束的无衍射性质时，关注轴上或近轴处的光场分布，因此可认为 \(r\) 足够小，使得 \(J_0\left( \frac{k r r_1}{z-f} \right)\) 引入的相位因子变化极缓慢，在分析驻相点时无需考虑。</p>
+<p>由此，可以写出被积函数的相位因子</p>
+$$
+\Phi(r_1)_\pm \approx \frac{k}{2(z-f)} r_1^2 \pm \frac{k R}{f} r_1 \tag{37}
+$$<p>驻相点满足 \(\frac{\mathrm{d}\Phi}{\mathrm{d}r_1} = 0\)，其中 \(\Phi_+\) 在 \(r_{1} > 0\) 处无驻相点，而 \(\Phi_-\) 可解得符合条件的驻相点</p>
+$$
+r_{1s} = \frac{R (z-f)}{f} \tag{38}
+$$<p>该振荡积分的主要贡献部分位于驻相点附近相位缓慢变化的区域。为使有限区间 \([0, a]\) 的积分近似等于无限区间 \([0, \infty)\) 的积分，要求驻相点位于积分区间内且远离上界 \(a\)，即 \(r_{1s} \ll a\)。整理得</p>
+$$
+z - f \ll \frac{a f}{R} \tag{39}
+$$<p>该条件具有明确的几何光学意义。如图 2 所示，在几何光学模型中，从透镜边缘 (\(r_1=a\)) 出射并以角度 \(\theta = R/f\) 向光轴会聚的光线，其与光轴相交的最大距离即为 \(Z_{max} = a f / R\)。当传播距离超过此范围，光线不再重叠，无法形成贝塞尔光束。</p>
+<p><strong>4.4   贝塞尔光束经高斯型软边光阑后的光场方程的推导</strong></p>
+<p>贝塞尔光束经高斯型软边光阑后的光场</p>
+$$
+\begin{align}
+    E(r, z) = -\frac{i}{\lambda} \frac{e^{i k z}}{z} e^{im\varphi} \int_{\infty} & E_0 J_m(k_r r_0) e^{im(\varphi_0-\varphi)} \exp\left(-\frac{r_0^2}{\omega^2}\right) \cdot \notag\\ &\quad\exp\left({\frac{i k}{2z} [r^2 + r_0^2 - 2 r r_0 \cos(\varphi_0 - \varphi)]}\right) r_0 \mathrm{d}r_0 \mathrm{d}\varphi_0 \tag{40}
+\end{align} 
+$$<p>首先，考虑对 \(\varphi_0\) 的积分，利用 Hansen Bessel 公式</p>
+$$
+\int_{-\pi}^{\pi} \exp\left( - \frac{i k r r_0}{z} \cos(\varphi_0 - \varphi) \right) e^{i m (\varphi_0 - \varphi)} \mathrm{d}\varphi_0 = 2 \pi (-i)^m J_m\left( \frac{k r}{z} r_0 \right) \tag{41}
+$$<p>由此，光场可写为</p>
+$$
+\begin{align}
+    E(r, z) =& -\frac{i}{\lambda} \frac{e^{i k z}}{z} E_0 e^{i m \varphi} \exp\left({\frac{i k}{2z} r^2}\right) 2 \pi (-i)^m \cdot \notag\\ &\quad \int_{0}^{\infty} J_m(k_r r_0) J_m\left( \frac{k r}{z} r_0 \right) \exp\left[-\left(\frac{1}{\omega^2} - {\frac{i k}{2z} } \right) r_0^2 \right]  r_0 \mathrm{d}r_0 \tag{42}
+\end{align}
+$$<p>利用积分公式</p>
+$$
+\begin{align}
+    \int_0^\infty e^{-p^2 x^2} J_m(a x) J_m(b x) x \mathrm{d}x &= \frac{1}{2 p^2} \exp\left( - \frac{a^2 + b^2}{4 p^2} \right) I_m\left( \frac{a b}{2 p^2} \right) \notag\\
+    &= \frac{1}{2 p^2} \exp\left( - \frac{a^2 + b^2}{4 p^2} \right) (-i)^{-m} J_m\left( -i \frac{a b}{2 p^2} \right) \tag{43}
+\end{align} 
+$$<p>其中 \(I_m\) 为第一类虚宗量贝塞尔函数，满足 \(I_m(x) = i^{-m} J_m(i x)\) ，取 \(p^2 = \frac{1}{\omega^2} - \frac{i k}{2 z}\), \(a = k_r\), \(b = \frac{k r}{z}\)，得到最终的光场表达式</p>
+$$
+\begin{align}
+    E(r, z) =& -\frac{i}{\lambda} \frac{e^{i k z}}{z} E_0 e^{i m \varphi} \exp\left({\frac{i k}{2z} r^2}\right) 2 \pi \frac{1}{2\left( \frac{1}{\omega^2} - \frac{i k}{2 z} \right)} \cdot \notag\\
+    &\quad \exp\left[ - \frac{k_r^2 + \left( \frac{k r}{z} \right)^2}{4 \left( \frac{1}{\omega^2} - \frac{i k}{2 z} \right)} \right] J_m\left( -i \frac{k_r \frac{k r}{z}}{2 \left( \frac{1}{\omega^2} - \frac{i k}{2 z} \right)} \right) \notag\\ \notag\\
+    =& E_0 \frac{k}{k + 2 i \frac{z}{\omega^2}} \exp\left[ -i \frac{k_r^2}{2 k} z \left( \frac{1 - 2 i \frac{1}{\omega^2} \frac{k}{k_r^2} \frac{r^2}{z}}{1 + 2 i \frac{1}{\omega^2} \frac{z}{k}} \right) \right] J_m\left( \frac{k_r k}{k + 2 i \frac{z}{\omega^2}} r \right) e^{i m \varphi} e^{i k z} \tag{44}
+\end{align} 
+$$<hr>
+<p><strong>参考文献</strong></p>
+<pre tabindex="0"><code>[1] 吕百达. 激光光学光束描述、传输变换与光腔技术物理[M]. 第3版. 北京: 高等教育出版社, 2003: 250-259.
+
+[2] 羊国光, 宋菲君. 高等物理光学[M]. 第2版. 合肥: 中国科学技术大学出版社, 2008: 150-155.
+
+[3] 刘会龙, 胡总华, 夏菁, 等.无衍射光束的产生及其应用[J]. 物理学报, 2018, 67(21):19.
+
+[4] Durnin J .Exact solutions for nondiffracting beams. I. The scalar theory[J].J.opt.soc, 1987, 4:651-654.
+
+[5] Durnin J , Jr M J , Eberly J H .Diffraction-free beams[J].Physical Review Letters, 1987, 58(15):1499-1501.
+</code></pre>
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="500"
+        height="500"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="TrojanPoint"
+        loading="lazy" decoding="async"
+        
+          src="https://trojanpt.github.io/img/_.jpg"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          作者
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          TrojanPoint
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">What is mind? No matter.  What is matter? Never mind.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://github.com/TrojanPt"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="https://trojanpt.github.io/jottings/wigner-rotation/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Wigner 转动的一般情况</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-08-19 00:00:00 &#43;0000 UTC">2025.8.19</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+        
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="pt-3">
+              <script>
+  
+  const initialTheme = document.documentElement.classList.contains('dark') ? "noborder_dark" : "noborder_light";
+  
+  
+  window.giscusConfig = {
+    repo: "TrojanPt/TrojanPt.github.io",
+    repoId: "R_kgDOPC091g",
+    category: "Announcements",
+    categoryId: "DIC_kwDOPC091s4CsJK0",
+    mapping: "pathname",
+    strict: "0",
+    reactionsEnabled: "1",
+    emitMetadata: "0",
+    inputPosition: "top",
+    theme: initialTheme, 
+    lang: "zh-CN",
+    loading: "lazy",
+    crossorigin: "anonymous"
+  };
+
+  
+  function updateGiscusTheme() {
+    const theme = document.documentElement.classList.contains('dark') ? "noborder_dark" : "noborder_light";
+    const giscusFrame = document.querySelector('iframe.giscus-frame');
+    if (giscusFrame) {
+      giscusFrame.contentWindow.postMessage({
+        giscus: {
+          setConfig: {
+            theme: theme
+          }
+        }
+      }, 'https://giscus.app');
+    }
+  }
+
+  
+  new MutationObserver(updateGiscusTheme).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+
+  
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://giscus.app') return;
+    if (event.data?.giscus?.loading === false) {
+      updateGiscusTheme(); 
+    }
+  });
+</script>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="TrojanPt/TrojanPt.github.io"
+        data-repo-id="R_kgDOPC091g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOPC091s4CsJK0"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+<script>
+  if (window.giscusConfig) {
+    document.querySelector('script[src="https://giscus.app/client.js"]')
+      .setAttribute('data-theme', window.giscusConfig.theme);
+  }
+</script>
+            </div>
+          </div>
+        
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="回到顶部"
+            title="回到顶部"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex list-none flex-col sm:flex-row">
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/copyright/"
+                title="Copyright"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >版权声明</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+      </ul>
+    </nav>
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © 2025 TrojanPoint
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="切换为深色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="切换为浅色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+    
+
+
+<script
+type="text/javascript"
+src="https://trojanpt.github.io/background/sakura.min.js"
+integrity=""
+></script>
+
+
+<script defer src="https://events.vercount.one/js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const containers = document.querySelectorAll('.vercount-container[data-url]');
+    containers.forEach(async (container) => {
+        const url = container.getAttribute('data-url');
+        const valueElement = container.querySelector('.vercount_value_page_pv');
+        
+        if (!url || !valueElement) return;
+        
+        try {
+            
+            const response = await fetch("https://events.vercount.one/api/v2/log?url=" + encodeURIComponent(url), {
+                method: "GET",
+                signal: AbortSignal.timeout(5000)
+            });
+            
+            if (response.ok) {
+                const data = await response.json();
+                const pageViews = data.data?.page_pv || 0;
+                valueElement.textContent = pageViews;
+            } else {
+                valueElement.textContent = '-';
+            }
+        } catch (error) {
+            console.warn('Failed to load page views for:', url, error);
+            valueElement.textContent = '-';
+        }
+    });
+});
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contentDiv = document.querySelector('#main-content > article > section > div.min-h-0.min-w-0.max-w-prose.grow');
+        if (!contentDiv) return;
+    
+        
+        
+        const HEIGHT_THRESHOLD = 4000;
+        const SEGMENT_HEIGHT = 3000;
+        
+        
+        const rect = contentDiv.getBoundingClientRect();
+        if (rect.height > HEIGHT_THRESHOLD) {
+            console.log("[Teahouse] Detected long article (" + rect.height + "px). Applying backdrop-filter fix.");
+            
+            
+            contentDiv.classList.add('long-content-reduced-blur');
+            
+            
+            const START_Y = -15;
+            const END_Y = rect.height + 15;
+            const TOTAL_H = END_Y - START_Y; 
+            
+            
+            const count = Math.ceil(TOTAL_H / SEGMENT_HEIGHT);
+            
+            for (let i = 0; i < count; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('backdrop-segment');
+                
+                const segmentTop = START_Y + (i * SEGMENT_HEIGHT);
+                
+                
+                
+                const remaining = END_Y - segmentTop;
+                const segmentHeight = Math.min(SEGMENT_HEIGHT, remaining);
+                
+                segment.style.top = segmentTop + 'px';
+                segment.style.height = segmentHeight + 'px';
+
+                
+                if (i === 0) {
+                    segment.classList.add('segment-top');
+                }
+                if (i === count - 1) {
+                    segment.classList.add('segment-bottom');
+                }
+                contentDiv.appendChild(segment);
+            }
+        }
+    });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const fixKatexTags = () => {
+        
+        const displays = document.querySelectorAll('.katex-display');
+        displays.forEach(display => {
+            const tag = display.querySelector('.tag');
+            
+            
+            
+            if (!tag) return;
+            
+            
+            const wrapper = tag.closest('.katex-html') || tag.parentElement;
+            if (!wrapper) return;
+
+            
+            tag.style.right = ''; 
+
+            const wrapperRect = wrapper.getBoundingClientRect();
+            
+            if (wrapperRect.width === 0) return;
+
+            
+            
+            let maxContentRight = 0;
+            const children = Array.from(wrapper.children);
+            children.forEach(child => {
+                if (child !== tag) {
+                    const r = child.getBoundingClientRect();
+                    
+                    if (r.right > maxContentRight) {
+                        maxContentRight = r.right;
+                    }
+                }
+            });
+
+            
+            if (maxContentRight === 0) return;
+
+            
+            
+            
+            
+            
+            
+            const tagWidth = tag.getBoundingClientRect().width;
+            const gap = 20; 
+            
+            
+            const minTagLeft = maxContentRight + gap;
+            
+            
+            const minTagRight = minTagLeft + tagWidth;
+            
+            
+            const targetTagRight = Math.max(wrapperRect.right, minTagRight);
+            
+            
+            
+            
+            
+            
+            
+            
+            if (targetTagRight > wrapperRect.right) {
+                
+                
+                const offset = wrapperRect.right - targetTagRight;
+                tag.style.right = offset + 'px';
+            }
+        });
+    };
+
+    
+    fixKatexTags();
+    
+    
+    window.addEventListener('resize', fixKatexTags);
+    
+    
+    window.addEventListener('load', fixKatexTags);
+});
+</script>
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://trojanpt.github.io/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

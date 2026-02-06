@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>贝塞尔光束的衍射性质</title>
+      <link>https://trojanpt.github.io/jottings/bessel-beam/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/bessel-beam/</guid>
+      <description>贝塞尔光束表现出无衍射特性，这类光束具有新颖且独特的光学性质</description>
+    </item>
     <item>
       <title>Wigner 转动的一般情况</title>
       <link>https://trojanpt.github.io/jottings/wigner-rotation/</link>

@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.42f6a44ef147ee46c18a0036d8fc36b1fce238fad971faf2b700d6d8f3e2fa80.css"
-    integrity="sha256-QvakTvFH7kbBigA22Pw2sfziOPrZcfrytwDW2PPi&#43;oA="
+    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
+    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
   />
   
     
@@ -66,8 +66,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="https://trojanpt.github.io/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
-      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
+      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
+      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
       data-copy="Copy"
       data-copied="Copied"
     ></script>
@@ -933,7 +933,8 @@
 
 <blockquote>
 <p>​	Feynman mentions in his lectures on physics Vol. I, §39-4 that if the pressures on both sides of a smooth adiabatic piston are equal but the temperatures are unequal, energy will transfer from the higher-temperature gas to the lower-temperature gas through microscopic vibrations of the piston, even when all heat conduction is neglected.</p>
-<p>​	This article attempts to examine microscopically whether the piston can achieve equilibrium and the process of reaching the final equilibrium state.</p></blockquote>
+<p>​	This article attempts to examine microscopically whether the piston can achieve equilibrium and the process of reaching the final equilibrium state.</p>
+</blockquote>
 <p>We begin our discussion with a simple model: As shown in <strong>Fig. 1</strong>, a smooth adiabatic piston divides an adiabatic container into two compartments. For the piston, the cross-sectional area is denoted by \(A\) and its mass by \(M\). For the gas, the mass of a single molecule is denoted by \(m ({\ll} M)\), the constant-pressure molar heat capacity by \(C^{mol}_p\), and the gas can be treated as ideal.</p>
 <p>In the initial state, the amount of substance of the left gas is \(\nu_1\), pressure \(p_0\), temperature \(T_{10}\); the right gas has amount of substance \(\nu_2\), pressure \(p_0\), and temperature \(T_{20} (> T_{10})\).</p>
 <p>At some time \(t\) during the process, let the pressure of the left gas be \(p\), temperature \(T_{1}\); the right gas has pressure \(p\), temperature \(T_{2}\). The velocity of the piston is \(u\) (defined as positive to the right).</p>
@@ -1440,6 +1441,146 @@ document.addEventListener('DOMContentLoaded', function() {
             valueElement.textContent = '-';
         }
     });
+});
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contentDiv = document.querySelector('#main-content > article > section > div.min-h-0.min-w-0.max-w-prose.grow');
+        if (!contentDiv) return;
+    
+        
+        
+        const HEIGHT_THRESHOLD = 4000;
+        const SEGMENT_HEIGHT = 3000;
+        
+        
+        const rect = contentDiv.getBoundingClientRect();
+        if (rect.height > HEIGHT_THRESHOLD) {
+            console.log("[Teahouse] Detected long article (" + rect.height + "px). Applying backdrop-filter fix.");
+            
+            
+            contentDiv.classList.add('long-content-reduced-blur');
+            
+            
+            const START_Y = -15;
+            const END_Y = rect.height + 15;
+            const TOTAL_H = END_Y - START_Y; 
+            
+            
+            const count = Math.ceil(TOTAL_H / SEGMENT_HEIGHT);
+            
+            for (let i = 0; i < count; i++) {
+                const segment = document.createElement('div');
+                segment.classList.add('backdrop-segment');
+                
+                const segmentTop = START_Y + (i * SEGMENT_HEIGHT);
+                
+                
+                
+                const remaining = END_Y - segmentTop;
+                const segmentHeight = Math.min(SEGMENT_HEIGHT, remaining);
+                
+                segment.style.top = segmentTop + 'px';
+                segment.style.height = segmentHeight + 'px';
+
+                
+                if (i === 0) {
+                    segment.classList.add('segment-top');
+                }
+                if (i === count - 1) {
+                    segment.classList.add('segment-bottom');
+                }
+                contentDiv.appendChild(segment);
+            }
+        }
+    });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const fixKatexTags = () => {
+        
+        const displays = document.querySelectorAll('.katex-display');
+        displays.forEach(display => {
+            const tag = display.querySelector('.tag');
+            
+            
+            
+            if (!tag) return;
+            
+            
+            const wrapper = tag.closest('.katex-html') || tag.parentElement;
+            if (!wrapper) return;
+
+            
+            tag.style.right = ''; 
+
+            const wrapperRect = wrapper.getBoundingClientRect();
+            
+            if (wrapperRect.width === 0) return;
+
+            
+            
+            let maxContentRight = 0;
+            const children = Array.from(wrapper.children);
+            children.forEach(child => {
+                if (child !== tag) {
+                    const r = child.getBoundingClientRect();
+                    
+                    if (r.right > maxContentRight) {
+                        maxContentRight = r.right;
+                    }
+                }
+            });
+
+            
+            if (maxContentRight === 0) return;
+
+            
+            
+            
+            
+            
+            
+            const tagWidth = tag.getBoundingClientRect().width;
+            const gap = 20; 
+            
+            
+            const minTagLeft = maxContentRight + gap;
+            
+            
+            const minTagRight = minTagLeft + tagWidth;
+            
+            
+            const targetTagRight = Math.max(wrapperRect.right, minTagRight);
+            
+            
+            
+            
+            
+            
+            
+            
+            if (targetTagRight > wrapperRect.right) {
+                
+                
+                const offset = wrapperRect.right - targetTagRight;
+                tag.style.right = offset + 'px';
+            }
+        });
+    };
+
+    
+    fixKatexTags();
+    
+    
+    window.addEventListener('resize', fixKatexTags);
+    
+    
+    window.addEventListener('load', fixKatexTags);
 });
 </script>
   
