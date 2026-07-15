@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
-    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
+    href="https://trojanpt.github.io/css/main.bundle.min.2b0da29ebaf86ff97e255aa58837f765e81b6c0589e3283228daf5be50c8377e.css"
+    integrity="sha256-Kw2inrr4b/l&#43;JVqliDf3ZegbbAWJ4ygyKNr1vlDIN34="
   />
   
     
@@ -66,8 +66,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
-      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
+      src="https://trojanpt.github.io/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
       data-copy="Copy"
       data-copied="Copied"
     ></script>
@@ -205,7 +205,7 @@
     defer
     src="https://trojanpt.github.io/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
     integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
-    onload="renderMathInElement(document.body);"
+    onload="renderMathInElement(document.body, { delimiters: [ { left: '$$', right: '$$', display: true }, { left: '\\[', right: '\\]', display: true }, { left: '$', right: '$', display: false }, { left: '\\(', right: '\\)', display: false } ] });"
   ></script>
   
   
@@ -1041,8 +1041,7 @@ $$
                 -\sh\theta\boldsymbol{e}\cdot \mathbf{R}_{11} & \ch\theta
             \end{bmatrix} \tag{10}
         \end{align} $$<blockquote>
-<p>Note that here (and below) \(\boldsymbol{e} \cdot \mathbf{R}_{11}\) denotes \(e_i R_{ij}\), i.e. \(\boldsymbol{e}^T \mathbf{R}_{11}\).</p>
-</blockquote>
+<p>Note that here (and below) \(\boldsymbol{e} \cdot \mathbf{R}_{11}\) denotes \(e_i R_{ij}\), i.e. \(\boldsymbol{e}^T \mathbf{R}_{11}\).</p></blockquote>
 <p>Moreover, \(\mathbf{R}_{11}\) is a (pure) rotation matrix.</p>
 <p>Thus to verify equality of the two sides we proceed:</p>
 <ol>
@@ -1050,8 +1049,7 @@ $$
 <li>Make an ansatz for \(\boldsymbol{\beta}\).</li>
 <li>Using the ansatz compute \(\hat{R} = \hat{Q}^{-1}(\boldsymbol{\beta})\hat{Q}(\boldsymbol{\beta_2})\hat{Q}(\boldsymbol{\beta_1})\).</li>
 <li>Show \(\hat{R}\) is a pure spatial rotation; the ansatz is then confirmed.</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p>We can verify</p>
 $$
 \begin{cases}
@@ -1113,8 +1111,7 @@ $$
 \end{align}
 $$<blockquote>
 <p>We observe that \(r_{22} = 1\) and \(\boldsymbol{r}_{12}=\boldsymbol{0}\); thus indeed \(-\sh\theta\ \ \boldsymbol{e} = \boldsymbol{a}_{12}\), confirming the ansatz (13).</p>
-<p>Next we must show that \(\mathbf{R}_{11}\) is a pure rotation matrix.</p>
-</blockquote>
+<p>Next we must show that \(\mathbf{R}_{11}\) is a pure rotation matrix.</p></blockquote>
 <p>Since
 </p>
 $$
@@ -1211,8 +1208,7 @@ $$
         \boldsymbol{e}_1 \cdot \boldsymbol{e}_2 & 1
     \end{bmatrix}
 \right) = 1 \tag{26} $$<p>
-Thus, we need to verify (23) and (26).</p>
-</blockquote>
+Thus, we need to verify (23) and (26).</p></blockquote>
 <p>The coefficients are
 </p>
 $$
@@ -1264,8 +1260,7 @@ $$ r'_i = \left[ n_i n_j + (\delta_{ij} - n_i n_j) \cos\phi - \varepsilon_{ijk} 
 $$ R_{ij} = n_i n_j + (\delta_{ij} - n_i n_j) \cos\phi - \varepsilon_{ijk} n_k \sin\phi \tag{35} $$</blockquote>
 <p>We now decompose the identity \(\mathbf{I}\).</p>
 <blockquote>
-<p>Our goal is to decompose the identity appearing in (19). The ambient space is \(\mathbb{R}^3\); hence \( (\operatorname{span}\{\boldsymbol{e}_1, \boldsymbol{e}_2\})^\perp \cong \mathbb{R}^1\). Let \(\boldsymbol{e}_{\bot}\) be a unit vector spanning this orthogonal complement.</p>
-</blockquote>
+<p>Our goal is to decompose the identity appearing in (19). The ambient space is \(\mathbb{R}^3\); hence \( (\operatorname{span}\{\boldsymbol{e}_1, \boldsymbol{e}_2\})^\perp \cong \mathbb{R}^1\). Let \(\boldsymbol{e}_{\bot}\) be a unit vector spanning this orthogonal complement.</p></blockquote>
 <p>Let
 </p>
 $$
@@ -1374,8 +1369,7 @@ $$<blockquote>
 <p>Alternatively,
 </p>
 $$\hat{Q}\left( \mathbf{R}_{11}^T \cdot \boldsymbol{\beta} \right) = \hat{R}^T \hat{Q}\left(\boldsymbol{\beta} \right) \hat{R} \tag{54}$$<p>
-which is immediate from spatial rotational symmetry of the Lorentz group.</p>
-</blockquote>
+which is immediate from spatial rotational symmetry of the Lorentz group.</p></blockquote>
 <h4 id="ii-low-velocity-approximation" class="relative group">(ii) Low-Velocity Approximation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ii-low-velocity-approximation" aria-label="Anchor">#</a></span></h4><p>Consider the limit \(\beta_1, \beta_2 \to 0\). Then
 </p>
 $$

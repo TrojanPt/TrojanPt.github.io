@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
-    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
+    href="https://trojanpt.github.io/css/main.bundle.min.2b0da29ebaf86ff97e255aa58837f765e81b6c0589e3283228daf5be50c8377e.css"
+    integrity="sha256-Kw2inrr4b/l&#43;JVqliDf3ZegbbAWJ4ygyKNr1vlDIN34="
   />
   
     
@@ -66,8 +66,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
-      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
+      src="https://trojanpt.github.io/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
       data-copy="Copy"
       data-copied="Copied"
     ></script>
@@ -205,7 +205,7 @@
     defer
     src="https://trojanpt.github.io/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
     integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
-    onload="renderMathInElement(document.body);"
+    onload="renderMathInElement(document.body, { delimiters: [ { left: '$$', right: '$$', display: true }, { left: '\\[', right: '\\]', display: true }, { left: '$', right: '$', display: false }, { left: '\\(', right: '\\)', display: false } ] });"
   ></script>
   
   
@@ -985,8 +985,7 @@ $$</blockquote>
 </ol>
 <p>This implies that for first-order small vibrations near the stable equilibrium position of a multi-degree-of-freedom system, there exist normal coordinates equal in number to its degrees of freedom.</p>
 <blockquote>
-<p>\(\lambda_i >0\) means the motion described is oscillatory (normal modes). The geometric multiplicity of \(\mathbf{A}\) equaling \(n\) implies the number of normal coordinates matches the system&rsquo;s degrees of freedom. Hence the statement: <em>there exist normal coordinates equal in number to its degrees of freedom</em>.</p>
-</blockquote>
+<p>\(\lambda_i >0\) means the motion described is oscillatory (normal modes). The geometric multiplicity of \(\mathbf{A}\) equaling \(n\) implies the number of normal coordinates matches the system&rsquo;s degrees of freedom. Hence the statement: <em>there exist normal coordinates equal in number to its degrees of freedom</em>.</p></blockquote>
 <p>This article aims to discuss the existence of these conditions.</p>
 <blockquote>
 <p>Similarly, under the alternative approach, the statement &lsquo;<em>solves for the normal mode frequencies \(\omega_i\) and the corresponding eigenvectors \(\bm{x_i}\) \((i=1,2,\cdots, n)\)</em>&rsquo; is not self-evident. Potential issues are</p>
@@ -994,8 +993,7 @@ $$</blockquote>
 <li>\(\omega_i\) being imaginary ( \(\omega_i^2 < 0\) ).</li>
 <li>The geometric multiplicity of \(\mathbf{A}\) being less than \(n\). Even over \(\mathbb{C}\), \(n\) linearly independent eigenvectors \(\bm{x_i}\) may not exist if there are degenerate eigenvalues. Consequently, \(\bm{x}\) could have particular solutions not expressible as trigonometric functions (or finite sums thereof).</li>
 </ol>
-<p>These two points are equivalent to the two points above. We need to discuss whether such situations can occur.</p>
-</blockquote>
+<p>These two points are equivalent to the two points above. We need to discuss whether such situations can occur.</p></blockquote>
 <h2 id="existence-of-normal-coordinates" class="relative group">Existence of Normal Coordinates <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#existence-of-normal-coordinates" aria-label="Anchor">#</a></span></h2><p>For first-order small vibrations near the stable equilibrium position of a multi-degree-of-freedom system, the equations of motion can be written as
 </p>
 $$

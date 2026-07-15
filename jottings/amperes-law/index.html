@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
-    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
+    href="https://trojanpt.github.io/css/main.bundle.min.2b0da29ebaf86ff97e255aa58837f765e81b6c0589e3283228daf5be50c8377e.css"
+    integrity="sha256-Kw2inrr4b/l&#43;JVqliDf3ZegbbAWJ4ygyKNr1vlDIN34="
   />
   
     
@@ -66,8 +66,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
-      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
+      src="https://trojanpt.github.io/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
       data-copy="复制"
       data-copied="已复制"
     ></script>
@@ -205,7 +205,7 @@
     defer
     src="https://trojanpt.github.io/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
     integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
-    onload="renderMathInElement(document.body);"
+    onload="renderMathInElement(document.body, { delimiters: [ { left: '$$', right: '$$', display: true }, { left: '\\[', right: '\\]', display: true }, { left: '$', right: '$', display: false }, { left: '\\(', right: '\\)', display: false } ] });"
   ></script>
   
   
@@ -926,8 +926,7 @@
         
 
 <blockquote>
-<p>Ampere 定律给出了如何计算两电流源间作用力的方法，但实际上，现行的 Ampere 定律的形式并不是 Ampere 最初提出的形式，二者在数学形式上有所差异，但是对于稳恒情况，在物理上并无实际测量意义上的区别。</p>
-</blockquote>
+<p>Ampere 定律给出了如何计算两电流源间作用力的方法，但实际上，现行的 Ampere 定律的形式并不是 Ampere 最初提出的形式，二者在数学形式上有所差异，但是对于稳恒情况，在物理上并无实际测量意义上的区别。</p></blockquote>
 <p><strong>Ampere 定律原始形式</strong>
 </p>
 $$
@@ -937,11 +936,9 @@ $$<p><strong>现行的 Ampere 定律形式（Grassmann 形式）</strong>
 $$
 d\vec{F}_{12} = k \ \frac{i_1 i_2}{r_{12}^3} d\vec{l}_2 \times (d\vec{l}_1 \times \vec{r}_{12}) \notag
 $$<blockquote>
-<p>本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。</p>
-</blockquote>
+<p>本文将介绍 Ampere 定律的原始形式的推导过程，并对其与现行形式进行讨论。</p></blockquote>
 <h2 id="一原始-ampere-定律的导出过程" class="relative group">一、原始 Ampere 定律的导出过程 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%80%e5%8e%9f%e5%a7%8b-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e5%af%bc%e5%87%ba%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span></h2><blockquote>
-<p>Ampere 关于电流相互作用的理论建立在四个实验证据和一个假设之上（Ampere&rsquo;s theory of the mutual action of electric currents is founded on four experimental facts and one assumption）&quot;，Maxwell 在他的  A Treatise on Electricity and Magnetism 一书的最后一章中如此写道。本小节尝试从 Ampere 所做的四个实验以及他的一个假设出发，推导出原始的 Ampere 定律。</p>
-</blockquote>
+<p>Ampere 关于电流相互作用的理论建立在四个实验证据和一个假设之上（Ampere&rsquo;s theory of the mutual action of electric currents is founded on four experimental facts and one assumption）&quot;，Maxwell 在他的  A Treatise on Electricity and Magnetism 一书的最后一章中如此写道。本小节尝试从 Ampere 所做的四个实验以及他的一个假设出发，推导出原始的 Ampere 定律。</p></blockquote>
 <h3 id="实验依据" class="relative group">实验依据 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%ae%9e%e9%aa%8c%e4%be%9d%e6%8d%ae" aria-label="锚点">#</a></span></h3><p>Ampere 的四个实验均采用了“示零法”，即通过构造平衡状态判断电流间相互作用力大小相等的方式。考虑到地磁的干扰，Ampere 设计了如图 1 所示的测量装置，称其为“无定向秤“（astatic）。它在均匀磁场（如地磁场）中不受力和力矩，可以随遇平衡，但对于非均匀磁场将会作出反应。考虑到无定向秤本身产生的磁场，在实际的实验中，需要先接通无定向秤的电源，调整到平衡状态后，再接通实验电路，观察无定向秤是否作出反应。</p>
 <figure style="text-align: center;">
     <img src="p1.jpg" alt="图 1 无定向秤" style="position: relative; left: 50%; transform: translateX(-50%); zoom:70%; border-radius: 12px;" />
@@ -1020,8 +1017,7 @@ $$ (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\gamma ({r}_{12})_\mu \cdots \tag{7
 <p>1） \( (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\alpha ({r}_{12})_\beta \cdots \)</p>
 <p>即 \( (d\vec{l}_1 \cdot \vec{\gamma}_{12})(d\vec{l}_2 \cdot \vec{\gamma}_{12}) \) 项</p>
 <p>2） \( \varepsilon_{\gamma\alpha\beta} (d{l}_1)_\alpha (d{l}_2)_\beta ({r}_{12})_\gamma \cdots \)</p>
-<p>即 \( (d\vec{l}_1 \times d\vec{l}_2) \cdot \vec{\gamma}_{12} \) 项</p>
-</blockquote>
+<p>即 \( (d\vec{l}_1 \times d\vec{l}_2) \cdot \vec{\gamma}_{12} \) 项</p></blockquote>
 <p>考虑（4），从而
 </p>
 $$
@@ -1087,8 +1083,7 @@ $$<p>
 此即 Ampere 定律的原始形式。</p>
 <h2 id="二原始-ampere-定律的适用性讨论" class="relative group">二、原始 Ampere 定律的适用性讨论 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%ba%8c%e5%8e%9f%e5%a7%8b-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e9%80%82%e7%94%a8%e6%80%a7%e8%ae%a8%e8%ae%ba" aria-label="锚点">#</a></span></h2><blockquote>
 <p>在稳恒情况下，由于实际情形下一对电流元间的作用力不可测量，</p>
-<p>实际有测量意义的物理量至少应是闭合回路对电流元的作用力</p>
-</blockquote>
+<p>实际有测量意义的物理量至少应是闭合回路对电流元的作用力</p></blockquote>
 $$
 \begin{align}
 d\vec{F}_{L_1,2} =& \oint_{L_1} d\vec{F}_{12} \notag \\
@@ -1104,8 +1099,7 @@ $$$$
 \vec{r}_{12} (d\vec{r}_{12} \cdot d\vec{l}_2) - d\vec{r}_{12} (d\vec{r}_{12} \cdot d\vec{l}_2) = d\vec{l}_2 \times (\vec{r}_{12} \times d\vec{r}_{12}) \tag{19}
 $$<blockquote>
 <p>由此可见，现行 Ampere 定律与原始 Ampere 定律相差一个全微分项</p>
-<p>因此对稳恒情形下的闭合回路，二者没有实际意义上的区别</p>
-</blockquote>
+<p>因此对稳恒情形下的闭合回路，二者没有实际意义上的区别</p></blockquote>
 <p>从而
 </p>
 $$
@@ -1119,8 +1113,7 @@ $$<p>
 与现行 Ampere 定律所得结果一致</p>
 <h2 id="三为什么使用现行-ampere-定律的形式" class="relative group">三、为什么使用现行 Ampere 定律的形式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%89%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bd%bf%e7%94%a8%e7%8e%b0%e8%a1%8c-ampere-%e5%ae%9a%e5%be%8b%e7%9a%84%e5%bd%a2%e5%bc%8f" aria-label="锚点">#</a></span></h2><blockquote>
 <p>虽然实际情况下不存在稳定的电流元，</p>
-<p>但在非稳定情况下可以存在</p>
-</blockquote>
+<p>但在非稳定情况下可以存在</p></blockquote>
 <p>例如，运动的点电荷即可视为独立存在的电流元，有<br>
 </p>
 $$

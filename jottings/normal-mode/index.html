@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
-    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
+    href="https://trojanpt.github.io/css/main.bundle.min.2b0da29ebaf86ff97e255aa58837f765e81b6c0589e3283228daf5be50c8377e.css"
+    integrity="sha256-Kw2inrr4b/l&#43;JVqliDf3ZegbbAWJ4ygyKNr1vlDIN34="
   />
   
     
@@ -66,8 +66,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
-      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
+      src="https://trojanpt.github.io/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
       data-copy="复制"
       data-copied="已复制"
     ></script>
@@ -205,7 +205,7 @@
     defer
     src="https://trojanpt.github.io/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
     integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
-    onload="renderMathInElement(document.body);"
+    onload="renderMathInElement(document.body, { delimiters: [ { left: '$$', right: '$$', display: true }, { left: '\\[', right: '\\]', display: true }, { left: '$', right: '$', display: false }, { left: '\\(', right: '\\)', display: false } ] });"
   ></script>
   
   
@@ -977,8 +977,7 @@ $$</blockquote>
 </ol>
 <p>即是说，对多自由度体系稳定平衡位置附近的一阶小振动，存在与其自由度数量相等的简正坐标。</p>
 <blockquote>
-<p>\(\lambda_i >0\) 意即其描述的运动为简正模式， \(\mathbf{A}\) 的几何重数 \(=n\) 意即简正坐标的数量与体系自由度一致。从而说，<em>存在与其自由度数量相等的简正坐标</em> 。</p>
-</blockquote>
+<p>\(\lambda_i >0\) 意即其描述的运动为简正模式， \(\mathbf{A}\) 的几何重数 \(=n\) 意即简正坐标的数量与体系自由度一致。从而说，<em>存在与其自由度数量相等的简正坐标</em> 。</p></blockquote>
 <p>本文即意在对于其存在性展开讨论。</p>
 <blockquote>
 <p>同样地，在另一种说法下，即是说，上述『 <em>可解得简振频率 \(\omega_i\) 以及对应的特征值 \(\bm{x_i}\) \((i=1,2,\cdots, n)\)</em> 』并不显然成立。即</p>
@@ -986,8 +985,7 @@ $$</blockquote>
 <li>\(\omega _i\) 为虚数，即 \(\omega_i^2<0\) 的情况</li>
 <li>系数矩阵 \(\mathbf{A}\) 的几何重数 \(< n\) 的情况。即是说，即使在 \(\mathbb{C}\) 内，也不一定存在 \(n\) 个线性无关的特征值 \(\bm{x_i}\) ，当其对应的特征值有简并时，这是可能发生的。从而 \(\bm{x}\) 存在不能表示成三角函数（或有限个三角函数相加的）形式的特解</li>
 </ol>
-<p>这两点与正文中的两点是等价的。对于是否会发生这些情况，这是我们需要讨论的。</p>
-</blockquote>
+<p>这两点与正文中的两点是等价的。对于是否会发生这些情况，这是我们需要讨论的。</p></blockquote>
 <h2 id="简正坐标的存在性" class="relative group">简正坐标的存在性 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%ae%80%e6%ad%a3%e5%9d%90%e6%a0%87%e7%9a%84%e5%ad%98%e5%9c%a8%e6%80%a7" aria-label="锚点">#</a></span></h2><p>对多自由度体系稳定平衡位置附近的一阶小振动，其动力学方程可写作
 </p>
 $$

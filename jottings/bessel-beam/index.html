@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://trojanpt.github.io/css/main.bundle.min.62b58b6e48128bdd36ca89a9254f3828cb8f46e5a3031639f7acabb988a9983d.css"
-    integrity="sha256-YrWLbkgSi902yompJU84KMuPRuWjAxY596yruYipmD0="
+    href="https://trojanpt.github.io/css/main.bundle.min.2b0da29ebaf86ff97e255aa58837f765e81b6c0589e3283228daf5be50c8377e.css"
+    integrity="sha256-Kw2inrr4b/l&#43;JVqliDf3ZegbbAWJ4ygyKNr1vlDIN34="
   />
   
     
@@ -66,8 +66,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="https://trojanpt.github.io/js/main.bundle.min.d97ddc5ab27d9f764a39a1e9c14f27b5583e3d47287e6278766921e42cb09f55.js"
-      integrity="sha256-2X3cWrJ9n3ZKOaHpwU8ntVg&#43;PUcofmJ4dmkh5Cywn1U="
+      src="https://trojanpt.github.io/js/main.bundle.min.cbcb4d7ec04757d63c3fea9f6faa3642cdcd3084b80ca1990969d9201ca349c9.js"
+      integrity="sha256-y8tNfsBHV9Y8P&#43;qfb6o2Qs3NMIS4DKGZCWnZIByjSck="
       data-copy="复制"
       data-copied="已复制"
     ></script>
@@ -205,7 +205,7 @@
     defer
     src="https://trojanpt.github.io/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
     integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
-    onload="renderMathInElement(document.body);"
+    onload="renderMathInElement(document.body, { delimiters: [ { left: '$$', right: '$$', display: true }, { left: '\\[', right: '\\]', display: true }, { left: '$', right: '$', display: false }, { left: '\\(', right: '\\)', display: false } ] });"
   ></script>
   
   
@@ -777,8 +777,7 @@
 <blockquote>
 <p>光波的传输通常会受到衍射效应的影响，导致横向光场分布随传播距离增加而发散，这一现象限制了其在对光束准直性敏感的领域的应用。1987年，Durnin 等人提出了一类标量亥姆霍兹方程的特殊解，即<strong>贝塞尔光束</strong>（Bessel Beam）。贝塞尔光束具有一系列独特的传输特性。理想的贝塞尔光束在自由空间传播时，其横向光强分布保持不变，具有高度局域化强度分布。此外，贝塞尔光束还表现出自愈特性，当光束经过光阑后，在一定传播距离后能够自重建出原始光场。Durnin 将符合这些特性的光束称为<strong>无衍射光束</strong>（Diffraction-free Beam），这类光束新颖且独特的性质使得其在激光打孔、微粒操控、精密准直等领域展现出广泛的应用前景。</p>
 <p>然而，理想的贝塞尔光束在全空间内非平方可积，意味着其携带无限大的能量，这与现实相悖。实际应用中，通常通过环缝 - 透镜系统、轴棱锥等光学元件产生近似贝塞尔光束。这类光束在有限的传播距离内能够较好地符合理想贝塞尔光束的无衍射与自愈特性。</p>
-<p>本文旨在探讨贝塞尔光束的衍射特性及其经光阑后的自愈机制，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性。</p>
-</blockquote>
+<p>本文旨在探讨贝塞尔光束的衍射特性及其经光阑后的自愈机制，利用理想贝塞尔光束以及环缝 - 透镜系统产生的近似贝塞尔光束的光束方程，分析其无衍射性质以及通过高斯型软边光阑后的衍射特性。</p></blockquote>
 <h2 id="1---贝塞尔光束" class="relative group">1   贝塞尔光束 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1---%e8%b4%9d%e5%a1%9e%e5%b0%94%e5%85%89%e6%9d%9f" aria-label="锚点">#</a></span></h2><h3 id="11---理论公式" class="relative group">1.1   理论公式 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#11---%e7%90%86%e8%ae%ba%e5%85%ac%e5%bc%8f" aria-label="锚点">#</a></span></h3><p>考虑在柱坐标系下求解标量亥姆霍兹方程</p>
 $$
 \nabla^2 u + k^2 u = 0 \tag{1}
@@ -820,7 +819,7 @@ $$<p>附录 \(4.1\) 给出了具体的推导过程。其中 \(k_r^2 = k^2 - k_z^
         <source
           
             
-              srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_0_2d_hu_16ad75d268cb3da4.webp"
+              srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_0_2d_hu_2acd18e21499a227.webp"
             
           
           sizes="100vw"
@@ -872,7 +871,7 @@ $$<p>附录 \(4.1\) 给出了具体的推导过程。其中 \(k_r^2 = k^2 - k_z^
         <source
           
             
-              srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_1_2d_hu_9a922f97a824d3b3.webp"
+              srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_1_1_2d_hu_10698c9f089ac8d5.webp"
             
           
           sizes="100vw"
@@ -991,15 +990,15 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_f11f1b2ec251a024.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_f281e33490be5c9e.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_c0fc9d5490a6872d.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_248007a344c1b7ab.webp 660w
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_df7ae8d3188ebaa6.webp 840w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_ee77edde72bea1d2.webp 840w
               
             
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_df7ae8d3188ebaa6.webp 840w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_ee77edde72bea1d2.webp 840w
               
             "
           
@@ -1014,7 +1013,7 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
         alt="近似贝塞尔光束横向光强分布 z - f = 100 mm"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_1a939d2468f2eac.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_81e60f497b2c697e.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_1a939d2468f2eac.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_d14727bc538959d2.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_18160d93176e7f57.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100_hu_d14727bc538959d2.png 660w
           
             ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_100.png 840w
           
@@ -1058,15 +1057,15 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_62e9fda52fbceb3f.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_65b312eb23c66b4c.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_bfb34b2a640fc2e6.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_9dd98671a14f8b27.webp 660w
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e1d8a04b2e7bfc19.webp 839w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_9dcf6557f8381319.webp 839w
               
             
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e1d8a04b2e7bfc19.webp 839w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_9dcf6557f8381319.webp 839w
               
             "
           
@@ -1081,7 +1080,7 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
         alt="近似贝塞尔光束横向光强分布 z - f = 400 mm"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e7d743365c356330.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_88ea6a58eb4cf08f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_e7d743365c356330.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_8dda2a7410d0a95a.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_2ef0e0d9f7bab03f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400_hu_8dda2a7410d0a95a.png 660w
           
             ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_400.png 839w
           
@@ -1129,15 +1128,15 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_584c1319108cfec6.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_15a61086dc60eefd.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_df2f5f56328912f4.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_cb11e85d9f1cae5f.webp 660w
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_127f492ee9001805.webp 840w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_1348eb4a4299ae2.webp 840w
               
             
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_127f492ee9001805.webp 840w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_1348eb4a4299ae2.webp 840w
               
             "
           
@@ -1152,7 +1151,7 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
         alt="近似贝塞尔光束横向光强分布 z - f = 700 mm"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_9283d931bd5a7892.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_9f65d2e089e6cb48.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_9283d931bd5a7892.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_b8d7d44227b7031c.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_1730a68318c50222.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700_hu_b8d7d44227b7031c.png 660w
           
             ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_700.png 840w
           
@@ -1196,15 +1195,15 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_c432910d4657751a.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_397c36a2e62b0ebe.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_db1b8e792fa3e221.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_aba0b7c2618cdcd8.webp 660w
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_7542942c41921504.webp 839w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_b0f90a0790fdcfb7.webp 839w
               
             
             
               
-                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_7542942c41921504.webp 839w
+                ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_b0f90a0790fdcfb7.webp 839w
               
             "
           
@@ -1219,7 +1218,7 @@ $$<p>即反映了近似贝塞尔光束的有限无衍射距离。</p>
         alt="近似贝塞尔光束横向光强分布 z - f = 1000 mm"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_163297b68bace164.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_d5dd16177ca59a2e.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_163297b68bace164.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_3e20464a03f0f099.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_445e5bca4bf7111f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000_hu_3e20464a03f0f099.png 660w
           
             ,https://trojanpt.github.io/jottings/bessel-beam/Figure_4_1000.png 839w
           
@@ -1290,12 +1289,12 @@ $$<p>符合贝塞尔光束的形式。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_11f7d2d618322792.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_81f0ea3ec6780006.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_50ec29c8c9b0ca95.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_6b2366b62d4398af.webp 660w
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_7d1d6d8c70a7d720.webp 1024w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_9180192956ae4100.webp 1024w
             
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_329043cb9ccd2d31.webp 1320w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_5f49483a9c50703f.webp 1320w
             "
           
           sizes="100vw"
@@ -1309,12 +1308,12 @@ $$<p>符合贝塞尔光束的形式。</p>
         alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 1 m"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_ff278818f3d7d5c4.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_799e6d8700016c41.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_ff278818f3d7d5c4.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_c94eb06299a672ed.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_127b2225f76a3b22.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_c94eb06299a672ed.png 660w
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_b00d664fc978fcb0.png 1024w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_583f7dee3a88ee8c.png 1024w
           
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_b24f0441fbe4543b.png 1320w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z1000_hu_2cc474d825ece163.png 1320w
           "
           sizes="100vw"
         
@@ -1353,12 +1352,12 @@ $$<p>符合贝塞尔光束的形式。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_2f2a5612748f2202.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_7d6987ee0e901601.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_c4ac8f291d08c04f.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_f44014ac21d5c99b.webp 660w
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_af6c71a52a565580.webp 1024w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_4656f0c3319856.webp 1024w
             
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_eda95d2b5f9f77ff.webp 1320w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_64c3192e5f811c55.webp 1320w
             "
           
           sizes="100vw"
@@ -1372,12 +1371,12 @@ $$<p>符合贝塞尔光束的形式。</p>
         alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 10 m"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_76eb2ed7e02795e1.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_d57c5bae277e66a8.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_76eb2ed7e02795e1.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_81fa448337b53699.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_866d8d84c6d66e1f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_81fa448337b53699.png 660w
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_96710646b507bdb.png 1024w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_fe82d9f773201e64.png 1024w
           
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_b8e427801f4bc3b4.png 1320w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z10000_hu_2258131e23b1a6b5.png 1320w
           "
           sizes="100vw"
         
@@ -1420,12 +1419,12 @@ $$<p>符合贝塞尔光束的形式。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_1089f9f3bd017a75.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_74b04942b1e3f6c3.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_9a37c7a74d5fd9e4.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_ef56c019eccea96f.webp 660w
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_535eab6c9cc4022a.webp 1024w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_141e24e95ba363e7.webp 1024w
             
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_43df268801642b6d.webp 1320w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_4731db5300142b72.webp 1320w
             "
           
           sizes="100vw"
@@ -1439,12 +1438,12 @@ $$<p>符合贝塞尔光束的形式。</p>
         alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 15 m"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_6b180fbdf8bb4d14.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_5a01b450f3a2d262.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_6b180fbdf8bb4d14.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_17a0f78e420dacb3.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_ee7a3ebd4d19437f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_17a0f78e420dacb3.png 660w
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_b91b26bf8d28767f.png 1024w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_4f6a35c67d2ae94e.png 1024w
           
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_d920362c3efe0c89.png 1320w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z15000_hu_9dcc9de7e49c910d.png 1320w
           "
           sizes="100vw"
         
@@ -1483,12 +1482,12 @@ $$<p>符合贝塞尔光束的形式。</p>
       
         <source
           
-            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_fe207ada8a08c952.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_77e2a2e4fb012b7c.webp 660w
+            srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_7270427699b3a3dd.webp 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_ac595b7e89aa0137.webp 660w
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_d01e74ef37e0c593.webp 1024w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_2f65559b1b702043.webp 1024w
             
             
-              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_78ac98346e5e80d2.webp 1320w
+              ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_6f568e76204013ee.webp 1320w
             "
           
           sizes="100vw"
@@ -1502,12 +1501,12 @@ $$<p>符合贝塞尔光束的形式。</p>
         alt="贝塞尔光束经高斯型软边光阑后横向光强分布 z = 20 m"
         loading="lazy" decoding="async"
         
-          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_d995fd06cac2415e.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_49259f34076b8ffd.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_d995fd06cac2415e.png 660w
+          src="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_1fe0f14aa25b8fab.png" srcset="https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_4d6d7a19eca8ab2f.png 330w,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_1fe0f14aa25b8fab.png 660w
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_cbd8d8978c8df699.png 1024w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_6b19f77526c0433b.png 1024w
           
           
-            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_5170770e45d76341.png 1320w
+            ,https://trojanpt.github.io/jottings/bessel-beam/Figure_6_z20000_hu_bc7c434c557f2628.png 1320w
           "
           sizes="100vw"
         
@@ -1765,6 +1764,25 @@ $$<hr>
           
         </span>
         <span>
+          
+            <a class="group flex text-right" href="https://trojanpt.github.io/jottings/band-topology-1/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >【某几何的 Bloch Bands】其一 | 能带上的 Berry Connection</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2026-07-15 00:00:00 &#43;0000 UTC">2026.7.15</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
           
         </span>
       </div>
