@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>系列 on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/series/</link>
+    <description>Recent content in 系列 on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2025-2026 TrojanPoint</copyright>
+    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>某几何的 Bloch Bands</title>
+      <link>https://trojanpt.github.io/series/bloch-bands/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/series/bloch-bands/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

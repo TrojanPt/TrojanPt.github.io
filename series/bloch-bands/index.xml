@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>某几何的 Bloch Bands on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/series/bloch-bands/</link>
+    <description>Recent content in 某几何的 Bloch Bands on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2025-2026 TrojanPoint</copyright>
+    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/series/bloch-bands/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>量子几何张量【某几何的 Bloch Bands · 3】</title>
+      <link>https://trojanpt.github.io/jottings/band-topology-3/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/band-topology-3/</guid>
+      <description>本文给出了量子几何张量的定义，并分析了其实部与虚部的性质及其物理意义。</description>
+    </item>
+    <item>
+      <title>Berry phase, Berry curvature 与陈数【某几何的 Bloch Bands · 2】</title>
+      <link>https://trojanpt.github.io/jottings/band-topology-2/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/band-topology-2/</guid>
+      <description>本文给出了 Berry phase, Berry curvature 与陈数的定义，并展开讨论。</description>
+    </item>
+    <item>
+      <title>能带上的 Berry Connection【某几何的 Bloch Bands · 1】</title>
+      <link>https://trojanpt.github.io/jottings/band-topology-1/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/band-topology-1/</guid>
+      <description>从几何的角度考察二维晶格的能带结构。本文中给出了能带上的 Berry Connection, 并分析了其诱导的平行移动的物理意义。</description>
+    </item>
+  </channel>
+</rss>

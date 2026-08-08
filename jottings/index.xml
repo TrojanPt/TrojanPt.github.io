@@ -6,11 +6,25 @@
     <description>Recent content in Jottings on Trojan TeaHouse</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
-    <copyright>&amp;copy; 2025 TrojanPoint</copyright>
-    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2025-2026 TrojanPoint</copyright>
+    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/jottings/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【某几何的 Bloch Bands】其一 | 能带上的 Berry Connection</title>
+      <title>量子几何张量【某几何的 Bloch Bands · 3】</title>
+      <link>https://trojanpt.github.io/jottings/band-topology-3/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/band-topology-3/</guid>
+      <description>本文给出了量子几何张量的定义，并分析了其实部与虚部的性质及其物理意义。</description>
+    </item>
+    <item>
+      <title>Berry phase, Berry curvature 与陈数【某几何的 Bloch Bands · 2】</title>
+      <link>https://trojanpt.github.io/jottings/band-topology-2/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/jottings/band-topology-2/</guid>
+      <description>本文给出了 Berry phase, Berry curvature 与陈数的定义，并展开讨论。</description>
+    </item>
+    <item>
+      <title>能带上的 Berry Connection【某几何的 Bloch Bands · 1】</title>
       <link>https://trojanpt.github.io/jottings/band-topology-1/</link>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://trojanpt.github.io/jottings/band-topology-1/</guid>
