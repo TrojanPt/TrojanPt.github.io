@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2025-2026 TrojanPoint</copyright>
-    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://trojanpt.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QFT の一存</title>
+      <link>https://trojanpt.github.io/series/qft/</link>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/series/qft/</guid>
+      <description></description>
+    </item>
     <item>
       <title>某几何的 Bloch Bands</title>
       <link>https://trojanpt.github.io/series/bloch-bands/</link>

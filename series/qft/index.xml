@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QFT の一存 on Trojan TeaHouse</title>
+    <link>https://trojanpt.github.io/series/qft/</link>
+    <description>Recent content in QFT の一存 on Trojan TeaHouse</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2025-2026 TrojanPoint</copyright>
+    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://trojanpt.github.io/series/qft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hilbert 空间【QFT の一存 · 1】</title>
+      <link>https://trojanpt.github.io/notes/path-integral-formulation-1/</link>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://trojanpt.github.io/notes/path-integral-formulation-1/</guid>
+      <description>本文讨论了量子场论的运动学基础，从场空间出发构造等时 Hilbert 空间，讨论了其上的标准正交基，并以有限维高斯测度为例给出了 Fock 基的构造过程。</description>
+    </item>
+  </channel>
+</rss>
